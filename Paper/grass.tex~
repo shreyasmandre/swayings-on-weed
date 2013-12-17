@@ -182,10 +182,10 @@ with base profile $U$ and $P$ respectively, momentum and mass balance equation e
 %of having been produced through equation of motion itself.\newline
 %We performed stability analysis on two different kind of base flow namely (1) flow driven by constant pressure gradient between two parallel plate (2) constant pressure gradient driven 
 %flow with zero shear at top. We use following scaling to non-dimensionlize equation of motion
-Where drag coeffient $C_N$ is set zero out side vagetation. Using height $H$ of fluid column and associated advection time H/$U_{0}$, we use following scalaing to non-dimensinlize equation 
-of motion
-   \[ u = U_{0}\bar{u},\hspace{1cm} y = (H/2)\bar{y}, \hspace{1cm} \text{with}\hspace{2mm} U_{0}=\frac{(dP/dx)H^2}{4\mu} \]
-With these scaling along with use of stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$, equations can be simplified into a single equation.
+Where drag coeffient $C_N$ is set zero out side vagetation. Using channel height $H$ and advection time $H/U$, we use following scalaing to non-dimensinlize equation of motion
+   \[ u = U_{0}\bar{u},\hspace{1cm} y = (H/2)\bar{y}, \hspace{1cm} \text{with}\hspace{2mm} U_{0}=\frac{dP/dxH^2}{4\mu} \]
+where $c_{1}$ is constant pressure gradient, H is height at which fluid is present. With these scaling and using stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$, equations 
+can be simplified into a single equation.
 \begin{equation}
 \begin{split}
  R_{e}\left[\psi_{yyt}+\psi_{xxt}+U\left(\psi_{xyy}+\psi_{xxx}\right)-U_{yy}\psi_{x} \right] &=\left[\psi_{yyxx}+\psi_{yyyy}+\psi_{xxxx}+\psi_{xxyy} \right]\\
