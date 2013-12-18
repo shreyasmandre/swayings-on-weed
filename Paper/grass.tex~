@@ -94,8 +94,8 @@ the presence of an inflection point in the mean velocity profile near the top of
 %\newline
 %Following the work of Raupach (1996) on terrestrial canopies, 
 Existing explanation of monami have been done under assumption that the a pattern of coherent eddies are excited by hydrodynamic instability of shear layer
-similar to that of free shear flow known as Kelvin-Helmholtz instability. Influence of these coherent eddies over sea grasses are exhibited by large amplitude synchronous 
-oscillations of sea grasses.
+similar to that of free shear flow known as Kelvin-Helmholtz instability. Influence of these coherent eddies over sea grasses are exhibited by their large amplitude synchronous 
+oscillations.
 %Sea grasses exhibit large amplitude wave like motion in response to these eddies propagating downstream.
 %are exhibited in form of large amplitude oscillations knows as mo-nami.
 \newline
@@ -104,8 +104,8 @@ several aspect of existing theory remain unexplained. First, the proposed hydrod
 grass does not take into account influence of drag due to grasses itself. 
 %the proposed hydrodynamic instability mechanism of shear layer layer does not take into account presence of grass whereas existence of 
 %shear layer is due to drag provided by vegetation. 
-Second, classical free shear flow is known to be unstable above a very small Reynolds number $\leq 10 $. On the contrary observed critical Reynolds number for monami is much
-higher.
+Second, classical free shear flow is known to be unstable above a very small Reynolds number $\leq 10 $. On the contrary observed critical Reynolds number (Grizzle 1996) for monami is much
+higher $\sim 1000$
 %(Grizzle,1996) shows that an event of mo-nami is not observed until flow speed exceed a certain threshold value. Although atmospheric flow through terrestrial canopy seems similar to 
 %aquatic flow through vegetation, atmospheric flow is essentially unbounded, due to these difference of vertical extent of flow in two cases a mechanism similar to 
 %terrestrial case might not be adequate for aquatic scenario.
@@ -119,7 +119,7 @@ higher.
 \newline 
  In this paper we extend the idea of Raupach et.al via incorporating drag due to presence of vegetation. Our calculation of linear stability analysis of flow in presence of grasses 
 shows that drag from the grass blades damps out the Kelvin Helmholtz instability. We also show instead that mo-nami is caused by instability 
-of fluid flow above vegetation coupled with the flow through. We further show that inclusion of drag due to grass predicts a threshold condition for waving where threshold is
+of fluid flow above vegetation coupled with the flow through canopy. We further show that inclusion of drag due to grass predicts a threshold condition for waving where threshold is
 characterized by Reynolds number. We confirm our analysis by comparing prediction from theory with field and experimental observations.  
 %In this paper we propose a coupled fluid-canopy model to study dynamics of flexible canopy and flow field. Canopies are represented by a continuous 
 %medium which is coupled to flow field via a drag term. We did linear stability analysis of flow without ignoring presence of grass via solving 
@@ -128,8 +128,10 @@ characterized by Reynolds number. We confirm our analysis by comparing predictio
 %prediction from theory with existing data
 
 \section{The model}
-We use a mean field average model for the coupling between the flow and the canopy. Drag force exerted by grass is approximated via continuous drag field 
-which is incorporated as an additional body force $\mathbf{f}=-N\mathbf{f_d}$ in fluid momentum equation. 
+We use a mean field model for the coupling between the flow and the canopy. Assuming strong oscillation in fluid flow is caused by instability of flow
+composed of regions experiencing higher drag with in grass and less outside while monami being response of flexible grass to oscillations of fluid flow. We expect stiffness 
+of grass to play minor role in development of flow instability. We approximate grasses with stiff cylindrical rod of diameter $d$ and height $h$ with number density $N/m^2$. 
+Drag force exerted by the grass is approximated via a continuous body force $\mathbf{f}=-N\mathbf{f_d}$ in the fluid momentum balance as
 %We propose a fully coupled model in order to comprehend dynamics of canopy and fluid flow, drag force excerted by grasses is
 %taken as an additional body force in momentum equation of fluid. We approximate presence of grass via continuous field whose shape at any location is approximated as averaged 
 %shape of grass at that location which can be obtained by assuming grass to be in quasi-equilibrium at any moment.
@@ -140,9 +142,11 @@ which is incorporated as an additional body force $\mathbf{f}=-N\mathbf{f_d}$ in
 %\begin{equation}
 % \mathbf{f}=-N\mathbf{f_{d}}
 %\end{equation}
-where $\mathbf{f_{d}}$ is drag force per unit length of grass; N is grass number density. Drag force exerted by fluid on grass depends on
-fluid density $\rho$, flow velocity $\bu$, which we model as $\mathbf{f_{d}}=C_N \rho\bu_{N}^{2}d\hat{n}+C_{T}\rho\bu_{T}^{2}d\hat{t}$ where 
-$C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively; $\bu_{T}$, $\bu_{N}$ are velocity vector along and normal to grass.
+where $\mathbf{f_{d}}$ is drag force per unit length of grass, $\rho$ the fluid density, $\mathbf{u}$ the velocity, $P$ the pressure, $\mu$ the viscosity and $\mathbf{g}$
+the acceleration due to gravity. Drag force itself is modeled as $\mathbf{f_{d}}=C_N \rho\bu_{N}^{2}d\hat{n}+C_{T}\rho\bu_{T}^{2}d\hat{t}$ where 
+$C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively which are set to zero outside the grass; $\bu_{T}$, $\bu_{N}$ are velocity vector along and
+normal to grass while $\hat{t},\hat{n}$ being unit vector along and normal to grass. We expect $C_T \ll C_N$ and take $C_T=0$ for rest of analysis. We further expect $C_N$ to
+not change along the height of the grass and take $C_N$ to be constant for further analysis. 
 %\begin{equation}
 % \mathbf{f_{d}}=C_N \rho\bu_{N}^{2}d\hat{n}+C_{T}\rho\bu_{T}^{2}d\hat{t}
 %\end{equation}\

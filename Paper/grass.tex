@@ -128,8 +128,10 @@ characterized by Reynolds number. We confirm our analysis by comparing predictio
 %prediction from theory with existing data
 
 \section{The model}
-We use a mean field average model for the coupling between the flow and the canopy. Drag force exerted by grass is approximated via continuous drag field 
-which is incorporated as an additional body force $\mathbf{f}=-N\mathbf{f_d}$ in fluid momentum equation. 
+We use a mean field model for the coupling between the flow and the canopy. Assuming strong oscillation in fluid flow is caused by instability of flow
+composed of regions experiencing higher drag with in grass and less outside while monami being response of flexible grass to oscillations of fluid flow. We expect stiffness 
+of grass to play minor role in development of flow instability. We approximate grasses with stiff cylindrical rod of diameter $d$ and height $h$ with number density $N/m^2$. 
+Drag force exerted by the grass is approximated via a continuous body force $\mathbf{f}=-N\mathbf{f_d}$ in the fluid momentum balance as
 %We propose a fully coupled model in order to comprehend dynamics of canopy and fluid flow, drag force excerted by grasses is
 %taken as an additional body force in momentum equation of fluid. We approximate presence of grass via continuous field whose shape at any location is approximated as averaged 
 %shape of grass at that location which can be obtained by assuming grass to be in quasi-equilibrium at any moment.
@@ -140,9 +142,11 @@ which is incorporated as an additional body force $\mathbf{f}=-N\mathbf{f_d}$ in
 %\begin{equation}
 % \mathbf{f}=-N\mathbf{f_{d}}
 %\end{equation}
-where $\mathbf{f_{d}}$ is drag force per unit length of grass; N is grass number density. Drag force exerted by fluid on grass depends on
-fluid density $\rho$, flow velocity $\bu$, which we model as $\mathbf{f_{d}}=C_N \rho\bu_{N}^{2}d\hat{n}+C_{T}\rho\bu_{T}^{2}d\hat{t}$ where 
-$C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively; $\bu_{T}$, $\bu_{N}$ are velocity vector along and normal to grass.
+where $\mathbf{f_{d}}$ is drag force per unit length of grass, $\rho$ the fluid density, $\mathbf{u}$ the velocity, $P$ the pressure, $\mu$ the viscosity and $\mathbf{g}$
+the acceleration due to gravity. Drag force itself is modeled as $\mathbf{f_{d}}=C_N \rho\bu_{N}^{2}d\hat{n}+C_{T}\rho\bu_{T}^{2}d\hat{t}$ where 
+$C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively which are set to zero outside the grass; $\bu_{T}$, $\bu_{N}$ are velocity vector along and
+normal to grass while $\hat{t},\hat{n}$ being unit vector along and normal to grass. We expect $C_T \ll C_N$ and take $C_T=0$ for rest of analysis. We further expect $C_N$ to
+not change along the height of the grass and take $C_N$ to be constant for further analysis. 
 %\begin{equation}
 % \mathbf{f_{d}}=C_N \rho\bu_{N}^{2}d\hat{n}+C_{T}\rho\bu_{T}^{2}d\hat{t}
 %\end{equation}\
