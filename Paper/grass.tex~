@@ -1,6 +1,6 @@
-%\documentclass[aps,twocolumn,floatfix,prl]{revtex4-1}
+\documentclass[aps,twocolumn,floatfix,prl,10pt]{revtex4-1}
 %\documentclass[letterpaper,10pt,prl,twocolumn,aps]{revtex4-1}
-\documentclass[aps,preprint,floatfix,prl]{revtex4-1}
+%\documentclass[aps,preprint,floatfix,prl]{revtex4-1}
 \usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -130,8 +130,8 @@ characterized by Reynolds number. We confirm our analysis by comparing predictio
 \section{The model}
 We use a mean field model for the coupling between the flow and the canopy. Assuming strong oscillation in fluid flow is caused by instability of flow
 composed of regions experiencing higher drag with in grass and less outside while monami being response of flexible grass to oscillations of fluid flow. We expect stiffness 
-of grass to play minor role in development of flow instability. We approximate grasses with stiff cylindrical rod of diameter $d$ and height $h$ with number density $N/m^2$. 
-Drag force exerted by the grass is approximated via a continuous body force $\mathbf{f}=-N\mathbf{f_d}$ in the fluid momentum balance as
+of grass to play minor role in development of flow instability. We approximate grasses with stiff cylindrical rod of diameter $d$ and height $h$ with number density $N_g/m^2$. 
+Drag force exerted by the grass is approximated via a continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$ in the fluid momentum balance as
 %We propose a fully coupled model in order to comprehend dynamics of canopy and fluid flow, drag force excerted by grasses is
 %taken as an additional body force in momentum equation of fluid. We approximate presence of grass via continuous field whose shape at any location is approximated as averaged 
 %shape of grass at that location which can be obtained by assuming grass to be in quasi-equilibrium at any moment.
@@ -181,9 +181,19 @@ not change along the height of the grass and take $C_N$ to be constant for furth
 %For flexible grass whose bending stiffness is really low, we assume that monami/honami is response to oscillations in flow velocity of fluid. In that case we can safely ignore
 %set of equation(3).
 \section{Stability Analysis}
-In order to understand frequency and wavelength associated with passage of dominant eddies over grass which are manifestation of hydrodynamic instability associated with mean flow, 
-we investigate stability of base flow profile which is obtained by solving steady state solution of equation(1). Considering small perturbations $u, v, p$  associated 
-with base profile $U$ and $P$ respectively, momentum and mass balance equation expanded in 1st order of perturbed variable yields.
+We perform linear stability analysis of a base state associated with the vegetated flow to gain insight about instability characteristics of flow in presence of grass.
+Base state flow can be obtained by solving steady state form of constant pressure gradient driven flow associated with equation(1)
+$-\frac{dP}{dx}+\mu\frac{d^2U}{dy^2}+\rho C_N d N_gU^2=0$ with no slip at bottom and zero shear at top of surface. Width of shear layer associated with the base flow can be 
+obtained by balancing viscous force and vegetative drag in shear layer along with the balance of shear stress exerted by un-vegetated flow at the tip and total vegetative 
+drag in shear layer see figure(1). With these balance we can get the scale of shear layer $\delta \sim H\left(\frac{\rho U_0 H}{\mu} C_N d N_g H\right)^{-1/3}$
+where $U_0 = \frac{dP/dxH^2}{\mu}$ is scale for velocity.
+\begin{figure}[htb!]
+  \includegraphics[]{fig1}
+\caption{Basic flow profile (left )and model of canopy (bottom) along with variation of shear layer (top center) }
+\end{figure}
+Knowing the scale of shear layer we can systematically investigate its effect on flow instability
+by varying grass number density $N_g$ and pressure gradient $\frac{dP}{dx}$. Considering small perturbations $u, v, p$ about the base profile $U$ and $P$
+respectively, momentum and mass balance equation expanded in 1st order of perturbed variable yields.
 \begin{equation}
 \begin{split}
  \frac{\del u}{\del t}+U\frac{\del u}{\del x}+v\frac{\del U}{\del y} &= -\frac{1}{\rho}\frac{\del p}{\del x}+\frac{\mu}{\rho}(u_{xx}+u_{yy})-2C_{N}dN_{g}Uu\\
@@ -197,35 +207,38 @@ with base profile $U$ and $P$ respectively, momentum and mass balance equation e
 %of having been produced through equation of motion itself.\newline
 %We performed stability analysis on two different kind of base flow namely (1) flow driven by constant pressure gradient between two parallel plate (2) constant pressure gradient driven 
 %flow with zero shear at top. We use following scaling to non-dimensionlize equation of motion
-Where drag coeffient $C_N$ is set zero out side vagetation. Using height $H$ of fluid column and associated advection time H/$U_{0}$, we use following scalaing to non-dimensinlize equation 
-of motion
-   \[ u = U_{0}\bar{u},\hspace{1cm} y = (H/2)\bar{y}, \hspace{1cm} \text{with}\hspace{2mm} U_{0}=\frac{(dP/dx)H^2}{4\mu} \]
-With these scaling along with the use of stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$, equations can be simplified into a single equation.
+Momentum and mass balance equation can be non-dimensionlize using half channel height $H$, associated advection time H/$U_0$ and velocity $U_0 = \frac{dP/dxH^2}{\mu0}$.
+%Using half channel height $H$ of and associated advection time H/$U_{0}$, we use following scaling to non-dimensinlize equation 
+%of motion
+%   \[ u = U_{0}\bar{u},\hspace{1cm} y = (H/2)\bar{y}, \hspace{1cm} \text{with}\hspace{2mm} U_{0}=\frac{(dP/dx)H^2}{4\mu} \]
+With these scaling along with the use of stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance, momentum and mass balance can be combined 
+into a single equation.
 \begin{equation}
-\begin{split}
- R_{e}\left[\psi_{yyt}+\psi_{xxt}+U\left(\psi_{xyy}+\psi_{xxx}\right)-U_{yy}\psi_{x} \right] &=\left[\psi_{yyxx}+\psi_{yyyy}+\psi_{xxxx}+\psi_{xxyy} \right]\\
-& + 2D_{drag}U\psi_{y}\delta(y-h)\\
-& - 2D_{drag}U_{y}\psi_{y} -2D_{drag}U\psi_{yy}
-\end{split}
+Re\left[\del_t+\del_x U \right]\grad^2\phi - U_{yy}\psi_x = \grad^4\psi-\frac{\del}{\del_y}\left(\frac{2D_{drag}}{R_e}U\psi_y\right)
+%\begin{split}
+% R_{e}\left[\psi_{yyt}+\psi_{xxt}+U\left(\psi_{xyy}+\psi_{xxx}\right)-U_{yy}\psi_{x} \right] &=\left[\psi_{yyxx}+\psi_{yyyy}+\psi_{xxxx}+\psi_{xxyy} \right]\\
+%& + 2D_{drag}U\psi_{y}\delta(y-h)\\
+%& - 2D_{drag}U_{y}\psi_{y} -2D_{drag}U\psi_{yy}
+%\end{split}
 \end{equation}
-where $R_{e}= \frac{\rho U_0 H}{2\mu}$ is Reynolds number and $\bar{N_g} = C_N d N_g H/2$ is non-dimensional grass number density and  $D_{drag} = R_{e}\bar{N_{g}}$ is non-dimensional.
-Seeking wave solution in form of $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma}$, we get generalized orr-sommerfield equation 
+where $R_{e}= \frac{\rho U_0 H}{\mu}$ is Reynolds number and $\bar{N_g} = C_N d N_g H$ is non-dimensional grass number density and  $D_{drag} = R_{e}\bar{N_{g}}$ is 
+non-dimensional drag. Seeking wave solution in form of $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma}$, we get generalized orr-sommerfield equation 
 which is an eigenvalue problem whose solution provides frequency and wavelength of eddies traveling over canopy.
 \begin{equation}
 \begin{split}
-\sigma \left(D^2-k^2\phi \right) &= \frac{1}{R_{e}}\left[D^4\phi -2k^{2}D^2\phi +k^{4}\phi \right]\\
-				  & +ikU_{yy}\phi-ikU\left(D^2\phi-k^2\phi \right)\\
- & -\frac{2D_{drag}}{R_{e}}U_{y}\phi_{y}-\frac{2D_{drag}}{R_{e}}U\phi_{yy}+\frac{2D_{drag}}{R_{e}}U\phi_{y}\delta(y-h)
+\left(\sigma+ikU\right) \left(D^2-k^2\right)\phi &= \frac{1}{R_{e}}\left[D^2 -k^{2} \right]^2\phi +ikU_{yy}\phi\\
+&-\frac{\del}{\del y}\left(\frac{2D_{drag}}{R_e}U\phi_y\right)
+%& -\frac{2D_{drag}}{R_{e}}U_{y}\phi_{y}-\frac{2D_{drag}}{R_{e}}U\phi_{yy}+\frac{2D_{drag}}{R_{e}}U\phi_{y}\delta(y-h)
 \end{split}
 \end{equation}
 Critical Reynolds number above which we get growing solution of perturbation, as a function of grass number density for different grass height shows following characteristics 
   \begin{figure}[htb!]
-  \includegraphics[scale=0.35]{Instability2}
+  \includegraphics[]{Critical_Re_vs_Ng_Grizzle}
 \caption{Critical Reynolds number with flow between parallel plate for different grass height as a function of grass number density}
 \end{figure}
 
 \begin{figure}[htb!]
-  \includegraphics[scale=0.35]{Instability1_free.jpg}
+  \includegraphics[scale=0.15]{Instability1_free.jpg}
 \caption{Critical Reynolds number with no shear stress at top for different grass height as a function of grass number density}
 \end{figure}
 
