@@ -11,7 +11,6 @@
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{dashrule}
-
 \usepackage{amsmath}
 
 \usepackage{dcolumn}% Align table columns on decimal point
@@ -40,9 +39,8 @@
 \newcommand{\del}{\partial}
 
 \begin{document}
-
 \title{Waving and swaying}
-\author{Ravi Singh}
+\author{Ravi Singh, Shreyas Mandre}
 \affiliation{Brown University, Providence RI 02912 USA}
 \author{L. Mahadevan}
 \affiliation{Harvard University, Cambridge MA 02138 USA}
@@ -50,87 +48,55 @@
 \affiliation{Okinawa Institute of Science and Technology, Okinawa, Japan}
 \author{Amala Mahadevan}
 \affiliation{Woods Hold Institute of Oceanography, Woods Hole MA USA}
-\author{Shreyas Mandre}
-\affiliation{Brown University, Providence RI 02912 USA}
+%\author{Shreyas Mandre}
+%\affiliation{Brown University, Providence RI 02912 USA}
 
 \begin{abstract}
-The spontaneous waving of marine grass is thought to be due to a Kelvin-Helmholtz instability resulting from an inflection point in the flow profile. 
-We find that this inflection point is located inside the grass canopy, and the drag from the grass blades damps out the Kelvin Helmholtz instability, 
-normally observed in a free shear layer. We also show that the wavelength of coherent vortices scales with the unvegetated water depth, and not with 
-the shear layer thickness as predicted by a theory based on Kelvin-Helmholtz instability. Based on these results, we propose a mechanism for waving 
-marine grass based on the shear instability of the flow above the canopy.
+%The spontaneous waving of marine grass is thought to be due to a Kelvin-Helmholtz instability resulting from an inflection point in the flow profile. 
+%We find that this inflection point is located inside the grass canopy, and the drag from the grass blades damps out the Kelvin Helmholtz instability, 
+%normally observed in a free shear layer. We also show that the wavelength of coherent vortices scales with the unvegetated water depth, and not with 
+%the shear layer thickness as predicted by a theory based on Kelvin-Helmholtz instability. Based on these results, we propose a mechanism for waving 
+%marine grass based on the shear instability of the flow above the canopy.
+The spontaneous waving of marine grass is though to be due to a Kelving-helmholtz instability resulting from strong shear near top of grass. On the contrary
+we find that strong velocity shear resulting from vertical discontinuity of drag due to presence of grass does not lead to Kelvin-Helmholtz instability which is 
+normally observed in free shear flows. We also show that wavelength of coherent vortices scales with the unvegetated water depth. Based on these results, 
+we propose an alternative mechanism which attributes waving of marine grass on shear instability of flow above the canopy. 
 \end{abstract}
 \maketitle
 
 \section{Introduction}
 Sea grasses exhibit rich set of dynamics due to their interaction with the flow of water and can considerably affect surrounding hydrodynamic conditions.
-%Rich set of dynamics are exhibited by sea grasses due to their interaction with water flow which can considerably affect the hydrodynamic conditions near the 
-%grass.
-Resulting changes in hydrodynamic conditions relative to unobstructed flow can influence number of environmental variables and processes such as 
+Resulting changes in hydrodynamic conditions can influence number of environmental variables and processes such as 
 transport of sediments, contaminants, dissolved oxygen, plant growth and biomass production etc. 
-%Driven by such applications number of scientific work regarding flow over canopies has been done over 
-%last three decades. One of main development is recognition that major contribution to canopy turbulence arises from coherent eddies
-%of canopy scales.\newline
 The response of flexible grass canopies to steady current in form of large amplitude coherent oscillations known as mo-nami (Ackerman and Okubo, 1993) plays a central role
 in the recruitment of microscopic marine organism such as blue mussel larvae. The hydrodynamic mechanism underlying monami is the focus of this paper. 
-%Among many dynamics shown by flexible grasses due to their interaction with water flow, their response to steady current in form of large amplitude coherent oscillations known as
-%mo-nami (Ackerman and Okubo 1993) is focus of this paper. 
-Similar phenomenon of large amplitude coherent oscillation of canopy in wind known as ho-nami (Inoue 1955) have also been observed.
-% Experimental observations (Grizzle 1996) have shown that monami is observed when mean flow speed exceed a certain threshold value. 
 \newline
+Similar phenomenon of large amplitude coherent oscillation of canopy in wind known as ho-nami (Inoue 1955, Raupach 1996) have also been observed.
 Although atmosphere flow through terrestrial canopies seems similar to aquatic flow through vegetation, atmospheric flows are essentially unbounded vertically. Another major
-difference between atmospheric flow and aquatic flow is the considerable difference of stiffness of canopies, terrestrial canopies tends to be much more rigid than marine canopies.
+difference between atmospheric flow and aquatic flow is the considerable difference of stiffness of canopies; terrestrial canopies tend to be much more rigid than marine canopies.
 \newline   
-The previous explanation of mo-nami invokes the existence of strong shear near the top of the canopy (Ghisalberti 2002, Raupach 1996) due to
-different amounts of drag experienced by fluid in and above the canopy. Existence of strong shear is manifested by
-the presence of an inflection point in the mean velocity profile near the top of the canopy.
-% In addition pattern of coherent eddies propagating downstream 
-%along have also been observed.
-%A crucial feature of a velocity inflection is that it induces a hydrodynamic instability
-%process which sets the pattern of coherent eddies propagating over terrestrial and submerged canopies. In response to coherent eddies canopies
-%may exhibit synchronous large-amplitude waving (termed as monami in aquatic setting by Ackerman and Okubo[1993], and honami by Inoue (1955) in terrestrial setting). 
-%Monami (Honami) can be observed when flow velocity is above certain threshold value, which can depends on flow depth, elasticity of canopy material
-%etc.
-%\newline
-%Following the work of Raupach (1996) on terrestrial canopies, 
-Existing explanation of monami have been done under assumption that the a pattern of coherent eddies are excited by hydrodynamic instability of shear layer
-similar to that of free shear flow known as Kelvin-Helmholtz instability. Influence of these coherent eddies over sea grasses are exhibited by their large amplitude synchronous 
-oscillations.
+Existing explanation of mo-nami invokes the existence of strong shear near the top of the canopy (Ghisalberti 2002, Raupach 1996) due to
+different amounts of drag experienced by fluid in and above the canopy. This shear layer is assumed to become unstable to coherent vortices throguh a mechanism similar to Kelvin-Helmholtz
+instability. Influence of these coherent eddies over sea grasses is manifested in their large amplitude synchronous oscillations.
 %Sea grasses exhibit large amplitude wave like motion in response to these eddies propagating downstream.
 %are exhibited in form of large amplitude oscillations knows as mo-nami.
 \newline
 While shear layer model successfully predict frequency of mo-nami for number of experimental observations,
 several aspect of existing theory remain unexplained. First, the proposed hydrodynamic instability of shear layer produced due to drag of 
-grass does not take into account influence of drag due to grasses itself. 
-%the proposed hydrodynamic instability mechanism of shear layer layer does not take into account presence of grass whereas existence of 
-%shear layer is due to drag provided by vegetation. 
+grass does not take into account influence of drag due to grasses itself.
+Linear stability analysis of base flow does not take into account influence of drag due to grass  
 Second, classical free shear flow is known to be unstable above a very small Reynolds number $\leq 10 $. On the contrary observed critical Reynolds number (Grizzle 1996) for monami is much
-higher $\sim 1000$
-%(Grizzle,1996) shows that an event of mo-nami is not observed until flow speed exceed a certain threshold value. Although atmospheric flow through terrestrial canopy seems similar to 
-%aquatic flow through vegetation, atmospheric flow is essentially unbounded, due to these difference of vertical extent of flow in two cases a mechanism similar to 
-%terrestrial case might not be adequate for aquatic scenario.
-%might not hold  
-%was produced due to drag caused by presence vegetation. 
-%Second, shear layer instability mechanism does not predict any threshold for monami, hence it fails to explain
-%observations where monami is observed when mean flow speed is above certain value. While atmospheric flow through terrestrial vegetation seems similar to aquatic flow through marine grass, 
-%atmospheric flow is unbounded in vertical direction.
-% but aquatic flow is not so its not obvious that similar mechanism will hold in aquatic case too (2) The proposed hydrodynamic instability mechanism of shear layer produced 
-%by presence of grass does not take into account the presence of grass itself (3) It does not predict any threshold condition for waving to happen 
+higher $O(1000)$
 \newline 
  In this paper we extend the idea of Raupach et.al via incorporating drag due to presence of vegetation. Our calculation of linear stability analysis of flow in presence of grasses 
 shows that drag from the grass blades damps out the Kelvin Helmholtz instability. We also show instead that mo-nami is caused by instability 
 of fluid flow above vegetation coupled with the flow through canopy. We further show that inclusion of drag due to grass predicts a threshold condition for waving where threshold is
 characterized by Reynolds number. We confirm our analysis by comparing prediction from theory with field and experimental observations.  
-%In this paper we propose a coupled fluid-canopy model to study dynamics of flexible canopy and flow field. Canopies are represented by a continuous 
-%medium which is coupled to flow field via a drag term. We did linear stability analysis of flow without ignoring presence of grass via solving 
-%a generalized orr-sommerfield equation with presence of grass. Our calculation predicts threshold a threshold criteria for waving which is characterized by Reynolds number.
-%We further show that for flexible marine grass monami is caused by instability of flow above the grass rather than by shear layer. We confirm our analysis by comparing 
-%prediction from theory with existing data
 
 \section{The model}
-We use a mean field model for the coupling between the flow and the canopy. Assuming strong oscillation in fluid flow is caused by instability of flow
-composed of regions experiencing higher drag with in grass and less outside while monami being response of flexible grass to oscillations of fluid flow. We expect stiffness 
-of grass to play minor role in development of flow instability. We approximate grasses with stiff cylindrical rod of diameter $d$ and height $h$ with number density $N_g/m^2$. 
+We use a mean field model for the coupling between the flow and the canopy. The drag force per unit volume experienced by fluid flow is believed to be dependent on
+mean frontal area of grass while flexibility of grass playing only minor role in development of flow (Raupach-1996, Gishalberti-2002).   
+We approximate mean frontal area of grass field with stiff cylindrical rod of diameter $d$ and height $h$ with number density $N_g/m^2$. 
 Drag force exerted by the grass is approximated via a continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$ in the fluid momentum balance as
 %We propose a fully coupled model in order to comprehend dynamics of canopy and fluid flow, drag force excerted by grasses is
 %taken as an additional body force in momentum equation of fluid. We approximate presence of grass via continuous field whose shape at any location is approximated as averaged 
@@ -142,11 +108,11 @@ Drag force exerted by the grass is approximated via a continuous body force $\ma
 %\begin{equation}
 % \mathbf{f}=-N\mathbf{f_{d}}
 %\end{equation}
-where $\mathbf{f_{d}}$ is drag force per unit length of grass, $\rho$ the fluid density, $\mathbf{u}$ the velocity, $P$ the pressure, $\mu$ the viscosity and $\mathbf{g}$
+where $\mathbf{f_{d}}$ is drag force per unit length of the grass blade, $\rho$ the fluid density, $\mathbf{u}$ the velocity, $P$ the pressure, $\mu$ the viscosity and $\mathbf{g}$
 the acceleration due to gravity. Drag force itself is modeled as $\mathbf{f_{d}}=C_N \rho\bu_{N}^{2}d\hat{n}+C_{T}\rho\bu_{T}^{2}d\hat{t}$ where 
 $C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively which are set to zero outside the grass; $\bu_{T}$, $\bu_{N}$ are velocity vector along and
 normal to grass while $\hat{t},\hat{n}$ being unit vector along and normal to grass. We expect $C_T \ll C_N$ and take $C_T=0$ for rest of analysis. We further expect $C_N$ to
-not change along the height of the grass and take $C_N$ to be constant for further analysis. 
+not change along the height of the grass and take $C_N$ to be constant. 
 %\begin{equation}
 % \mathbf{f_{d}}=C_N \rho\bu_{N}^{2}d\hat{n}+C_{T}\rho\bu_{T}^{2}d\hat{t}
 %\end{equation}\
@@ -182,18 +148,22 @@ not change along the height of the grass and take $C_N$ to be constant for furth
 %set of equation(3).
 \section{Stability Analysis}
 We perform linear stability analysis of a base state associated with the vegetated flow to gain insight about instability characteristics of flow in presence of grass.
-Base state flow can be obtained by solving steady state form of constant pressure gradient driven flow associated with equation(1)
-$-\frac{dP}{dx}+\mu\frac{d^2U}{dy^2}+\rho C_N d N_gU^2=0$ with no slip at bottom and zero shear at top of surface. Width of shear layer associated with the base flow can be 
-obtained by balancing viscous force and vegetative drag in shear layer along with the balance of shear stress exerted by un-vegetated flow at the tip and total vegetative 
-drag in shear layer see figure(1). With these balance we can get the scale of shear layer $\delta \sim H\left(\frac{\rho U_0 H}{\mu} C_N d N_g H\right)^{-1/3}$
-where $U_0 = \frac{dP/dxH^2}{\mu}$ is scale for velocity.
+Base state flow is obtained by solving steady state form of constant pressure gradient driven flow associated with equation(1)
+$-\frac{dP}{dx}+\mu\frac{d^2U}{dy^2}+\rho C_N d N_gU^2=0$ with no slip at bottom and zero shear at top of surface. Dominant balance of drag force with pressure gradient with in
+grass leads to a constant velocity $U_g \sim \sqrt{\frac{dP/dx}{\rho C_N dN_g}}$ while balance of viscous force with pressure gradient above grass provide a parabolic velocity profile.
+The base flow profile consist of two boundary layer one near the bottom of grass due to no slip condition and other near tip of canopy known as shear layer due to vertical discontinuity 
+of drag force. Width of boundary layer near bottom of grass can be obtained by balance of viscous force with drag and pressure gradient forces which gives boundary layer
+width $\sim \sqrt{\frac{\mu}{\rho C_NdN_g U_g}}$. Thickness of shear layer near the top of grass known as shear layer width is obtained by balance of viscous force 
+with drag along with matching of shear stress near tip exerted by flow in unvegetated region at canopy top which leads to shear layer 
+width $\delta \sim  H\left(\frac{\rho U_0 H}{\mu} C_N d N_g H\right)^{-1/3}$ where $U_0 = \frac{dP/dxH^2}{\mu}$ is scale for velocity.
+ 
 \begin{figure}[htb!]
   \includegraphics[]{fig1}
-\caption{Basic flow profile (left )and model of canopy (bottom) along with variation of shear layer (top center) }
+\caption{Basic flow profile (left )and model of canopy (bottom) along with variation of shear layer (inset) }
 \end{figure}
 Knowing the scale of shear layer we can systematically investigate its effect on flow instability
 by varying grass number density $N_g$ and pressure gradient $\frac{dP}{dx}$. Considering small perturbations $u, v, p$ about the base profile $U$ and $P$
-respectively, momentum and mass balance equation expanded in 1st order of perturbed variable yields.
+respectively, momentum and mass balance equation expanded in first order of perturbed variable yields.
 \begin{equation}
 \begin{split}
  \frac{\del u}{\del t}+U\frac{\del u}{\del x}+v\frac{\del U}{\del y} &= -\frac{1}{\rho}\frac{\del p}{\del x}+\frac{\mu}{\rho}(u_{xx}+u_{yy})-2C_{N}dN_{g}Uu\\
@@ -211,10 +181,10 @@ Momentum and mass balance equation can be non-dimensionlize using half channel h
 %Using half channel height $H$ of and associated advection time H/$U_{0}$, we use following scaling to non-dimensinlize equation 
 %of motion
 %   \[ u = U_{0}\bar{u},\hspace{1cm} y = (H/2)\bar{y}, \hspace{1cm} \text{with}\hspace{2mm} U_{0}=\frac{(dP/dx)H^2}{4\mu} \]
-With these scaling along with the use of stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance, momentum and mass balance can be combined 
+With these scaling along with the use of stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance; momentum and mass balance can be combined 
 into a single equation.
 \begin{equation}
-Re\left[\del_t+\del_x U \right]\grad^2\phi - U_{yy}\psi_x = \grad^4\psi-\frac{\del}{\del_y}\left(\frac{2D_{drag}}{R_e}U\psi_y\right)
+Re\left[\del_t+\del_x U \right]\grad^2\psi - U_{yy}\psi_x = \grad^4\psi-\frac{\del}{\del_y}\left(\frac{2D_{drag}}{R_e}U\psi_y\right)
 %\begin{split}
 % R_{e}\left[\psi_{yyt}+\psi_{xxt}+U\left(\psi_{xyy}+\psi_{xxx}\right)-U_{yy}\psi_{x} \right] &=\left[\psi_{yyxx}+\psi_{yyyy}+\psi_{xxxx}+\psi_{xxyy} \right]\\
 %& + 2D_{drag}U\psi_{y}\delta(y-h)\\
@@ -231,7 +201,8 @@ which is an eigenvalue problem whose solution provides frequency and wavelength 
 %& -\frac{2D_{drag}}{R_{e}}U_{y}\phi_{y}-\frac{2D_{drag}}{R_{e}}U\phi_{yy}+\frac{2D_{drag}}{R_{e}}U\phi_{y}\delta(y-h)
 \end{split}
 \end{equation}
-Critical Reynolds number above which we get growing solution of perturbation, as a function of grass number density for different grass height shows following characteristics 
+Solution of generalized Orr-Somerfield equation predicts a critical Reynolds number as function of grass number density, below which there is no hydrodynamic instability. Fig(2) shows 
+this critical number for different grass density and grass height along with experimental threshold observed by Grizzle (1996)
   \begin{figure}[htb!]
   \includegraphics[]{Critical_Re_vs_Ng_Grizzle}
 \caption{Critical Reynolds number with flow between parallel plate for different grass height as a function of grass number density}
