@@ -52,16 +52,21 @@
 %\affiliation{Brown University, Providence RI 02912 USA}
 
 \begin{abstract}
-The spontaneous waving of marine grass is thought to be due to a Kelvin-Helmholtz instability resulting from an inflection point in the flow profile. 
-We find that this inflection point is located inside the grass canopy but it does not lead to Kelvin Helmholtz instability which is 
-normally observed in a free shear layer. We also show that the wavelength of coherent vortices scales with the unvegetated water depth, and not with 
-the shear layer thickness as predicted by a theory based on Kelvin-Helmholtz instability. Based on these results, we propose a mechanism for waving 
-marine grass based on the shear instability of the flow above the canopy.
+%The spontaneous waving of marine grass is thought to be due to a Kelvin-Helmholtz instability resulting from an inflection point in the flow profile. 
+%We find that this inflection point is located inside the grass canopy but it does not lead to Kelvin Helmholtz instability which is 
+%normally observed in a free shear layer. We also show that the wavelength of coherent vortices scales with the unvegetated water depth, and not with 
+%the shear layer thickness as predicted by a theory based on Kelvin-Helmholtz instability. Based on these results, we propose a mechanism for waving 
+%marine grass based on the shear instability of the flow above the canopy.
 
 %The spontaneous waving of marine grass is though to be due to a Kelving-helmholtz instability resulting from strong shear near top of grass. On the contrary
 %we find that strong velocity shear resulting from vertical discontinuity of drag due to presence of grass does not lead to Kelvin-Helmholtz instability which is 
 %normally observed in free shear flows. We also show that wavelength of coherent vortices scales with the unvegetated water depth. Based on these results, 
 %we propose an alternative mechanism which attributes waving of marine grass on shear instability of flow above the canopy. 
+
+The spontaneous waving of marine grass is thought to be due to a Kelvin-Helmholtz instability resulting from an inflection point in the flow profile. We find that this inflection point
+is located near the tip of grass canopy. Our analysis shows that flow in presence of grass become unstable either through a mechanism of Kelvin-Helmholtz instability associated with 
+inflection point or via shear instability of flow above the grass.
+
 \end{abstract}
 \maketitle
 
@@ -150,7 +155,7 @@ with drag along with match of shear at grass tip exerted by flow in unvegetated 
 width $\delta \sim  H\left(\frac{\rho U_0 H}{\mu} C_N d N_g H\right)^{-1/3}$ where $U_0 = \frac{dP/dxH^2}{\mu}$ is scale for velocity.
  
 \begin{figure}[htb!]
-  \includegraphics[]{fig1}
+  \includegraphics[scale=0.8]{fig1}
 \caption{Basic flow profile (left )and model of canopy (bottom) along with variation of shear layer (inset) }
 \end{figure}
 Knowing the scale of shear layer we can systematically investigate its effect on flow instability
@@ -192,18 +197,33 @@ which is an eigenvalue problem whose solution provides frequency and wavelength 
 &-\frac{\del}{\del y}\left(\frac{2D_{drag}}{R_e}U\phi_y\right)
 \end{split}
 \end{equation}
-Solution of generalized Orr-Somerfield equation predicts a critical Reynolds number as function of grass number density, below which there is no hydrodynamic instability (Fig(2))
-
+Solution of generalized Orr-Somerfield equation predicts a critical Reynolds number as function of grass number density, below which there is no hydrodynamic instability (Fig(2)).
+Variation of critical wave number with shear layer thickness for different grass height is shown in Fig-3.
 % shows 
 %this critical number for different grass density and grass height along with experimental threshold observed by Grizzle (1996)
 \begin{figure}[htb!]
-\includegraphics[scale=0.8]{Critical_Re_vs_Ng_Grizzle}
-\caption{Critical Reynolds number with flow between parallel plate for different grass height as a function of grass number density}
+\includegraphics[]{Critical_Re_vs_delta}
+\caption{Critical Reynolds number with flow for different grass height as a function of inverse shear thickness}
 \end{figure}
+\newline
+The following features can be noted from Fig(3). For the certain grass height region of linear variation of wavenumber with inverse shear layer thickness suggest that the flow is subject 
+to Kelvin-Helmholtz instability above a threshold shear thickness. Region of constant wave number suggest that length scale of the instability is no longer governed by shear layer
+thickness in this this regime, rather it is governed by flow above the grass, which can be understood by asymptotic analysis in regime of small shear layer thickness and large Reynolds 
+number
 \begin{figure}[htb!]
 \includegraphics[]{K_vs_shear_width}
 \caption{Critical Wavenumber for different grass height as function of shear layer thickness}
 \end{figure}
+%\newline
+Collapse of $\phi$ for different shear thickness in the regime of constant critical wavenumber $k$ suggest that we have obtained the asymptotic solution in limit of small shear layer 
+thickness. Noting that non-dimensional flow velocity $U \sim \delta^{3/2}$ inside the grass and $R_{e} \gg 1$, we can simplify the equation-(4) considerably both with in the grass and 
+above the grass canopy. Inside the grass equation simplifies into $\sigma\left(D^2-k^2\right)\phi = -\frac{\del}{\del y}\left(\frac{2\phi_y}{\delta^{3/2}R_e}\right)$. Together with simplified
+force balance inside the grass canopy and constant value of $k\approx O(1)$, we can estimate that critical Reynolds number $R_e \sim \delta^{-3/2}$ for small shear layer thickness Fig(2) 
+\begin{figure}[htb!]
+ \includegraphics[]{Asymptotic_eig_set3}
+\caption{plot of $|\phi|$ for different shear layer thickness in limit of small shear layer thickness}
+\end{figure}
+
 \begin{figure}[htb!]
 \includegraphics[scale=0.34]{Observed_vs_calculated}
 \caption{Comparison between experimently oberved frequency and predicted frequency}
