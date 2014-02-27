@@ -1,5 +1,5 @@
-%\documentclass[aps,prl,twocolumn,showpacs,superscriptaddress,groupedaddress,10pt]{revtex4-1}  % for review and submission
-\documentclass[aps,twocolumn,floatfix,prl,10pt]{revtex4-1}
+\documentclass[aps,prl,twocolumn,showpacs,superscriptaddress,groupedaddress,10pt]{revtex4-1}  % for review and submission
+%\documentclass[aps,twocolumn,floatfix,prl,10pt]{revtex4-1}
 %\documentclass[letterpaper,10pt,prl,twocolumn,aps]{revtex4-1}
 %\documentclass[aps,preprint,floatfix,prl]{revtex4-1}
 %\usepackage{fullpage}
@@ -21,8 +21,6 @@
 \usepackage{calrsfs}
 \usepackage{subfigure}
 \graphicspath{ {images/} }
-
-
 \newcommand{\ellcap}{{\ell_\text{c}}}
 \newcommand{\Fh}{{\boldsymbol{F}_h}}
 \newcommand{\Fv}{{\boldsymbol{F}_v}}
@@ -36,6 +34,7 @@
 \newcommand{\bu}{\mathbf{u}}
 \newcommand{\grad}{\mathbf{\nabla}}
 \newcommand{\del}{\partial}
+
 
 \begin{document}
 \title{Waving and swaying}
@@ -197,45 +196,66 @@ Variation of critical wave number with shear layer thickness for different grass
 \includegraphics[]{Critical_Re_vs_delta}
 \caption{Critical Reynolds number with flow for different grass height as a function of inverse shear thickness}
 \end{figure}
+\begin{figure}[htb]
+\includegraphics[]{K_vs_shear_width_noshear}
+\caption{Critical Wavenumber for different grass height as function of shear layer thickness}
+\label{K_vs_shear}
+\end{figure}
+Variation of critical wavenumber with shear layer thickness can be divided into three distinct region. First region, where critical wavelength does not increases linearly with the
+increase of the shear layer thickness, this region occur for canopies with thick shear layer $H/\delta <10$. Second region named as shear layer region, where variation in critical
+wavelength is proportional to the variation in shear layer thickness, which can be understood to be arising from a mechanism similar to Kelin-Helmholtz instability observed in the free
+shear flow. Third region where critical wavelength does not vary with the variation of shear layer thickness. The boundary of these region depends on 
+submergence ratio and the shear layer thickness experienced by the canopy.
+\begin{figure}[]
+\includegraphics[]{Asymptotic_eig_set3.pdf}
+\caption{plot of $|\phi|$ for different shear layer thickness in limit of small shear layer thickness}
+\label{Asymptotic_mode}
+\end{figure}
 \newline
-Variation of critical wavenumber with shear layer thickness exhibits a region of linear variation of critical wavelength with shear layer thickness showing flow instability arising from
-a mechanism similar to Kelvin-Helmholtz as hypothesized earlier (Ghisalberti, Raupach). For small submergence ration, the broad region of linear variation of wavelength 
-with the shear layer thickness is also consistent with the field observation of atmospheric canopies where the wavelength of Ho-nami is known be proportional to the
-shear layer thickness (Raupach). However the region of almost no variation of wavelength for a given submergence ratio with shear layer thickness shows the existence of another regime 
-where flow instability does not arise from Kelvin-Helmholtz instability of shear layer rather flow instability is dominated by
-the instability of flow in unvegetated region. The existence of a regime dominated by shear instability of flow above grass is further corroborated by the collapse of eigen-modes 
-for different shear layer thickness into a single profile as shown in Figure \ref{Asymptotic_mode}. The regime of shear instability of flow above the grass further predicts that for
-large drag $R_e \sim (\frac{\delta}{H})^{-3/2}$, which can be understood by asymptotic analysis of \eqref{Orr-somerfield}.
+The mechanism similar to Kelvin-Helmholtz instability is observed for a wide range of shear layer thickness $ <5H/\delta <800$ for canopy with low submergence ratio $h/H\leq 0.4$.
+Canopy with low submergence ratio can also be understood to be close to the canopy in unbounded flow $h/H\sim0$ such as terrestrial canopy with atmospheric flow. 
+The linear variation of critical wavelength with the shear layer thickness in this regime is also consistent with the observed wavelength of honami for terrestrial canopies.
+However the deviation of critical wavelength from the prediction based on of instability of shear layer in region-1 and region-3 for a given submergence ratio shows the existence of 
+regimes where flow instability does not arise from mechanism similar to Kelvin-Helmholtz instability. The instability in region-1 is understood to be arising from instability of flow
+comprising flow in shear layer and flow above the canopies. Whereas constant value of critical wavelength for all the shear layer smaller than a critical values shows the instability 
+in the region-3 is arising from the shear instability of flow above the canopy. The existence of a regime dominated by shear instability of flow above grass is further corroborated 
+by the collapse of eigen-modes for different shear layer thickness into a single profile as shown in Figure \ref{Asymptotic_mode}. The regime of shear instability of flow above the 
+grass further predicts that for large drag $R_e \sim (\frac{\delta}{H})^{-3/2}$, which can be understood by asymptotic analysis of \eqref{Orr-somerfield}.
 Noting that for large drag, non-dimensional flow velocity $U \sim (\frac{\delta}{H})^{3/2}$ inside the grass and $R_{e} \gg 1$. So equation \eqref{Orr-somerfield}
 can be simplified considerably both with in the grass and above the grass canopy. As $U_{yy}\sim 0$ inside the grass and $\frac{1}{R_e} \ll 1$,
 the equation within the grass simplifies into
 $\sigma\left(\phi_{yy}-k^2\phi\right) = -\frac{\del}{\del y}\left(\frac{2\phi_y}{\delta^{3/2}R_e}\right)$ while in the unvegetated region it simplifies into Rayleigh equation 
 $ \left(\sigma+ikU\right) \left(D^2-k^2\right)\phi =  ikU_{yy}\phi$. From the balance of coefficients of $\phi_{yy}$ inside the grass we can easily estimate that asymptotically 
-$R_e \sim (\frac{\delta}{H})^{-3/2}$.  
-\begin{figure}[htb]
-\includegraphics[]{K_vs_shear_width}
-\caption{Critical Wavenumber for different grass height as function of shear layer thickness}
-\label{K_vs_shear}
-\end{figure}
-\begin{figure}[]
-\includegraphics[]{Asymptotic_eig_set3}
-\caption{plot of $|\phi|$ for different shear layer thickness in limit of small shear layer thickness}
-\label{Asymptotic_mode}
-\end{figure}
-\newline
-We also compared the frequency of mode with highest growth rate predicted by the model with that of experimental observations of the frequencies in the lab scale experiments.
-The observed frequencies in the lab scale are associated with the peaks in velocity spectra, frequency of monami and frequency of vortex passage. The agreement between the observed
-frequency and the predicted frequency suggest that monami is associated with the instability of flow 
+$R_e \sim (\frac{\delta}{H})^{-3/2}$.
 \begin{figure}[htb]
 \includegraphics[scale=0.34]{Observed_vs_calculated}
 \caption{Comparison between experimently oberved frequency and predicted frequency}
 \label{Observed_calculated}
 \end{figure}
-\begin{figure}[htb]
-\subfigure{\includegraphics[]{Vivoni_Fig3_6_zero_shear_match}}
-\subfigure{\includegraphics[]{Vivoni_Fig3_7_zero_shear_match}}
-\caption{Comparison between observed and calculated velocity profile}
-\end{figure}
+\newline
+Comparison of frequency associated with mode of highest growth predicted by model with that of experimental observations of frequencies in the lab scale experiments is shown in
+Figure \ref{Observed_calculated}.
+The observed frequencies in the lab scale are associated with the peaks in velocity spectra, frequency of monami and frequency of vortex passage. The agreement between the observed
+frequency and the predicted frequency along with shear layer width suggest that monami is associated with the instability of flow comprising shear layer flow and flow above the canopy.
+The deviation of predicted frequency from the observed one can be attributed to the various simplification we have made in our model. For real canopy the drag coefficients are known to
+decrease from bottom to tip of the grass blades. The turbulent viscosity is also known to vary between the flow of unvegetated region and flow through the canopy. Although these variation
+are not central to the mechanism leading to the instability of flow, we believe an improved analysis of flow with these variation in the model might lead to a better agreement between the
+observed frequency and the predicted frequency.   
+\newline
+Numerical investigation of flow in presence of canopy reveal three distinct zone of flow instability which might lead to monai. The occurrence of these three flow instability in a canopy
+depends on its submergence ratio and shear layer thickness. Our analysis shows that flow in presence of grass become unstable not only through the mechanism similar to Kelvin-Helmholtz
+instability but also through shear instability of flow above the grass for small shear layer thickness and shear instability of flow comprising flow in shear layer with flow above the grass.
+Our analysis further predict a threshold criteria characterized by a Reynolds number above which flow become unstable. The predicted value of threshold Reynolds number is $O(100)$, which is 
+close to the the Reynolds number corresponding to the observed value of threshold flow speed in the observation of Grizzle. Inclusion of variation of drag coefficient along the grass filament
+might lead to better agreement between the observed and predicted frequency of monami. 
+\cite{Delangre06}\cite{Delangre04}\cite{Raupach96}\cite{Nepf99}
+%\cite{Nepf02}\cite{Nepf04}\cite{Nepf08}\cite{Nepf08_2}\cite{Raupach11}\cite{Raupach94}
+%\cite{Delangre06}
+%\begin{figure}[htb]Q
+%\subfigure{\includegraphics[]{Vivoni_Fig3_6_zero_shear_match}}
+%\subfigure{\includegraphics[]{Vivoni_Fig3_7_zero_shear_match}}
+%\caption{Comparison between observed and calculated velocity profile}
+%\end{figure}
 %\begin{figure}[htb]
 %\includegraphics[]{Vivoni_Fig3_7_hb_14match}
 %\caption{Comparison between observed and calculated velocity profile,hb=14}
@@ -244,4 +264,7 @@ frequency and the predicted frequency suggest that monami is associated with the
 %\includegraphics[]{Vivoni_Fig3_7_hb_17match}
 %\caption{Comparison between observed and calculated velocity profile,hb=17}
 %\end{figure}
+\bibliography{Grass}{}
+\bibliographystyle{plain}
+%\nocite{*}
 \end{document}
