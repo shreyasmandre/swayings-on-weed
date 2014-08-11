@@ -147,36 +147,21 @@ $H$ is half channel width.
 \newline
 Knowing the scale of shear layer we can systematically investigate its effect on flow instability
 by varying grass number density $N_g$ and pressure gradient $\frac{dP}{dx}$. Considering small perturbations $u, v, p$ about the base profile $U$ and $P$
-respectively, momentum and mass balance equation expanded in first order of perturbed variable yields.
-\small
+respectively, momentum and mass balance equation expanded in first order of perturbed variable yields
 \begin{equation}
 \begin{split}
-\frac{\del u}{\del t}+U\frac{\del u}{\del x}+v\frac{\del U}{\del y} &= -\frac{1}{\rho}\frac{\del p}{\del x}+\frac{\mu}{\rho}\nabla^2u-2S(y) C_{N}dN_{g}Uu\\
-\frac{\del v}{\del  t}+ U\frac{\del v}{\del x} &= -\frac{1}{\rho}\frac{\del p}{\del y}+\frac{\mu}{\rho}\nabla^2v, \hspace{0.3cm} \nabla\cdot\bu=0\\
+\frac{\del u}{\del t}+U\frac{\del u}{\del x}+v\frac{\del U}{\del y} &= -\frac{1}{\rho}\frac{\del p}{\del x}+\frac{\mu}{\rho}\nabla^2u-2S(y) C_{N}dN_{g}Uu, \\
+\frac{\del v}{\del  t}+ U\frac{\del v}{\del x} &= -\frac{1}{\rho}\frac{\del p}{\del y}+\frac{\mu}{\rho}\nabla^2v, \hspace{0.3cm} \nabla\cdot\bu=0.
  %\nabla\cdot \bu &= 0
 \end{split}
 \end{equation}
-\normalsize
-Momentum and mass balance equation can be non-dimensionlize using half channel height $H$, associated advection time H/$U_0$ and velocity $U_0$.
-With these scaling along with the use of stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance; momentum and mass balance can be combined 
-into a single equation.
-\small
-\begin{equation}
-R \left[ (\del_t+\del_x U )\grad^2\psi - U_{yy}\psi_x \right] = \grad^4\psi-\frac{\del}{\del_y}\left({2}\frac{H^3}{\delta^3}S(y) U\psi_y\right)
-\end{equation}
-\normalsize
-%In most of recent work on honami/monami base profile have been approximated to a plane mixing layer profile having inflection point near top of canopy, It is also argued that 
-%It is instability associated with inflection of mean velocity which is responsible for coherent eddies traveling on top of canopies. In our calculation we get base velocity
-%profile by hydrodynamic balance between pressure, drag and diffusive force which also results in a velocity profile with inflection point near top of canopy with additional property 
-%of having been produced through equation of motion itself.\newline
-%We performed stability analysis on two different kind of base flow namely (1) flow driven by constant pressure gradient between two parallel plate (2) constant pressure gradient driven 
-%flow with zero shear at top. We use following scaling to non-dimensionlize equation of motion
-%Using half channel height $H$ of and associated advection time H/$U_{0}$, we use following scaling to non-dimensinlize equation 
-%of motion
-%   \[ u = U_{0}\bar{u},\hspace{1cm} y = (H/2)\bar{y}, \hspace{1cm} \text{with}\hspace{2mm} U_{0}=\frac{(dP/dx)H^2}{4\mu} \]
-where $R= {\rho U_0 H}/{\mu}$ is Reynolds number. Seeking wave solution in form of $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$, 
-we get modified Orr-Sommerfield equation. The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency associated with a perturbation of wavelength $2\pi/k$.
-\small
+Momentum and mass balance equation can be non-dimensionlize using half channel height $H$, associated advection time H/$U_0$ and velocity $U_0$. We are left with three non-dimensional parameters in the model, viz. the Reynolds number $R= {\rho U_0 H}/{\mu}$, the drag parameter $\delta/H$, and the submergence ratio of the grass $h_g/H$. With these scaling along with the use of stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance; 
+% momentum and mass balance can be combined  into a single equation.
+% \begin{equation}
+% R \left[ (\del_t+\del_x U )\grad^2\psi - U_{yy}\psi_x \right] = \grad^4\psi-\frac{\del}{\del_y}\left({2}\frac{H^3}{\delta^3}S(y) U\psi_y\right).
+% \end{equation}
+Seeking wave solution in form of $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$,  we get modified Orr-Sommerfield equation. The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency associated with a perturbation of wavelength $2\pi/k$.
+% \small
 \begin{equation}
 \begin{split}
 \left(\sigma+ikU\right) \left(D^2-k^2\right)\phi &= \frac{1}{R_{e}}\left[D^2 -k^{2} \right]^2\phi +ikU_{yy}\phi \\
@@ -184,25 +169,21 @@ we get modified Orr-Sommerfield equation. The eigenvalue $\sigma$ for a given $k
 \label{Orr-somerfield}
 \end{split}
 \end{equation}
-\normalsize
+% \normalsize
+
 \begin{figure}[htb]
 \includegraphics[]{Critical_Re_vs_delta}
 \caption{Critical Reynolds number with flow for different grass height as a function of inverse shear thickness}
 \label{Re_vs_delta}
 \end{figure}
-Solution of generalized Orr-Somerfield equation predicts a critical Reynolds number as function of grass number density, below which the flow is stable 
-(Figure\ref{Re_vs_delta}). The solution also predicts a critical wavenumber $k$ with maximum growth rate.
-The variation of critical wave number with the variation in $\delta$ for different grass height is shown in Figure \ref{K_vs_shear}, where we can observe that above a 
+Solution of \eqref{Orr-somerfield} predicts a critical $R$ as function of grass number density, below which the flow is stable (Re($\sigma$)$<0$) and above which it is unstable (Re($\sigma$)$>0$),
+as shown in Figure\ref{Re_vs_delta}. The solution also predicts a finite critical wavenumber $k$ corresponding to this threshold for instability shown in Figure \ref{K_vs_shear}. 
+\shreyas{Needs language clean up from here on. Describe the most important observation. The details are to be explained in the longer paper.}
+we can observe that above a 
 certain threshold $\delta$ the critical wavelength decreases with the decrease in $\delta$, similar to the one predicted by K-H theory based on the instability of free shear flow, for that
 reason this region is identified as shear layer region. We also observe that once the $\delta$ is decreased below the threshold value, there isn't any variation in the 
 critical wavelength with the decrease of shear layer thickness and $\lambda_{critical} \sim (H-h_{grass})$, we identify this region as shear instability of unvegetated region.
 The boundary of transition from instability of shear-layer near the tip of grass to the instability of unvegetated flow depends on the submergence ratio of grass. 
-%    This variation of critical 
-%wavenumber with shear layer thickness can be divided into three distinct region. First, the region where critical wavelength does not increases linearly with the
-%increase of the shear layer thickness, this region occur for canopies with thick shear layer $H/\delta <10$. Second region identified as shear layer region, where variation in critical
-%wavelength is proportional to the variation in shear layer thickness, the instability in this region can be understood to arise from a mechanism similar to Kelin-Helmholtz instability 
-%observed in the free shear flow. Third, the region where critical wavelength does not vary with the variation of shear layer thickness. The boundary of these region depends on 
-%submergence ratio and the shear layer thickness experienced by the canopy.
 \begin{figure}[htb]
 \includegraphics[]{K_vs_shear_width_noshear}
 \caption{Critical Wavenumber for different grass height as function of shear layer thickness}
