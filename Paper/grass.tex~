@@ -93,8 +93,8 @@ further investigation for better understanding of phenomenon.
 \newline 
 In this paper we extend the idea of Raupach et.al\cite{Raupach96} via incorporating drag due to presence of vegetation. Our calculation of linear stability analysis of flow in presence of grass
 shows that flow through vegetation become unstable not only through a mechanism of Kelvin-Helmholtz 
-instability associated with strong shear near the canopy top but also through shear instability of flow above grass canopies arising due to existence of flow boundary.
-We further show that inclusion of drag due to grass predicts a threshold condition for waving. We confirm our analysis by comparing prediction from theory 
+instability associated with strong shear near the canopy top but also through shear instability of flow above grass canopies and shear instability of flow comprising flow above the canopy 
+and flow in the shear layer. We further show that inclusion of drag due to grass predicts a threshold condition for waving. We confirm our analysis by comparing prediction from theory 
 with field and experimental observations.
 %\section{The model}
 %Monami is believed to be response to strong oscillations of flow in streamwise velocity associated with coherent vortices.
@@ -198,12 +198,17 @@ which is an eigenvalue problem. The eigenvalue $\sigma$ for a given $k$ provides
 \end{figure}
 Solution of generalized Orr-Somerfield equation predicts a critical Reynolds number as function of grass number density, below which the flow is stable 
 (Figure\ref{Re_vs_delta}). The solution also predicts a critical wavenumber $k$ with maximum growth rate.
-The variation of critical wave number with shear layer thickness for different grass height is shown in Figure \ref{K_vs_shear}. This variation of critical 
-wavenumber with shear layer thickness can be divided into three distinct region. First, the region where critical wavelength does not increases linearly with the
-increase of the shear layer thickness, this region occur for canopies with thick shear layer $H/\delta <10$. Second region identified as shear layer region, where variation in critical
-wavelength is proportional to the variation in shear layer thickness, the instability in this region can be understood to arise from a mechanism similar to Kelin-Helmholtz instability 
-observed in the free shear flow. Third, the region where critical wavelength does not vary with the variation of shear layer thickness. The boundary of these region depends on 
-submergence ratio and the shear layer thickness experienced by the canopy.
+The variation of critical wave number with the variation in $\delta$ for different grass height is shown in Figure \ref{K_vs_shear}, where we can observe that above a 
+certain threshold $\delta$ the critical wavelength decreases with the decrease in $\delta$, similar to one the predicted by K-H theory based on free shear instability, for that
+reason this region is identified as shear layer region. We also observe that once the $\delta$ is decreased below the threshold value, there isn't any variation in the 
+critical wavelength with the decrease of shear layer thickness and $\lambda_{critical} \sim (H-h_{grass})$, we identify this region as shear instability of unvegetated region.
+The boundary of transition from instability of shear-layer near the tip of grass to the instability of unvegetated flow depends on the submergence ratio of grass. 
+%    This variation of critical 
+%wavenumber with shear layer thickness can be divided into three distinct region. First, the region where critical wavelength does not increases linearly with the
+%increase of the shear layer thickness, this region occur for canopies with thick shear layer $H/\delta <10$. Second region identified as shear layer region, where variation in critical
+%wavelength is proportional to the variation in shear layer thickness, the instability in this region can be understood to arise from a mechanism similar to Kelin-Helmholtz instability 
+%observed in the free shear flow. Third, the region where critical wavelength does not vary with the variation of shear layer thickness. The boundary of these region depends on 
+%submergence ratio and the shear layer thickness experienced by the canopy.
 \begin{figure}[htb]
 \includegraphics[]{K_vs_shear_width_noshear}
 \caption{Critical Wavenumber for different grass height as function of shear layer thickness}
