@@ -7,6 +7,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{booktabs}
 %\usepackage{slashbox}
 \usepackage{color}
 \usepackage{longtable}
@@ -20,6 +21,10 @@
 \usepackage{amssymb}	% Math symbols such as \mathbb
 \usepackage{calrsfs}
 \usepackage{subfigure}
+\usepackage{tabularx}
+\usepackage{afterpage}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
 \graphicspath{ {images/}{images/Growth_Rate_Cont_Plots/} }
 \newcommand{\ellcap}{{\ell_\text{c}}}
 \newcommand{\Fh}{{\boldsymbol{F}_h}}
@@ -36,6 +41,7 @@
 \newcommand{\del}{\partial}
 
 \newcommand{\shreyas}[1]{{\bf (#1)}}
+\definecolor{tableShade}{gray}{0.8}
 
 \begin{document}
 \title{Waving and swaying}
@@ -86,10 +92,7 @@ Kelvin-Helmholtz instability. Influence of these coherent eddies over sea grasse
 %Sea grasses exhibit large amplitude wave like motion in response to these eddies propagating downstream.
 %are exhibited in form of large amplitude oscillations knows as mo-nami.
 \newline
-While shear layer model successfully appears to predict frequency of mo-nami for number of experimental observations,
-several aspect of existing theory remain unsatisfactory. First, linear stability analysis of base flow does not take into account influence of drag due to grass hence not a self 
-consistent theory. Second, classical free shear flow is known to be unstable above a very small Reynolds number $\leq 10 $, whereas observed critical 
-Reynolds number\cite{Grizzle96} (Grizzle 1996) for monami is much higher $\approx O(1000)$. Finally, the thickness of the free shear layer, defined as the momentum thickness of the boundary layer near the grass tip, is in many cases comparable to the unvegetated layer thickness, and therefore inconsistent with the assumptions of the free shear layer instability. These drawbacks of existing theory suggest that flow through vegetation requires further investigation for better understanding of phenomenon.
+While the shear layer model successfully appears to predict frequency of mo-nami for number of experimental observations, several aspect of existing theory remain unsatisfactory. First, linear stability analysis of base flow does not take into account influence of drag due to grass hence not a self consistent theory. Second, classical free shear flow is known to be unstable above a very small Reynolds number $\leq 10 $, whereas observed critical Reynolds number\cite{Grizzle96} (Grizzle 1996) for monami is much higher $\approx O(1000)$. Finally, the thickness of the free shear layer, defined as the momentum thickness of the boundary layer near the grass tip, is in many cases comparable to the unvegetated layer thickness, and therefore inconsistent with the assumptions of the free shear layer instability. These drawbacks of existing theory suggest that flow through vegetation requires further investigation for better understanding of phenomenon.
 
 In this paper we present a mathematical model exhibiting a rich behavior, which is not only consistent within itself, but also with lab experiments and field observations. Our calculation of linear stability analysis of flow in presence of grass shows that flow through vegetation become unstable not only through a mechanism of Kelvin-Helmholtz instability associated with strong shear near the canopy top but also through an instability of the unvegetated flow coupled with flow deep within the vegetation. We call this new instability the unvegetated layer instability for brevity. We further show that inclusion of drag due to grass predicts a threshold condition for waving. We confirm our analysis by comparing prediction from theory with field and experimental observations.
 
@@ -111,7 +114,7 @@ continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$ in the fluid momentum balanc
 % \mathbf{f}=-N\mathbf{f_{d}}
 %\end{equation}
 where $\mathbf{f_{d}}$ is drag force per unit length of the grass blade, $N_g$ the grass number density per unit area, $\rho$ the fluid density, $\mathbf{u}$ the velocity, 
-$P$ the pressure, $\mu$ the viscosity and $\mathbf{g}$ the acceleration due to gravity. The Reynolds number of the flow on the scale of a grass blade is expected to be O($10^2$-$10^3$), and hence the drag force is dominated by form drag, and is modeled 
+$P$ the pressure, $\mu$ the turbulent viscosity and $\mathbf{g}$ the acceleration due to gravity. The Reynolds number of the flow on the scale of a grass blade is expected to be O($10^2$-$10^3$), and hence the drag force is dominated by form drag, and is modeled 
 as $\mathbf{f_{d}}=C_N \rho u_{N}^{2}d\hat{n}+C_{T}\rho u_{T}^{2}d\hat{t}$ where $d$ is average width of grass blade
 $C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively which are set to zero outside the grass; $\bu_{T}$, $\bu_{N}$ are velocity vector along and
 normal to grass while $\hat{t},\hat{n}$ being unit vector along and normal to grass. We expect $C_T \ll C_N$ and take $C_T=0$ for rest of analysis. In the field, both $C_N \& N_g$ vary with distance from the bottom but we do not expect these variation to be central to the mechanism and therefore take $C_N$ \& $N_g$ to be constants.
@@ -277,6 +280,22 @@ close to the the Reynolds number corresponding to the observed value of threshol
 grass filament
 might lead to better agreement between the observed and predicted frequency of monami. 
 
+\begin{table*}
+\rowcolors{3}{tableShade}{white}  %% start alternating shades from 3rd row
+\renewcommand{\arraystretch}{1.4}
+ \begin{tabular}{l|l|l|l}
+			& Kelvin-Helmholtz 				& Mode 1 		& Mode 2 \\ \hline
+ Base velocity profile 	& $U(y) = U_0 \tanh(y/\delta)$			& \multicolumn{2}{l}{$-{dP}/{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0$} \\
+ Domain 		& $-\infty < y < \infty$			& \multicolumn{2}{l}{$-1<y<1$} \\
+ Inflection point	& exists at $y=0$				& \multicolumn{2}{l}{$U''(y)$ discontinuous at $y=h_{grass}$} \\
+ Shear layer thickness	& $\delta$					& \multicolumn{2}{l}{$\delta \sim  H\left[({\rho U_0 H}/\mu) (C_N d N_g H)\right]^{-1/3}$} \\
+ Linearized dynamics	& Inviscid Rayleigh's equation			& \multicolumn{2}{l}{Equation \eqref{Orr-somerfield}} \\
+ Critical parameters	& none						& $R_e$, $\delta/H$ 	& $R_e \delta^{3/2}$ \\
+ Most unstable $k$ as $\delta \to 0$	& $\propto \delta^{-1}$		& $\propto \delta^{-1}$	& $O(1)$ \\
+ Mode localized?	& yes, near $y=0$				& yes, near $y=h_{grass}$			& no
+ \end{tabular}
+ \caption{Comparison between Kelvin-Helmholtz instability and the two modes presented here.}
+\end{table*}
 
 
 %\cite{Delangre06}\cite{Delangre04}\cite{Raupach96}\cite{Nepf99}
