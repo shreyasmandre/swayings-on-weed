@@ -32,4 +32,8 @@
 *.tdo
 *.tex~
 */*.tex~
+*/*.bib~
+*/*.tex~?
+*/*.bib~?
 .pdf
+*.backup
