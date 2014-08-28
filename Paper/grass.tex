@@ -94,13 +94,28 @@ Kelvin-Helmholtz instability. Influence of these coherent eddies over sea grasse
 %Sea grasses exhibit large amplitude wave like motion in response to these eddies propagating downstream.
 %are exhibited in form of large amplitude oscillations knows as mo-nami.
 \newline
-While the shear layer model successfully appears to predict frequency of mo-nami for number of experimental observations, several aspect of existing theory remain unsatisfactory. First, linear stability analysis\cite{Raupach96} does not take into account influence of drag due to grass hence is not a self consistent theory. Second, classical free shear flow is known to be unstable for all Reynolds number\cite{drazin}, whereas observations\cite{Grizzle96} indicate the existence of a threshold flow speed below which waving is not observed. Finally, the thickness of the free shear layer, defined as the momentum thickness of the boundary layer near the grass tip, is in many cases comparable to the unvegetated layer thickness, and therefore inconsistent with the assumptions of the free shear layer instability. These drawbacks of existing theory suggest that flow through vegetation requires further investigation for better understanding of the phenomenon.
+While the shear layer model successfully appears to predict frequency of mo-nami for number of experimental observations, several aspect of existing theory remain unsatisfactory. 
+First, linear stability analysis\cite{Raupach96} does not take into account influence of drag due to grass hence is not a self consistent theory. Second, classical free shear flow 
+is known to be unstable for all Reynolds number\cite{drazin}, whereas observations\cite{Grizzle96} indicate the existence of a threshold flow speed below which waving is not observed. 
+Finally, the thickness of the free shear layer, defined as the momentum thickness of the boundary layer near the grass tip, is in many cases comparable to the unvegetated layer thickness,
+ and therefore inconsistent with the assumptions of the free shear layer instability. These drawbacks of existing theory suggest that flow through vegetation requires further investigation for better understanding of the phenomenon.
 
-In this paper we present a mathematical model exhibiting a rich behavior, which is not only consistent within itself, but also with lab experiments and field observations of the threshold. The synchronous waving may be understood to be arising from the linear instability of a uniform flow over the grass bed. In the limit of a dense grass bed, two distinct unstable modes can be asymptotically distinguished, with one of them sharing many characteristics with the Kelvin-Helmholtz instability. In the parameter regime typical of marine grass beds, the two modes merge and are indistinguishable.
+In this paper we present a mathematical model exhibiting a rich behavior, which is not only consistent within itself, but also with lab experiments and field observations of the threshold.
+ The synchronous waving may be understood to be arising from the linear instability of a uniform flow over the grass bed. In the limit of a dense grass bed, two distinct unstable modes 
+can be asymptotically distinguished, with one of them sharing many characteristics with the Kelvin-Helmholtz instability. In the parameter regime typical of marine grass beds, 
+the two modes merge and are indistinguishable.
 
-% Our calculation of linear stability analysis of flow in presence of grass shows that flow through vegetation become unstable not only through a mechanism of Kelvin-Helmholtz instability associated with strong shear near the canopy top but also through an instability of the unvegetated flow coupled with flow deep within the vegetation. We call this new instability the unvegetated layer instability for brevity. We further show that inclusion of drag due to grass predicts a threshold condition for waving. We confirm our analysis by comparing prediction from theory with field and experimental observations.
+% Our calculation of linear stability analysis of flow in presence of grass shows that flow through vegetation become unstable not only
+%through a mechanism of Kelvin-Helmholtz instability associated with strong shear near the canopy top but also through an instability of the 
+%unvegetated flow coupled with flow deep within the vegetation. We call this new instability the unvegetated layer instability for brevity. We further show that inclusion of drag due to grass predicts a threshold condition for waving. We confirm our analysis by comparing prediction from theory with field and experimental observations.
 
-The drag exerted by the grass bed on the flow is central to the hypothesized mechanism\cite{Ghisal02} of the instability underlying monami because it is directly responsible for realizing the shear layer structure of the flow. The flexibility of the grass blades, on the other hand, is considered to merely aid in visualizing the flow structure resulting from the instability. It has been demonstrate that the instability and the resulting flow structures are present even when the grass blades are replaced with rigid dowels (citation). Therefore, in the interest of deriving the simplest mathematical model for the linear instability, we consider the grass bed to form a rigid structure that exchanges momentum with the surrounding fluid but does not deform. Indeed, a more detailed calculation undertaken for terrestrial grass demonstrated\cite{Delangre06} that when the timescale of the instability is well-separated from the period of natural oscillations of the grass bed, the flow instability is similar to the instability of a shear layer. 
+The drag exerted by the grass bed on the flow is central to the hypothesized mechanism\cite{Ghisal02} of the instability underlying monami because it is directly responsible for 
+realizing the shear layer structure of the flow. The flexibility of the grass blades, on the other hand, is considered to merely aid in visualizing the flow structure resulting from 
+the instability. It has been demonstrate that the instability and the resulting flow structures are present even when the grass blades are replaced with rigid dowels (citation). 
+Therefore, in the interest of deriving the simplest mathematical model for the linear instability, we consider the grass bed to form a rigid structure that exchanges momentum with 
+the surrounding fluid but does not deform. Indeed, a more detailed calculation undertaken for terrestrial grass demonstrated\cite{Delangre06} that when the timescale of the instability 
+is well-separated from the period of natural oscillations of the grass bed, the flow instability is similar to the 
+instability of a shear layer. 
 
 % The drag force experienced by flow due to presence of grass is believed to play a central role in the development of coherent eddies. This drag force experienced by flow depends 
 % primarily on flow velocity, fluid density and mean frontal area of the grass canopy. The mechanism leading to coherent eddies is believed to depend weakly on flexibility of grass
@@ -108,7 +123,8 @@ The drag exerted by the grass bed on the flow is central to the hypothesized mec
 % very small compared to the frequency of the passage of eddies observed in marine grass, we do not expect the mechanism leading to instability of flow to be affected by plant flexibility.
 % Therefore we replace the flexible grass with stiff structure to investigate dynamics leading to generation of coherent vortices. 
 We use a mean field model for the coupling between the flow and the canopy. Drag force exerted by the grass is approximated via a 
-continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$ in the fluid momentum balance\cite{Vivoni98,Nepf99,Ghisal02,Delangre04,Delangre06} \shreyas{Where did this model come from? Has such a model been used before? Citations to those needed.} as
+continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$ in the fluid momentum balance\cite{Vivoni98,Nepf99,Ghisal02,Delangre04,Delangre06} 
+\shreyas{Where did this model come from? Has such a model been used before? Citations to those needed.} as
 \begin{equation}
 \rho \left(\bu_{t}+\bu.\grad\bu \right) = -\grad P+\mu\grad^{2}\bu +\mathbf{f}+\rho\mathbf{g}
 \label{navier-stokes}
@@ -117,10 +133,12 @@ continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$ in the fluid momentum balanc
 % \mathbf{f}=-N\mathbf{f_{d}}
 %\end{equation}
 where $\mathbf{f_{d}}$ is drag force per unit length of the grass blade, $N_g$ the grass number density per unit area, $\rho$ the fluid density, $\mathbf{u}$ the velocity, 
-$P$ the pressure, $\mu$ the turbulent viscosity and $\mathbf{g}$ the acceleration due to gravity. The Reynolds number of the flow on the scale of a grass blade is expected to be O($10^2$-$10^3$), and hence the drag force is dominated by form drag, and is modeled 
+$P$ the pressure, $\mu$ the turbulent viscosity and $\mathbf{g}$ the acceleration due to gravity. The Reynolds number of the flow on the scale of a grass blade is expected to 
+be O($10^2$-$10^3$), and hence the drag force is dominated by form drag, and is modeled 
 as $\mathbf{f_{d}}=C_N \rho u_{N}^{2}d\hat{n}+C_{T}\rho u_{T}^{2}d\hat{t}$ where $d$ is average width of grass blade
 $C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively which are set to zero outside the grass; $\bu_{T}$, $\bu_{N}$ are velocity vector along and
-normal to grass while $\hat{t},\hat{n}$ being unit vector along and normal to grass. We expect $C_T \ll C_N$ and take $C_T=0$ for rest of analysis. In the field, both $C_N \& N_g$ vary with distance from the bottom but we do not expect these variation to be central to the mechanism and therefore take $C_N$ \& $N_g$ to be constants.
+normal to grass while $\hat{t},\hat{n}$ being unit vector along and normal to grass. We expect $C_T \ll C_N$ and take $C_T=0$ for rest of analysis. In the field, both $C_N \& N_g$ 
+vary with distance from the bottom but we do not expect these variation to be central to the mechanism and therefore take $C_N$ \& $N_g$ to be constants.
 %\begin{equation}
 % \mathbf{f_{d}}=C_N \rho\bu_{N}^{2}d\hat{n}+C_{T}\rho\bu_{T}^{2}d\hat{t}
 %\end{equation}\
@@ -150,7 +168,9 @@ thickness $\delta \sim  H\left[({\rho U_0 H}/\mu) (C_N d N_g H)\right]^{-1/3}$\n
 $H$ is half channel width.
 \begin{figure}[htb]
   \includegraphics[scale=1]{Grass_Base_Vivoni_shear}
-\caption{Basic flow profile (left )from the experiment and model and the model of canopy (bottom) along with variation of shear layer (inset) }
+\caption{Base flow profile (left )from the experiment of Vivoni\cite{Vivoni98} (Case-3A (Figure-3.6A) with 330 plants/$m^2$, 6 blades per plant, 
+plant height = 16.0$\pm0.2$ and blade width of 0.28cm)
+ and it's approximation with $U_0=31cm/s$ and $\delta = 0.2H$ with our model. The model of canopy is shown in the bottom and the variation of shear layer in the inset }
 \label{fig:basicflow}
 \end{figure}
 \newline
@@ -164,12 +184,15 @@ respectively, momentum and mass balance equation expanded in first order of pert
  %\nabla\cdot \bu &= 0
 \end{split}
 \end{equation}
-Momentum and mass balance equation can be non-dimensionlize using half channel height $H$, associated advection time H/$U_0$ and velocity $U_0$. We are left with three non-dimensional parameters in the model, viz. the Reynolds number $R= {\rho U_0 H}/{\mu}$, the drag parameter $\delta/H$, and the submergence ratio of the grass $h_g/H$. With these scaling along with the use of stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance; 
+Momentum and mass balance equation can be non-dimensionlize using half channel height $H$, associated advection time H/$U_0$ and velocity $U_0$. 
+We are left with three non-dimensional parameters in the model, viz. the Reynolds number $R= {\rho U_0 H}/{\mu}$, the drag parameter $\delta/H$, 
+and the submergence ratio of the grass $h_g/H$. With these scaling along with the use of stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance; 
 % momentum and mass balance can be combined  into a single equation.
 % \begin{equation}
 % R \left[ (\del_t+\del_x U )\grad^2\psi - U_{yy}\psi_x \right] = \grad^4\psi-\frac{\del}{\del_y}\left({2}\frac{H^3}{\delta^3}S(y) U\psi_y\right).
 % \end{equation}
-Seeking wave solution in form of $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$,  we get modified Orr-Sommerfield equation. The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency associated with a perturbation of wavelength $2\pi/k$.
+Seeking wave solution in form of $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$,  
+we get modified Orr-Sommerfield equation. The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency associated with a perturbation of wavelength $2\pi/k$.
 % \small
 \begin{equation}
 \begin{split}
