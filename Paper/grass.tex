@@ -39,6 +39,7 @@
 \newcommand{\bu}{\mathbf{u}}
 \newcommand{\grad}{\mathbf{\nabla}}
 \newcommand{\del}{\partial}
+\newcommand{\hg}{h_g}
 
 \newcommand{\shreyas}[1]{{\bf (#1)}}
 \definecolor{tableShade}{gray}{0.8}
@@ -123,8 +124,7 @@ instability of a shear layer.
 % very small compared to the frequency of the passage of eddies observed in marine grass, we do not expect the mechanism leading to instability of flow to be affected by plant flexibility.
 % Therefore we replace the flexible grass with stiff structure to investigate dynamics leading to generation of coherent vortices. 
 We use a mean field model for the coupling between the flow and the canopy. Drag force exerted by the grass is approximated via a 
-continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$ in the fluid momentum balance\cite{Vivoni98,Nepf99,Ghisal02,Delangre04,Delangre06} 
-\shreyas{Where did this model come from? Has such a model been used before? Citations to those needed.} as
+continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$ in the fluid momentum balance\cite{Vivoni98,Nepf99,Ghisal02,Delangre04,Delangre06} as
 \begin{equation}
 \rho \left(\bu_{t}+\bu.\grad\bu \right) = -\grad P+\mu\grad^{2}\bu +\mathbf{f}+\rho\mathbf{g}
 \label{navier-stokes}
@@ -138,7 +138,7 @@ be O($10^2$-$10^3$), and hence the drag force is dominated by form drag, and is 
 as $\mathbf{f_{d}}=C_N \rho u_{N}^{2}d\hat{n}+C_{T}\rho u_{T}^{2}d\hat{t}$ where $d$ is average width of grass blade
 $C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively which are set to zero outside the grass; $\bu_{T}$, $\bu_{N}$ are velocity vector along and
 normal to grass while $\hat{t},\hat{n}$ being unit vector along and normal to grass. We expect $C_T \ll C_N$ and take $C_T=0$ for rest of analysis. In the field, both $C_N \& N_g$ 
-vary with distance from the bottom but we do not expect these variation to be central to the mechanism and therefore take $C_N$ \& $N_g$ to be constants.
+vary with distance from the bottom but we do not expect these variation to be central to the mechanism and therefore take $C_N$ \& $N_g$ to be constants. Based on previous experiments\cite{Vivoni98}, we take $C_N \approx 1$.
 %\begin{equation}
 % \mathbf{f_{d}}=C_N \rho\bu_{N}^{2}d\hat{n}+C_{T}\rho\bu_{T}^{2}d\hat{t}
 %\end{equation}\
@@ -152,20 +152,16 @@ vary with distance from the bottom but we do not expect these variation to be ce
 %where $C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively; $\bu_{T}$, $\bu_{N}$ are velocity vector along and normal to grass.
 %\section{Stability Analysis}
 \newline
-The steady uniform flow $U(y)$ resulting from solution of \eqref{navier-stokes} is expected to be unstable, leading to coherent eddies underlying monami. Steady state flow driven by   
-%We perform linear stability analysis of a base state associated with the vegetated flow to gain insight about instability characteristics of flow in presence of grass.
-constant pressure gradient satisfies
-$-{dP}/{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0$, where $S(y)=1$ in the vegetated layer $0<y<h_{grass}$ and $S(y)=0$ in the unvegetated layer $h_{grass}< y< H$. 
+For consistency of analysis, we calculate the steady flow as a solution of \eqref{navier-stokes}, and examine its linear stability. The steady uniform flow $U(y)$ resulting from solution of \eqref{navier-stokes} is expected to be unstable, leading to coherent eddies underlying monami. Steady state flow driven by constant pressure gradient satisfies
+$-{dP}/{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0$, where $S(y)=1$ in the vegetated layer $0<y<\hg$ and $S(y)=0$ in the unvegetated layer $\hg< y< H$. 
 The flow in the laboratory experiments is better approximated by zero shear at the bottom ($y=0$) and top ($y=H$) of the fluid layer, as can be seen from the comparison 
 between sample solutions and mean flow observed in laboratory experiment shown in Figure \ref{fig:basicflow}. Flow consist of a region of approximately constant velocity
 \small$U_g \sim \sqrt{\frac{dP/dx}{\rho C_N dN_g}}$\normalsize arising from balance of drag force with pressure gradient with-in grass and a parabolic velocity 
 profile in unvegetated region due to balance of viscous force and pressure gradient. Continuity of flow speed and shear stress at canopy top 
-give rise to a boundary layer in the flow profile near the tip of the grass. The boundary layer near the canopy top may be identified 
-as a free shear layer\cite{Ghisal02} in the previous explanation of monami and its dependence on the grass density $N_g$ gives us a direct control of its thickness. 
-In our model, the thickness of shear layer near top of grass is obtained by balance of viscous force 
-with drag along with matching shear at grass tip exerted by flow in unvegetated region, which leads to shear layer 
-thickness $\delta \sim  H\left[({\rho U_0 H}/\mu) (C_N d N_g H)\right]^{-1/3}$\normalsize where \small$U_0 = \frac{dP/dxH^2}{\mu}$\normalsize is scale for velocity and
-$H$ is half channel width.
+give rise to a boundary layer in the flow profile near the tip of the grass. The boundary layer near the canopy top results from purely local dynamics independent of the influence of the boundaries, and may therefore be identified as a free shear layer\cite{Ghisal02} in the previous explanation of monami. 
+In our model, this boundary layer thickness is obtained by balance of viscous force with drag, and matching the shear with that in unvegetated region. This leads to a shear layer 
+thickness $\delta \sim  H\left[({\rho U_0 H}/\mu) (C_N d N_g H)\right]^{-1/3}$ where $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity and
+$H$ is half channel width. Its dependence on the grass density $N_g$ gives us a direct control of its thickness. 
 \begin{figure}[htb]
   \includegraphics[scale=1]{Grass_Base_Vivoni_shear}
 \caption{Base flow profile (left )from the experiment of Vivoni\cite{Vivoni98} (Case-3A (Figure-3.6A) with 330 plants/$m^2$, 6 blades per plant, 
@@ -174,9 +170,7 @@ plant height = 16.0$\pm0.2$ and blade width of 0.28cm)
 \label{fig:basicflow}
 \end{figure}
 \newline
-Knowing the scale of shear layer we can systematically investigate its effect on flow instability
-by varying grass number density $N_g$ and pressure gradient $\frac{dP}{dx}$. Considering small perturbations $u, v, p$ about the base profile $U$ and $P$
-respectively, momentum and mass balance equation expanded in first order of perturbed variable yields
+Knowing the scale of shear layer we can systematically investigate its effect on flow instability by varying grass number density $N_g$ and pressure gradient ${dP}/{dx}$. Considering small perturbations $u, v, p$ about the base profile $U$ and $P$ respectively, momentum and mass balance equation expanded in first order of perturbed variables yields
 \begin{equation}
 \begin{split}
 \frac{\del u}{\del t}+U\frac{\del u}{\del x}+v\frac{\del U}{\del y} &= -\frac{1}{\rho}\frac{\del p}{\del x}+\frac{\mu}{\rho}\nabla^2u-2S(y) C_{N}dN_{g}Uu, \\
@@ -185,14 +179,13 @@ respectively, momentum and mass balance equation expanded in first order of pert
 \end{split}
 \end{equation}
 Momentum and mass balance equation can be non-dimensionlize using half channel height $H$, associated advection time H/$U_0$ and velocity $U_0$. 
-We are left with three non-dimensional parameters in the model, viz. the Reynolds number $R= {\rho U_0 H}/{\mu}$, the drag parameter $\delta/H$, 
-and the submergence ratio of the grass $h_g/H$. With these scaling along with the use of stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance; 
+We are left with three non-dimensional parameters in the model, viz. the Reynolds number $R= {\rho U_0 H}/{\mu}$, the vegetation drag parametrized as $\delta/H$, 
+and the submergence ratio of the grass $h_g/H$. With these scaling, and using a stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance, we seek a wave solution of the form $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$ to  obtain a modified Orr-Sommerfield equation. 
 % momentum and mass balance can be combined  into a single equation.
 % \begin{equation}
 % R \left[ (\del_t+\del_x U )\grad^2\psi - U_{yy}\psi_x \right] = \grad^4\psi-\frac{\del}{\del_y}\left({2}\frac{H^3}{\delta^3}S(y) U\psi_y\right).
 % \end{equation}
-Seeking wave solution in form of $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$,  
-we get modified Orr-Sommerfield equation. The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency associated with a perturbation of wavelength $2\pi/k$.
+The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency associated with a perturbation of wavelength $2\pi/k$ through the solution of
 % \small
 \begin{equation}
 \begin{split}
@@ -201,6 +194,7 @@ we get modified Orr-Sommerfield equation. The eigenvalue $\sigma$ for a given $k
 \label{Orr-somerfield}
 \end{split}
 \end{equation}
+\shreyas{Boundary conditions?}
 % \normalsize
 
 \begin{figure}[htb]
