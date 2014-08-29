@@ -116,7 +116,7 @@ instability of a shear layer.
 We use a mean field model for the coupling between the flow and the canopy. Drag force exerted by the grass is approximated via a 
 continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$ in the fluid momentum balance\cite{Vivoni98,Nepf99,Ghisal02,Delangre04,Delangre06} as
 \begin{equation}
-\rho \left(\bu_{t}+\bu.\grad\bu \right) = -\grad P+\mu\grad^{2}\bu +\mathbf{f}+\rho\mathbf{g}
+\rho \left(\bu_{t}+\bu.\grad\bu \right) = -\grad P+\mu\grad^{2}\bu +\mathbf{f}+\rho\mathbf{g}, \quad \grad\cdot\bu = 0,
 \label{navier-stokes}
 \end{equation}
 %\begin{equation}
@@ -138,8 +138,8 @@ between sample solutions and mean flow observed in laboratory experiment shown i
 profile in unvegetated region due to balance of viscous force and pressure gradient. Continuity of flow speed and shear stress at canopy top 
 give rise to a boundary layer in the flow profile near the tip of the grass. The boundary layer near the canopy top results from purely local dynamics independent of the influence of the boundaries, and may therefore be identified as a free shear layer\cite{Ghisal02} in the previous explanation of monami. 
 In our model, this boundary layer thickness is obtained by balance of viscous force with drag, and matching the shear with that in unvegetated region. This leads to a shear layer 
-thickness $\delta \sim  H\left[({\rho U_0 H}/\mu) (C_N d N_g H)\right]^{-1/3}$ where $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity and
-$H$ is half channel width. Its dependence on the grass density $N_g$ gives us a direct control of its thickness. 
+thickness $\delta = \epsilon^{1/3} H$, where $\epsilon = \left[({\rho U_0 H}/\mu) (C_N d N_g H)\right]$, $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity, and
+$H$ is half channel width. The dependence of the boundary layer thickness on the grass density $N_g$ gives us a way to systematically control it and investigate its effect on the instability mechanism. 
 \begin{figure}[htb]
   \includegraphics[scale=1]{Grass_Base_Vivoni_shear}
 \caption{Base flow profile (left )from the experiment of Vivoni\cite{Vivoni98} (Case-3A (Figure-3.6A) with 330 plants/$m^2$, 6 blades per plant, 
@@ -148,7 +148,7 @@ plant height = 16.0$\pm0.2$ and blade width of 0.28cm)
 \label{fig:basicflow}
 \end{figure}
 
-Knowing the scale of shear layer we can systematically investigate its effect on flow instability by varying grass number density $N_g$ and pressure gradient ${dP}/{dx}$. Considering small perturbations $u, v, p$ about the base profile $U$ and $P$ respectively, momentum and mass balance equation expanded in first order of perturbed variables yields
+Considering small perturbations $u, v, p$ about the base profile $U$ and $P$ respectively, equation \eqref{navier-stokes} expanded to linear order in the perturbations yields
 \begin{equation}
 \begin{split}
 \frac{\del u}{\del t}+U\frac{\del u}{\del x}+v\frac{\del U}{\del y} &= -\frac{1}{\rho}\frac{\del p}{\del x}+\frac{\mu}{\rho}\nabla^2u-2S(y) C_{N}dN_{g}Uu, \\
@@ -156,14 +156,14 @@ Knowing the scale of shear layer we can systematically investigate its effect on
  %\nabla\cdot \bu &= 0
 \end{split}
 \end{equation}
-Momentum and mass balance equation can be non-dimensionalized using half channel height $H$, associated advection time H/$U_0$ and velocity $U_0$. 
+These equations can be non-dimensionalized using half channel height $H$, velocity $U_0$, and the associated advection time $H/U_0$ . 
 We are left with three non-dimensional parameters in the model, viz. the Reynolds number $\Rey= {\rho U_0 H}/{\mu}$, the vegetation drag parametrized as $\delta/H$, 
 and the submergence ratio of the grass $h_g/H$. With these scaling, and using a stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance, we seek a wave solution of the form $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$ to  obtain a modified Orr-Sommerfield equation. The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency associated with a perturbation of wavelength $2\pi/k$ through the solution of
 % \small
 \begin{equation}
 \begin{split}
-\left(\frac{\sigma}{ik}+U\right) \left(D^2-k^2\right)\phi &= \frac{1}{ik\Rey}\left[D^2 -k^{2} \right]^2\phi +U_{yy}\phi \\
-&-\frac{\del}{\del y}\left(\frac{2}{ik\Rey}\frac{H^3}{\delta^3}S(y) U\phi_y\right)
+\left(D^2 -k^{2} \right)^2\phi &= \Rey \left[ \left({\sigma}+ikU\right) \left(D^2-k^2\right) -ikU_{yy}\right]\phi \\
+&-D\left(2\epsilon^{-1} S(y) U D \phi\right)
 \label{Orr-somerfield}
 \end{split}
 \end{equation}
