@@ -138,7 +138,7 @@ between sample solutions and mean flow observed in laboratory experiment shown i
 profile in unvegetated region due to balance of viscous force and pressure gradient. Continuity of flow speed and shear stress at canopy top 
 give rise to a boundary layer in the flow profile near the tip of the grass. The boundary layer near the canopy top results from purely local dynamics independent of the influence of the boundaries, and may therefore be identified as a free shear layer\cite{Ghisal02} in the previous explanation of monami. 
 In our model, this boundary layer thickness is obtained by balance of viscous force with drag, and matching the shear with that in unvegetated region. This leads to a shear layer 
-thickness $\delta = \epsilon^{1/3} H$, where $\epsilon = \left[\Rey (C_N d H N_g)\right]^{-1}$, $\Rey=\rho U_0 H/\mu$ is the Reynolds number of the flow, $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity,
+thickness $\delta = \Rey^{-1/3} \epsilon^{1/3} H$, where $\epsilon = \left[(C_N d H N_g)\right]^{-1}$, $\Rey=\rho U_0 H/\mu$ is the Reynolds number of the flow, $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity,
 $H$ is half channel width, and $\mu$ the turbulent viscosity. The dependence of the boundary layer thickness on the grass density $N_g$ gives us a way to systematically control it and investigate its effect on the instability mechanism. 
 \begin{figure}[htb]
   \includegraphics[scale=1]{Grass_Base_Vivoni_shear}
@@ -163,7 +163,7 @@ and the submergence ratio of the grass $h_g/H$. With these scaling, and using a 
 \begin{equation}
 \begin{split}
 \left(D^2 -k^{2} \right)^2\phi &= \Rey \left[ \left({\sigma}+ikU\right) \left(D^2-k^2\right) -ikU_{yy}\right]\phi \\
-&-D\left(2\epsilon^{-1} S(y) U D \phi\right)
+&-D\left(2R \epsilon^{-1} S(y) U D \phi\right)
 \label{Orr-somerfield}
 \end{split}
 \end{equation}
@@ -211,11 +211,13 @@ observed frequency and the predicted frequency.
 \end{tabular}
 
 \caption{$Re(\sigma)$ as function of wavenumber and Reynolds number for a given grass number density along with the neutral curve ($Re(\sigma)$=0), for parameters shown in the corresponding panel.  
-At low grass number density both the modes are indistinguishable, but as $N_g$ increases the unstable region splits into two labeled as ``Mode 1'' and ``Mode 2''. For $N_g$ below
+As $\Re/\epsilon \propto N_g$ increases the unstable region splits into two labeled as ``Mode 1'' and ``Mode 2''. For $N_g$ below
 a critical value, the Mode 1 sets the threshold $\Rey$ whereas above the critical $N_{g}$ onset is determined by Mode 2.}
 \label{K_Re_sigma_set3}
 \end{figure*}
 
+To better understand the mechanism of waving, we consider the behavior of the instability as a function of the vegetation drag, especially as it becomes asymptotically large, i.e. $\epsilon \to 0$. \shreyas{comment about the transitions.} To aid in explaining the behavior, we show heat maps of Re$(\sigma)$ as a function of $\Rey$ and $kH$, for different $\hg/H$ and $\epsilon$. The lowest $\Rey$ on the neutral curve sets the threshold. We observe that as $\epsilon$ decreases, the unstable region splits into two. We refer to the unstable region with the higher $k$ as ``Mode 1'', and the one with the lower $k$ as ``Mode 2''.  
+ 
 The transition of dominant mode of flow instability from K-H mode to shear instability of flow above the grass can be further corroborated from Figure \ref{K_Re_sigma_set3}.
 We observe that the two different modes of instability are indistinguishable at low grass density. The distinction becomes apparent with the increase in grass number density, where we 
 can see that dominant mode of flow instability is 1st dominated by K-H mode before switching to shear instability of flow above the grass at relatively large grass density.  
