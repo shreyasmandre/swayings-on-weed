@@ -1,48 +1,27 @@
-\documentclass[aps,prl,twocolumn,showpacs,superscriptaddress,groupedaddress,10pt]{revtex4-1}  % for review and submission
+\documentclass[aps,prl,twocolumn,showpacs,superscriptaddress,10pt]{revtex4-1}  % for review and submission
 %\documentclass[aps,twocolumn,floatfix,prl,10pt]{revtex4-1}
 %\documentclass[letterpaper,10pt,prl,twocolumn,aps]{revtex4-1}
 %\documentclass[aps,preprint,floatfix,prl]{revtex4-1}
-%\usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
-%\usepackage{slashbox}
 \usepackage{color}
 \usepackage{longtable}
 \usepackage{array}
-\usepackage{dashrule}
-\usepackage{dcolumn}% Align table columns on decimal point
-%\usepackage{dcolumn}% Align table columns on decimal point
-\usepackage{bm}% bold math
-\usepackage{ifthen}
-\usepackage{amsthm} % Theorem Formatting
-\usepackage{amssymb}	% Math symbols such as \mathbb
-\usepackage{calrsfs}
-\usepackage{subfigure}
-\usepackage{tabularx}
-\usepackage{afterpage}
+\usepackage{amssymb}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 
 \graphicspath{ {images/}{images/Growth_Rate_Cont_Plots/} }
-\newcommand{\ellcap}{{\ell_\text{c}}}
-\newcommand{\Fh}{{\boldsymbol{F}_h}}
-\newcommand{\Fv}{{\boldsymbol{F}_v}}
-\newcommand{\Tv}{{\boldsymbol{T}}}
-\newcommand{\bn}{{\boldsymbol{n}}}
-\newcommand{\bt}{{\boldsymbol{t}}}
-\newcommand{\bz}{{\boldsymbol{z}}}
-\newcommand{\bx}{{\boldsymbol{x}}}
-\newcommand{\by}{{\boldsymbol{y}}}
-\newcommand{\bT}{{\boldsymbol{T}}}
+\newcommand{\bn}{{\boldsymbol{\hat{n}}}}
+\newcommand{\bt}{{\boldsymbol{\hat{t}}}}
 \newcommand{\bu}{\mathbf{u}}
 \newcommand{\grad}{\mathbf{\nabla}}
 \newcommand{\del}{\partial}
 \newcommand{\hg}{h_g}
 \newcommand{\Rey}{\text{R}}
 \newcommand{\Ndg}{\tilde{N}_g}
-
 \newcommand{\shreyas}[1]{{\bf (#1)}}
 \definecolor{tableShade}{gray}{0.8}
 
@@ -123,9 +102,9 @@ continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$ in the fluid momentum balanc
 where $\mathbf{f_{d}}$ is drag force per unit length of the grass blade, $N_g$ the grass number density per unit area, $\rho$ the fluid density, $\mathbf{u}$ the velocity, 
 $P$ the pressure, $\mu$ the turbulent viscosity and $\mathbf{g}$ the acceleration due to gravity. The Reynolds number of the flow on the scale of a grass blade is expected to 
 be O($10^2$-$10^3$), and hence the drag force is dominated by form drag, and is modeled 
-as $\mathbf{f_{d}}=C_N \rho u_{N}^{2}d\hat{n}+C_{T}\rho u_{T}^{2}d\hat{t}$ where $d$ is average width of grass blade
+as $\mathbf{f_{d}}=C_N \rho u_{N}^{2}d\bn + C_{T}\rho u_{T}^{2}d\bt$ where $d$ is average width of grass blade
 $C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively which are set to zero outside the grass; $\bu_{T}$, $\bu_{N}$ are velocity vector along and
-normal to grass while $\hat{t},\hat{n}$ being unit vector along and normal to grass. We expect $C_T \ll C_N$ and take $C_T=0$ for rest of analysis. In the field, both $C_N \& N_g$ 
+normal to grass while $\bt,\bn$ being unit vector along and normal to grass. We expect $C_T \ll C_N$ and take $C_T=0$ for rest of analysis. In the field, both $C_N \& N_g$ 
 vary with distance from the bottom but we do not expect these variation to be central to the mechanism and therefore take $C_N$ \& $N_g$ to be constants. Based on previous experiments\cite{Vivoni98}, we take $C_N \approx 1$.
 
 For consistency of analysis, we calculate the steady flow as a solution of \eqref{navier-stokes}, and examine its linear stability. The steady uniform flow $U(y)$ resulting from solution of \eqref{navier-stokes} is expected to be unstable, leading to coherent eddies underlying monami. Steady state flow driven by constant pressure gradient satisfies
@@ -230,16 +209,16 @@ canopy depends on its submergence ratio and shear layer thickness. Our analysis 
 \begin{table*}
 \rowcolors{3}{tableShade}{white}  %% start alternating shades from 3rd row
 \renewcommand{\arraystretch}{1.4}
- \begin{tabular}{l|l|l|l}
+ \begin{tabular}{l|c|c|c}
 			& Kelvin-Helmholtz 				& Mode 1 		& Mode 2 \\ \hline
- Base velocity profile 	& $U(y) = U_0 \tanh(y/\delta)$			& \multicolumn{2}{l}{$-{dP}/{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0$} \\
- Domain 		& $-\infty < y < \infty$			& \multicolumn{2}{l}{$-1<y<1$} \\
- Inflection point	& exists at $y=0$				& \multicolumn{2}{l}{$U''(y)$ discontinuous at $y=\hg$} \\
- Shear layer thickness	& $\delta$					& \multicolumn{2}{l}{$\delta \sim  H\left[({\rho U_0 H}/\mu) (C_N d N_g H)\right]^{-1/3}$} \\
- Linearized dynamics	& Inviscid Rayleigh's equation			& \multicolumn{2}{l}{Equation \eqref{Orr-somerfield}} \\
+ Base velocity profile 	& $U(y) = U_0 \tanh(y/\delta)$			& \multicolumn{2}{c}{$-{dP}/{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0$} \\
+ Domain 		& $-\infty < y < \infty$			& \multicolumn{2}{c}{$-1<y<1$} \\
+ Inflection point	& exists at $y=0$				& \multicolumn{2}{c}{$U''(y)$ discontinuous at $y=\hg$} \\
+ Shear layer thickness	& $\delta$					& \multicolumn{2}{c}{$\delta \sim  H\left[({\rho U_0 H}/\mu) (C_N d N_g H)\right]^{-1/3}$} \\
+ Linearized dynamics	& Inviscid Rayleigh's equation			& \multicolumn{2}{c}{Equation \eqref{Orr-somerfield}} \\
  Critical parameters	& none						& $\Rey$, $\delta/H$ 	& $\Rey \delta^{3/2}$ \\
  Most unstable $k$ as $\delta \to 0$	& $\propto \delta^{-1}$		& $\propto \delta^{-1}$	& $O(1)$ \\
- Mode localized?	& yes, near $y=0$				& yes, near $y=\hg$			& no
+ Mode localized?	& yes, near $y=0$				& ~~~~yes, near $y=\hg$~~~~			& no
  \end{tabular}
  \caption{Comparison between Kelvin-Helmholtz instability and the two modes presented here.}
 \end{table*}
