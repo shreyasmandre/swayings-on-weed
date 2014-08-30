@@ -10,7 +10,7 @@ uguess = 0.001*z;
 error = 100000;
  
 %while(abs(error)>1.0e-12)
-for ii=1:250
+for ii=1:100
     
        e = ones(N+1,1);
        A = spdiags([e -2*e e], -1:1, N+1, N+1);
@@ -36,7 +36,7 @@ end
  
 %  uy(2:end-1) = (unew(3:end)-unew(1:end-2))/(2*dz);
 %  uyy(2:end-1) = (unew(3:end)-2.*unew(2:end-1)+unew(1:end-2))/(dz^2);
-  uy  = interp1(z(2:end-2),uy(2:end-2),z,'cubic','extrap');
+  uy  = interp1(z(2:end-2),uy(2:end-2),z,'pchip','extrap');
 %  uyy = interp1(z(2:end-2),uyy(2:end-2),z,'cubic','extrap');
  
  uyy = D*unew.*unew.*(z<(h_grass+dz/2.))-1.;
