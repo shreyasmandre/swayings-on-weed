@@ -75,28 +75,28 @@ Influence of these coherent eddies over sea grasses is manifested in their large
 
 \begin{figure}
 \includegraphics[scale=1]{Grass_Base_Vivoni_shear}
-\caption{Base flow profile (left )from the experiment of Vivoni\cite{Vivoni98} (Case-3A (Figure-3.6A) with 330 plants/$m^2$, 6 blades per plant, 
-plant height = 16.0$\pm0.2$ and blade width of 0.28cm)
- and it's approximation with $U_0=31cm/s$ and $\delta = 0.2H$ with our model. The model of canopy is shown in the bottom and the variation of shear layer in the inset }
+\caption{Steady flow profile from the experiment of XX\cite{XX} (Case-XXXX from Figure-XX with XX plants/$m^2$, XX blades per plant, 
+plant height = XX$\pm XX$ and blade width of XX cm)
+ and it's approximation with $U_0=XX$ cm/s and $\delta = 0.2H$ with our model. The canopy extends upto $y=h_g$ in the water column of depth $3H$. The steady velocity profile can be decomposed into three regions, (i) A parabolic profile in the unvegetated region, (ii) a uniform profile deep within the grass bed, and (iii) a boundary layer of thicness $\delta$ near the canopy top. The depedence of the boundary layer on the vegetation density $\Ndg$ is shown in the inset.}
 \label{fig:basicflow}
 \end{figure}
 
 While the shear layer model successfully appears to predict frequency of monami for number of experimental observations, several aspect of existing theory remain unsatisfactory. 
-First, while the free shear layer is established due to the vegetation drag, the linear stability analysis\cite{Raupach96} does not take this drag into account and hence this explanation is not self consistent. 
+First, while the free shear layer is established due to the vegetation drag, the linear stability analysis\cite{Raupach96} does not take this drag into account, rendering this explanation inconsistent. 
 Second, classical free shear flow is known to be unstable for all Reynolds number\cite{drazin}, whereas observations in the lab\cite{Ghisal02} and the field\cite{Grizzle96} indicate the existence of a threshold flow speed below which waving is not observed. 
 Finally, the thickness of the free shear layer, defined as the momentum thickness of the boundary layer near the grass tip, is in many cases comparable to the unvegetated layer thickness,
 and therefore inconsistent with the assumptions of the free shear layer instability. 
 These drawbacks of existing theory suggest that flow through vegetation requires further investigation for better understanding of the phenomenon.
 
-In this paper we present a mathematical model exhibiting a rich behavior, which is not only consistent within itself, but also with lab experiments and field observations of the phenomenon.
+In this paper we present a mathematical\shreyas model exhibiting a rich behavior, which is not only consistent within itself, but also with lab experiments and field observations of the phenomenon.
 The synchronous waving may be understood to be arising from the linear instability of a uniform flow over the grass bed. 
 The threshold condition for the onset of the instability and the resulting waving frequency compares well with experimental observations.
 In the limit of a dense grass bed, two distinct unstable modes can be asymptotically distinguished, with one of them sharing many characteristics with the Kelvin-Helmholtz instability. 
 In the parameter regime typical of marine grass beds, the two modes merge and are indistinguishable.
 
-The drag exerted by the grass bed on the flow is central to the hypothesized mechanism\cite{Ghisal02} of the instability underlying monami because it is realizes the shear layer structure of the flow. 
-The flexibility of the grass blades, on the other hand, is considered to merely aid in visualizing the flow structure resulting from the instability. 
-It has been demonstrate that the instability and the resulting flow structures are present even when the grass blades are replaced with rigid dowels (citation). 
+The drag exerted by the grass bed on the flow is central to the hypothesized mechanism\cite{Ghisal02} of the instability underlying monami because it realizes the shear layer structure of the flow. 
+The flexibility of the grass blades, on the other hand, is considered to merely aid in visualizing the flow structure resulting from the instability\cite{Nepf2012}. 
+It has been demonstrate that the instability and the resulting flow structures are present even when the grass blades are replaced with rigid dowels\cite{Ghisal02}. 
 Therefore, in the interest of deriving the simplest mathematical model for the linear instability, we consider the grass bed to form a rigid structure that exchanges momentum with the surrounding fluid but does not deform. 
 Indeed, a more detailed calculation undertaken for terrestrial grass demonstrated\cite{Delangre06} that when the timescale of the instability is well-separated from the period of natural oscillations of the grass bed, the flow instability is similar to the instability of a shear layer. 
 
@@ -106,7 +106,7 @@ Indeed, a more detailed calculation undertaken for terrestrial grass demonstrate
 \vspace{-6mm} \hspace{-3mm}
 \includegraphics[]{K_vs_shear_width_noshear}
 \end{center}
-\caption{Critical Reynolds number with flow for different grass height as a function of inverse shear thickness}
+\caption{Critical Reynolds number with flow (top) and the corresponding marginally stable wave number (bottom) for different submergence ration as a function of vegetation density parametrized by the boundary layer thickness. Parameters estimated from experiments reported by Ghisalberti and Nepf\cite{Ghisal02} to exhibit or suppress synchronous waving are also included in the top panel. In order to estimate the $\Rey$ for these experiments, a representative value of $\mu=0.1$ Pa~s was assumed. Inset compares experimental observations of the dominant frequency $f_o$ (in Hz?) measured with the predictions from the solution of \eqref{Orr-somerfield}. The experimental data in the inset in obtained from the aricles by XX\cite{} and XX\cite{}.}
 \label{Re_vs_delta}
 \end{figure}
 We use a mean field model for the coupling between the flow and the canopy. 
@@ -117,7 +117,7 @@ Drag force exerted by the grass is approximated via a continuous body force $\ma
 \end{equation}
 where $\mathbf{f_{d}}$ is drag force per unit length of the grass blade, $N_g$ the grass number density per unit area, $\rho$ the fluid density, $\mathbf{u}$ the velocity, 
 $P$ the pressure, $\mu$ the turbulent viscosity and $\mathbf{g}$ the acceleration due to gravity. 
-The Reynolds number of the flow on the scale of a grass blade is expected to be O($10^2$-$10^3$), and hence the drag force is dominated by form drag, and is modeled as $\mathbf{f_{d}}=C_N \rho u_{N}^{2}d\bn + C_{T}\rho u_{T}^{2}d\bt$ where $d$ is average width of grass blade $C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively; $\bu_{T}$, $\bu_{N}$ are velocity vector along and
+The Reynolds number of the flow on the scale of a grass blade is expected to be O($10^2$-$10^3$), and hence the drag force is dominated by form drag, and is modeled as $\mathbf{f_{d}}=C_N \rho u_{N}^{2}d\bn + C_{T}\rho u_{T}^{2}d\bt$ \shreyas{citation needed} where $d$ is average width of grass blade $C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively; $\bu_{T}$, $\bu_{N}$ are velocity vector along and
 normal to grass while $\bt,\bn$ being unit vector along and normal to grass. 
 We expect $C_T \ll C_N$ and take $C_T=0$ for rest of analysis. 
 In the field, both $C_N$ and $N_g$ vary with distance from the bottom but we do not expect these variation to be central to the mechanism and therefore take $C_N$ and $N_g$ to be constants. 
@@ -129,8 +129,8 @@ The flow in the laboratory experiments is better approximated by zero shear at t
 Flow consist of a region within grass of approximately constant velocity $U_g \sim \sqrt{\frac{dP/dx}{\rho C_N dN_g}}$ arising from balance of drag force with pressure gradient and a parabolic velocity profile in unvegetated region due to balance of viscous force and pressure gradient. 
 Continuity of flow speed and shear stress at canopy top give rise to a boundary layer in the flow profile near the tip of the grass. 
 The boundary layer near the canopy top results from purely local dynamics independent of the influence of the boundaries, and may therefore be identified as a free shear layer\cite{Ghisal02} in the previous explanation of monami. 
-In our model, this leads to a shear layer thickness $\delta = (\Rey\Ndg)^{-1/3} H$, where $\Ndg = \left(C_N d H N_g\right)$ is the vegetation frontal area per bed area, $\Rey=\rho U_0 H/\mu$ is the Reynolds number of the flow, $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity, and $\mu$ the turbulent viscosity. 
-The dependence of the boundary layer thickness on the grass density $N_g$ gives us a way to systematically control it and investigate its effect on the instability mechanism. 
+In our model, this leads to a shear layer thickness $\delta = (\Rey\Ndg)^{-1/3} H$, where $\Ndg = \left(C_N d H N_g\right)$ is the vegetation frontal area per bed area, $\Rey=\rho U_0 H/\mu$ is the Reynolds number of the flow, and $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity. 
+This dependence of the boundary layer thickness on the grass density $N_g$, shown in figure \ref{Grass_Base_Vivoni_shear}, gives us a way to systematically control it and investigate its effect on the instability mechanism. 
 
 \begin{figure*}
 \begin{tabular}{cccc}
@@ -148,20 +148,16 @@ The dependence of the boundary layer thickness on the grass density $N_g$ gives 
 {\includegraphics[scale = 0.68]{Set6_dens38_imgsc}}
 \end{tabular}
 \caption{$Re(\sigma)$ as function of wavenumber and Reynolds number for a given grass number density along with the neutral curve ($Re(\sigma)$=0), for parameters shown in the corresponding panel.  
-As $\Re/\epsilon \propto N_g$ increases the unstable region splits into two labeled as ``Mode 1'' and ``Mode 2''. For $N_g$ below
-a critical value, the Mode 1 sets the threshold $\Rey$ whereas above the critical $N_{g}$ onset is determined by Mode 2.}
+As $\Ndg \propto N_g$ increases the unstable region splits into two labeled as ``Mode 1'' and ``Mode 2''. For $\Ndg$ below
+a critical value, the Mode 1 sets the threshold $\Rey$ whereas above the critical $\Ndg$ onset is determined by Mode 2.}
 \label{K_Re_sigma_set3}
 \end{figure*}
 
 Considering small perturbations $u, v, p$ about the base profile $U$ and $P$ respectively, equation \eqref{navier-stokes} expanded to linear order in the perturbations yields
 \begin{equation}
 \begin{split}
-% \frac{\del u}{\del t}+U\frac{\del u}{\del x}+v\frac{\del U}{\del y} &= -\frac{1}{\rho}\frac{\del p}{\del x}+\frac{\mu}{\rho}\nabla^2u-2S(y) C_{N}dN_{g}Uu, \\
-% \frac{\del v}{\del  t}+ U\frac{\del v}{\del x} &= -\frac{1}{\rho}\frac{\del p}{\del y}+\frac{\mu}{\rho}\nabla^2v, \hspace{0.3cm} \nabla\cdot\bu=0.
- %\nabla\cdot \bu &= 0
 \rho(u_t+U u_x+vU_y) &= -p_x+ {\mu}\nabla^2u-2S\rho C_{N}dN_{g}Uu, \\
 \rho(v_t+ Uv_x) &= -p_y+ {\mu}\nabla^2v, \hspace{0.3cm} \nabla\cdot\bu=0.
- %\nabla\cdot \bu &= 0
 \end{split}
 \end{equation}
 These equations can be non-dimensionalized using half channel height $H$, velocity $U_0$, and the associated advection time $H/U_0$. 
@@ -169,7 +165,6 @@ We are left with three non-dimensional parameters in the model, viz. $\Rey$, $\N
 We also use $\delta/H$ in lieu of $\Ndg$ to parametrize the grass density and help elucidate the mechanism of the instability. 
 With these scaling, and using a stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance, we seek a wave solution of the form $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$ to  obtain a modified Orr-Sommerfield equation. 
 The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency associated with a perturbation of wavelength $2\pi/k$ through the solution of
-% \small
 \begin{equation}
 \begin{split}
 \left(D^2 -k^{2} \right)^2\phi &= \Rey \left[ \left({\sigma}+ikU\right) \left(D^2-k^2\right) -ikU_{yy}\right]\phi \\
@@ -179,14 +174,15 @@ The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency assoc
 \end{equation}
 where $D=d/dy$, and subject to the boundary conditions $D\phi = D^2\phi = 0$ at $y=0$ and $y=2$. 
 
-A threshold in $\Rey$ for the onset of the instability naturally emerges from the solution of \eqref{Orr-somerfield}. The dependence of this critical $\Rey$, and the corresponding fastest growing wavenumber $k$, on the $\delta/H$ and $\hg/H$ is shown in figure \ref{Re_vs_delta}, and compared with experimental observation of the threshold\cite{Ghisal02}. 
+A threshold in $\Rey$ for the onset of the instability naturally emerges from the solution of \eqref{Orr-somerfield}. 
+The dependence of this critical $\Rey$, and the corresponding fastest growing wavenumber $k$, on the $\delta/H$ and $\hg/H$ is shown in figure \ref{Re_vs_delta}, and compared with experimental observation of the threshold\cite{Ghisal02}. 
 
 Comparison of frequency (Im$(\sigma)$) of the fastest growing mode with that of experimental observations of frequencies in the lab scale experiments, for cases where the vegetation was sufficiently dense to be modeled by a continuum drag field, is also shown in Figure \ref{Re_vs_delta}. The observed frequencies are associated with the peaks in velocity spectra, frequency of monami and frequency of vortex passage \shreyas{cite someone}. The deviation of predicted frequency from the observed may be attributed to the various simplification we have made in our model. In a real canopy, the drag coefficients are known to
 vary from bottom to tip of the grass blades\cite{Vivoni98,Nepf00}. The turbulent viscosity is also known to vary between the flow of unvegetated region and flow through the canopy. Although these variation
 are not central to the mechanism leading to the instability of flow, we believe an improved analysis of flow with these variation in the model might lead to a better agreement between the
 observed frequency and the predicted frequency.
 
-To better understand the mechanism of waving, we consider the behavior of the instability, especially the fastest growing wavenumber, as a function of the vegetation drag, especially as it becomes asymptotically large, i.e. $\Ndg \gg 1$ (or $\delta \ll H$). 
+To better understand the mechanism of waving, we consider the behavior of the instability, especially the fastest growing wavenumber, as a function of the vegetation drag, especially as it becomes asymptotically large, i.e. $\Ndg \gg 1$ (or $\delta \ll H$).
 The fastest growing wavenumber first increases proportional to $H/\delta$, but at a critical grass density discontinuously jumps and remains $O(1)$. 
 To aid in explaining the behavior, we show heat maps of Re$(\sigma)$ as a function of $\Rey$ and $k$ \shreyas{Make sure to remone $H$ from $kH$ because $k$ is dimensionless.}, for different $\hg/H$ and $\Ndg$ in figure \ref{K_Re_sigma_set3}. 
 The lowest $\Rey$ on the neutral curve sets the threshold. 
