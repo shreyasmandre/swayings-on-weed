@@ -106,7 +106,7 @@ Indeed, a more detailed calculation undertaken for terrestrial grass demonstrate
 \vspace{-6mm} \hspace{-3mm}
 \includegraphics[]{K_vs_shear_width_noshear}
 \end{center}
-\caption{Critical Reynolds number with flow (top) and the corresponding marginally stable wave number (bottom) for different submergence ration as a function of vegetation density parametrized by the boundary layer thickness. Parameters estimated from experiments reported by Ghisalberti and Nepf\cite{Ghisal02} to exhibit or suppress synchronous waving are also included in the top panel. In order to estimate the $\Rey$ for these experiments, a representative value of $\mu=0.1$ Pa~s was assumed. Inset compares experimental observations of the dominant frequency $f_o$ (in Hz?) measured with the predictions from the solution of \eqref{Orr-somerfield}. The experimental data in the inset in obtained from the aricles by XX\cite{} and XX\cite{}.}
+\caption{Critical Reynolds number with flow (top) and the corresponding marginally stable wave number (bottom) for different submergence ratios as a function of vegetation density parametrized by the boundary layer thickness. Parameters estimated from experiments reported by Ghisalberti and Nepf\cite{Ghisal02} to exhibit or suppress synchronous waving are also included in the top panel. In order to estimate the $\Rey$ for these experiments, a representative value of $\mu=0.1$ Pa~s was assumed. Inset compares experimental observations of the dominant frequency $f_o$ (in Hz?) measured with the predictions from the solution of \eqref{Orr-somerfield}. The experimental data in the inset in obtained from the articles by XX\cite{} and XX\cite{}.}
 \label{Re_vs_delta}
 \end{figure}
 We use a mean field model for the coupling between the flow and the canopy. 
@@ -147,9 +147,9 @@ This dependence of the boundary layer thickness on the grass density $N_g$, show
 {\includegraphics[scale = 0.68]{Set6_dens36_imgsc}} &
 {\includegraphics[scale = 0.68]{Set6_dens38_imgsc}}
 \end{tabular}
-\caption{$Re(\sigma)$ as function of wavenumber and Reynolds number for a given grass number density along with the neutral curve ($Re(\sigma)$=0), for parameters shown in the corresponding panel.  
-As $\Ndg \propto N_g$ increases the unstable region splits into two labeled as ``Mode 1'' and ``Mode 2''. For $\Ndg$ below
-a critical value, the Mode 1 sets the threshold $\Rey$ whereas above the critical $\Ndg$ onset is determined by Mode 2.}
+\caption{$Re(\sigma)$ as function of wavenumber and Reynolds number for a specified grass number density $\Ndg$ along with the neutral curve ($Re(\sigma)$=0), for parameters shown in the corresponding panel.  
+As $\Ndg \propto N_g$ increases, the unstable region splits into two labeled as ``Mode 1'' and ``Mode 2''. 
+For $\Ndg$ below a critical value, the Mode 1 sets the threshold $\Rey$ whereas above the critical $\Ndg$ onset is determined by Mode 2.}
 \label{K_Re_sigma_set3}
 \end{figure*}
 
@@ -193,13 +193,13 @@ The distinct asymptotic behavior of the two modes as $\Ndg \gg 1$ allows us to u
 Mode 2 has a threshold $\Rey \sim ({\delta}/{H})^{-3/2}$ (or $\Rey \propto \Ndg$) for $k\sim O(1)$, shown in figure \ref{Re_vs_delta}, which can be understood by asymptotic analysis of \eqref{Orr-somerfield}.
 Noting that for large $\Ndg$, the non-dimensional steady flow velocity inside the grass is $U_g \sim (\Rey \Ndg)^{-1/2}$. 
 Using this estimate, and $\Rey\gg1$, \eqref{Orr-somerfield} within the grass simplifies into $\sigma\left(D^2-k^2\right)\phi = 2{(\Ndg/\Rey)^{1/2}}D^2\phi$ \shreyas{check sign}, while in the unvegetated region it simplifies to the Rayleigh equation $ \left(\sigma+ikU\right) \left(D^2-k^2\right)\phi =  ikU_{yy}\phi$. 
-This analysis predicts that the mode shape would converge as $\Rey\gg 1$ and $\Ndg \gg 1$ but $\Rey/\Ndg \sim O(1)$, in agreement with out numerical results shown in figure \ref{Asymptotic_mode}. 
+This analysis predicts that the mode shape would converge as $\Rey\gg 1$ and $\Ndg \gg 1$ but $\Rey/\Ndg \sim O(1)$, in agreement with our numerical results shown in figure \ref{Asymptotic_mode}. 
 We interpret this as the instability of an inviscid flow, with the vegetation modeled by a continuum drag field, and for which the boundary layer near the grass tip plays no role. The only remaining parameter $\Rey/\Ndg$ sets the threshold, leading to the asymptotic behavior $\Rey \propto \Ndg$ (or $\Rey \sim ({\delta}/{H})^{-3/2}$).
 
 
 \begin{figure}
 \includegraphics[]{Asymptotic_noshear}
-\caption{plot of $|\phi|$ for different shear layer thickness in limit of small shear layer thickness}
+\caption{Plot of mode shape $|\phi|$ for different shear layer thickness in limit of small shear layer thickness for representative values of grass density. Mode 1 is shown in solid and Mode 2 is shown in dashed. The parameters Mode 2 shapes are chosen such that $\Rey \gg 1$, $\Ndg \gg 1$ (specifying in terms of $\delta/H$) but $\Rey/\Ndg = O(1)$. The mode shapes approach each other for these small values of $\delta/H$ indicating that the large grass density asymptote is reached. Mode 2 shapes appear self-similar in shape as $\delta\to 0$, and are compared to each other on a rescaled coordinate in the inset. Inset shows $|\phi|$ for Mode 1 as a function of $(y-\hg)/\delta$. The modes approach a universal shape, indicating that an asymptotic limit has been reached. The limit is not yet reached for the case $\delta/H = 0.01$ due to the influence of bottom boundary; the grass height in this case is comparable to the boundary layer thickness.}
 \label{Asymptotic_mode}
 \end{figure}
 
