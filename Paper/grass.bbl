@@ -1,9 +1,9 @@
 \begin{thebibliography}{10}
 
 \bibitem{AckermanOkubo93}
-JD~Ackerman and A~Okubo.
-\newblock Reduced mixing in a marine macrophyte canopy.
-\newblock {\em Functional Ecology}, pages 305--309, 1993.
+J.~D. Ackerman and A.~Okubo.
+\newblock {Reduced mixing in a marine macrophyte canopy}.
+\newblock {\em Functional Ecology}, 7:305--309, 1993.
 
 \bibitem{drazin}
 P.~H. Drazin and W.~H. Reid.
@@ -11,19 +11,16 @@ P.~H. Drazin and W.~H. Reid.
 \newblock Cambridge university press, Cambridge, England, 1982.
 
 \bibitem{Fonseca87}
-Mark~S Fonseca and W~Judson Kenworthy.
-\newblock Effects of current on photosynthesis and distribution of seagrasses.
+M.~S. Fonseca and W.~J. Kenworthy.
+\newblock {Effects of current on photosynthesis and distribution of
+  seagrasses}.
 \newblock {\em Aquatic Botany}, 27(1):59--78, 1987.
+\newblock Environmental Impacts On Seagrasses.
 
 \bibitem{Nepf04}
-M~Ghisalberti and HM~Nepf.
-\newblock The limited growth of vegetated shear layers.
-\newblock {\em Water Resources Research}, 40(7), 2004.
-
-\bibitem{Ghisal02}
-Marco Ghisalberti and Heidi~M Nepf.
-\newblock Mixing layers and coherent structures in vegetated aquatic flows.
-\newblock {\em J. Geophys. Res.: Oceans (1978--2012)}, 107(C2):3--1, 2002.
+M.~Ghisalberti and H.~M. Nepf.
+\newblock {The limited growth of vegetated shear layers}.
+\newblock {\em Water Resources Research}, 40.
 
 \bibitem{Grizzle96}
 R.~E. Grizzle, F.~T. Short, C.~R. Newell, H.~Hoven, and L.~Kindblom.
@@ -33,46 +30,49 @@ R.~E. Grizzle, F.~T. Short, C.~R. Newell, H.~Hoven, and L.~Kindblom.
   206(1--2):165--177, 1996.
 
 \bibitem{Inoue56}
-E~Inoue.
-\newblock Studies of the phenomena of waving plants (” honami”) caused by
-  wind. part 1: Mechanism and characteristics of waving plants phenomena.
-\newblock {\em J. Agric. Meteorol.(Japan)}, 11:18--22, 1955.
+E.~Inoue.
+\newblock {Studies of the Phenomena of Waving Plants Caused by Wind}.
+\newblock {\em J. of Agri. Meteor.}, 11(4):147--151, 1956.
+
+\bibitem{Ghisal02}
+{M. Ghisalberti and H. M. Nepf}.
+\newblock {Mixing layer and cohrent structures in vegetated aquatic flows}.
+\newblock {\em J. Geophys. Res.}, 107, 2002.
 
 \bibitem{Nepf2012}
-Heidi~M Nepf.
+H.~M. Nepf.
 \newblock Flow and transport in regions with aquatic vegetation.
-\newblock {\em Ann. Rev. Fluid Mech.}, 44:123--142, 2012.
-
-\bibitem{Nepf99}
-HM~Nepf.
-\newblock Drag, turbulence, and diffusion in flow through emergent vegetation.
-\newblock {\em Water resources research}, 35(2):479--489, 1999.
+\newblock {\em Annual Review of Fluid Mechanics}, 44:123--142, 2012.
 
 \bibitem{Nepf00}
-HM~Nepf and ER~Vivoni.
-\newblock Flow structure in depth-limited, vegetated flow.
-\newblock {\em J. Geophys. Res.: Oceans (1978--2012)}, 105(C12):28547--28557,
-  2000.
+H.~M. Nepf and E.~R. Vivoni.
+\newblock {Flow structure in depth-limited vegetated flow}.
+\newblock {\em J. Geophys. Res.}, 105:28,547--28,557, 2006.
+
+\bibitem{Nepf99}
+H.M. Nepf.
+\newblock {Drag, turbulence and diffusion in flow through emergent vegetation}.
+\newblock {\em Water Resour. Res.}, 35:479--489, 1999.
 
 \bibitem{Delangre04}
-Charlotte Py, Emmanuel de~Langre, and Bruno Moulia.
-\newblock The mixing layer instability of wind over a flexible crop canopy.
-\newblock {\em Comptes Rendus M{\'e}canique}, 332(8):613--618, 2004.
+C.~Py, E.~{De Langre}, and B.~Moulia.
+\newblock {The mixing layer instability of wind over a flexible crop canopy}.
+\newblock {\em Elevier}, pages 613--618, 2004.
 
 \bibitem{Delangre06}
-Charlotte Py, Emmanuel de~Langre, and Bruno Moulia.
-\newblock A frequency lock-in mechanism in the interaction between wind and
-  crop canopies.
-\newblock {\em J. Fluid Mech}, 568:425--449, 2006.
+C.~Py, E.~{De Langre}, and B.~Moulia.
+\newblock {A frequency lock-in mechanism in the interaction between wind and
+  crop canopies}.
+\newblock {\em J. Fluid Mech.}, 568:425--449, 2006.
 
 \bibitem{Raupach96}
-MR~Raupach, JJ~Finnigan, and Y~Brunei.
-\newblock Coherent eddies and turbulence in vegetation canopies: the
-  mixing-layer analogy.
-\newblock {\em Boundary-Layer Meteorology}, 78(3-4):351--382, 1996.
+M.~R. Raupach, J.~J. Finnigan, and Y.Brunet.
+\newblock {Cohrent eddies and turbulence in vegetation canopies: The mixing
+  layer analogy}.
+\newblock {\em Boundary-Layer Meteorology}, 78:351--382, 1996.
 
 \bibitem{Vivoni98}
-Vivoni-Gallart and Enrique Rafael.
+E.~R. Vivoni.
 \newblock {Turbulence Structure of a Model Seagrass Meadow}.
 \newblock Master's thesis, MIT, 1998.
 
