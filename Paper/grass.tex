@@ -99,11 +99,11 @@ Finally, the thickness of the free shear layer, defined as the momentum thicknes
 and therefore inconsistent with the assumptions of the free shear layer instability. 
 These drawbacks of existing theory suggest that flow through vegetation requires further investigation for better understanding of the phenomenon.
 
-In this paper we present a mathematical \shreyas model exhibiting a rich behavior, which is not only consistent within itself, but also with lab experiments and field observations of the phenomenon.
-The synchronous waving may be understood to be arising from the linear instability of a uniform flow over the grass bed. 
-The threshold condition for the onset of the instability and the resulting waving frequency compares well with experimental observations.
-In the limit of a dense grass bed, two distinct unstable modes can be asymptotically distinguished, with one of them sharing many characteristics with the Kelvin-Helmholtz instability. 
-In the parameter regime typical of marine grass beds, the two modes merge and are indistinguishable.
+In this paper we present a mathematical model exhibiting a rich behavior, which is not only consistent within itself, but also with lab experiments and field observations of the phenomenon.
+The synchronous waving may be understood to be arising from the linear hydrodynamic instability of a uniform flow over the grass bed, such that the principal role of the vegetation is to exert a drag on the flow. 
+A threshold flow speed arises naturally for the onset of the instability; this threshold condition and the resulting waving frequency compares well with experimental observations.
+The vegetation drag introduces a damping mechanism in the flow, in addition to the viscous damping, and overcoming this damping is a primary consideration that sets the threshold flow.
+We deduce this numerically and through an asymptotic analysis of the dense grass limit.
 
 The drag exerted by the grass bed on the flow is central to the hypothesized mechanism\cite{Ghisal02} of the instability underlying monami because it realizes the shear layer structure of the flow. 
 The flexibility of the grass blades, on the other hand, is considered to merely aid in visualizing the flow structure resulting from the instability\cite{Nepf2012}. 
@@ -148,7 +148,8 @@ Flow consist of a region within grass of approximately constant velocity $U_g \s
 Continuity of flow speed and shear stress at canopy top give rise to a boundary layer in the flow profile near the tip of the grass. 
 The boundary layer near the canopy top results from purely local dynamics independent of the influence of the boundaries, and may therefore be identified as a free shear layer\cite{Ghisal02} in the previous explanation of monami. 
 In our model, this leads to a shear layer thickness $\delta = (\Rey\Ndg)^{-1/3} H$, where $\Ndg = \left(C_N d H N_g\right)$ is the vegetation frontal area per bed area, $\Rey=\rho U_0 H/\mu$ is the Reynolds number of the flow, and $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity. 
-This dependence of the boundary layer thickness on the grass density $N_g$, shown in Figure \ref{basicflow}, gives us a way to systematically control it and investigate its effect on the instability mechanism. 
+This dependence of the boundary layer thickness on the grass density $N_g$, shown in Figure \ref{basicflow}, gives us a way to systematically control it and investigate its effect on the instability mechanism.
+The asymptotic regime of a thin boundary layer is expected to hold for $\Rey \Ndg \gtrsim 100$; departures from this scaling can be seen in the inset of figure \ref{basicflow}.
 
 
 \begin{figure*}
@@ -203,6 +204,24 @@ vary from bottom to tip of the grass blades\cite{Vivoni98,Nepf00}. The turbulent
 are not central to the mechanism leading to the instability of flow, we believe an improved analysis of flow with these variation in the model might lead to a better agreement between the
 observed frequency and the predicted frequency.
 
+\begin{table*}
+\rowcolors{3}{tableShade}{white}  %% start alternating shades from 3rd row
+\renewcommand{\arraystretch}{1.4}
+ \begin{tabular}{l|c|c|c}
+			& Kelvin-Helmholtz 				& Mode 1 		& Mode 2 \\ \hline
+ Base velocity profile 	& $U(y) = U_0 \tanh(y/\delta)$			& \multicolumn{2}{c}{$-{dP}/{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0$} \\
+ Domain 		& $-\infty < y < \infty$			& \multicolumn{2}{c}{$-1<y<1$} \\
+ Inflection point	& exists at $y=0$				& \multicolumn{2}{c}{$U''(y)$ discontinuous at $y=\hg$} \\
+ Shear layer thickness	& $\delta$					& \multicolumn{2}{c}{$\delta \sim  H\left[({\rho U_0 H}/\mu) (C_N d N_g H)\right]^{-1/3}$} \\
+ Linearized dynamics	& Inviscid Rayleigh's equation			& \multicolumn{2}{c}{Equation \eqref{Orr-somerfield}} \\
+ Critical parameters	& none						& $\Rey$, $\delta/H$ 	& $\Rey \delta^{3/2}$ \\
+ Most unstable $k$ as $\delta \to 0$	& $\propto \delta^{-1}$		& $\propto \delta^{-1}$	& $O(1)$ \\
+ Mode localized?	& yes, near $y=0$				& ~~~~yes, near $y=\hg$~~~~			& no
+ \end{tabular}
+ \caption{Comparison between Kelvin-Helmholtz instability and the two modes resulting from solution of \ref{Orr-somerfield}.}
+ \label{tab:comparison}
+\end{table*}
+
 To better understand the mechanism of waving, we consider the behavior of the instability, especially the fastest growing wavenumber, as a function of the vegetation drag, especially as it becomes asymptotically large, i.e. $\Ndg \gg 1$ (or $\delta \ll H$).
 The fastest growing wavenumber first increases proportional to $H/\delta$, but at a critical grass density discontinuously jumps and remains $O(1)$. 
 To aid in explaining the behavior, we show heat maps of Re$(\sigma)$ as a function of $\Rey$ and $k$ \shreyas{Make sure to remone $H$ from $kH$ because $k$ is dimensionless.}, for different $\hg/H$ and $\Ndg$ in figure \ref{K_Re_sigma_set3}. 
@@ -240,23 +259,6 @@ The occurrence of these modes for flow instability in a canopy depends on its su
 The predicted value of threshold Reynolds number agrees well with experimentally observed parameters. 
 Inclusion of variation of drag coefficient along the grass filament might lead to better agreement between the observed and predicted frequency of monami. 
 Our analysis also informs flow structure formation in many other related scenarios, such as flow over coral reefs, permeable sediments, etc. and therefore is expected to have a wider impact.
-\begin{table*}
-\rowcolors{3}{tableShade}{white}  %% start alternating shades from 3rd row
-\renewcommand{\arraystretch}{1.4}
- \begin{tabular}{l|c|c|c}
-			& Kelvin-Helmholtz 				& Mode 1 		& Mode 2 \\ \hline
- Base velocity profile 	& $U(y) = U_0 \tanh(y/\delta)$			& \multicolumn{2}{c}{$-{dP}/{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0$} \\
- Domain 		& $-\infty < y < \infty$			& \multicolumn{2}{c}{$-1<y<1$} \\
- Inflection point	& exists at $y=0$				& \multicolumn{2}{c}{$U''(y)$ discontinuous at $y=\hg$} \\
- Shear layer thickness	& $\delta$					& \multicolumn{2}{c}{$\delta \sim  H\left[({\rho U_0 H}/\mu) (C_N d N_g H)\right]^{-1/3}$} \\
- Linearized dynamics	& Inviscid Rayleigh's equation			& \multicolumn{2}{c}{Equation \eqref{Orr-somerfield}} \\
- Critical parameters	& none						& $\Rey$, $\delta/H$ 	& $\Rey \delta^{3/2}$ \\
- Most unstable $k$ as $\delta \to 0$	& $\propto \delta^{-1}$		& $\propto \delta^{-1}$	& $O(1)$ \\
- Mode localized?	& yes, near $y=0$				& ~~~~yes, near $y=\hg$~~~~			& no
- \end{tabular}
- \caption{Comparison between Kelvin-Helmholtz instability and the two modes resulting from solution of \ref{Orr-somerfield}.}
- \label{tab:comparison}
-\end{table*}
 
 \bibliography{Grass}{}
 \bibliographystyle{plain}
