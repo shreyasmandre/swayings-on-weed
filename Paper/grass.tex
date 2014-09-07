@@ -2,6 +2,7 @@
 %\documentclass[aps,twocolumn,floatfix,prl,10pt]{revtex4-1}
 %\documentclass[letterpaper,10pt,prl,twocolumn,aps]{revtex4-1}
 %\documentclass[aps,preprint,floatfix,prl]{revtex4-1}
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -163,7 +164,8 @@ Considering small perturbations $u, v, p$ about the base profile $U$ and $P$ res
 These equations can be non-dimensionalized using half channel height $H$, velocity $U_0$, and the associated advection time $H/U_0$. 
 We are left with three non-dimensional parameters in the model, viz. $\Rey$, $\Ndg$, and the submergence ratio of the grass $h_g/H$. 
 We also use $\delta/H$ in lieu of $\Ndg$ to parametrize the grass density and help elucidate the mechanism of the instability. 
-With these scaling, and using a stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance, we seek a wave solution of the form $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$ to  obtain a modified Orr-Sommerfield equation. 
+With these scaling, and using a stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance, we seek a wave solution of 
+the form $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$ to  obtain a modified Orr-Sommerfield equation. 
 The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency associated with a perturbation of wavelength $2\pi/k$ through the solution of
 \begin{equation}
 \begin{split}
@@ -222,25 +224,23 @@ Note that for large $\Ndg$, the non-dimensional steady flow velocity inside the 
 This estimate simplifies \eqref{Orr-somerfield} within the grass to $\sigma\left(D^2-k^2\right)\phi = -2{(\Ndg/\Rey)^{1/2}}D^2\phi$, while in the unvegetated region it simplifies to the Rayleigh equation $ \left(\sigma+ikU\right) \left(D^2-k^2\right)\phi =  ikU_{yy}\phi$. 
 This analysis predicts that the mode shape would converge in this limit, in agreement with our numerical results for Mode 2 shown in figure \ref{Asymptotic_mode}. 
 
-
-We interpret this as the instability of an inviscid flow, with the vegetation modeled by a continuum drag field, and for which the boundary layer near the grass tip plays no role. The only remaining parameter $\Rey/\Ndg$ sets the threshold, leading to the asymptotic behavior $\Rey \propto \Ndg$ (or $\Rey \sim ({\delta}/{H})^{-3/2}$).
+We interpret this as the instability of an inviscid flow, with the vegetation modeled by a continuum drag field, and for which the boundary layer near the grass tip plays no role. The only remaining parameter $\Rey/\Ndg$ 
+sets the threshold, leading to the asymptotic behavior $\Rey \propto \Ndg$ (or $\Rey \sim ({\delta}/{H})^{-3/2}$).
 
 
 \begin{figure}
 \includegraphics[]{Asymptotic_noshear}
-\caption{Plot of mode shape $|\phi|$ for different shear layer thickness in limit of small shear layer thickness 
-for representative values of grass density. Mode 1 is shown in solid and Mode 2 is shown in dashed. 
-The parameters Mode 2 shapes are chosen such that $\Rey \gg 1$, $\Ndg \gg 1$ (specifying in terms of $\delta/H$) 
-but $\Rey/\Ndg = O(1)$. The mode shapes approach each other for these small values of $\delta/H$ indicating that 
-the large grass density asymptote is reached. Mode 2 shapes appear self-similar in shape as $\delta\to 0$, 
-and are compared to each other on a rescaled coordinate in the inset. Inset shows $|\phi|$ for 
-Mode 1 as a function of $(y-\hg)/\delta$. The modes approach a universal shape, indicating that an asymptotic limit 
-has been reached. The limit is not yet reached for the case $\delta/H = 0.05$ due to the influence of bottom boundary; 
-the grass height in this case is comparable to the boundary layer thickness.}
+\caption{Plot of mode shape $|\phi|$ for different shear layer thickness in limit of small shear layer thickness for representative values of grass density. 
+Mode 1 is shown in solid and Mode 2 is shown in dashed. The parameters Mode 2 shapes are chosen such that $\Rey \gg 1$, $\Ndg \gg 1$ (specified in terms of $\delta/H$) but $\Rey/\Ndg = O(1)$. 
+The mode shapes approach each other for these small values of $\delta/H$ indicating that the large grass density asymptote is reached. Mode 1 shapes appear self-similar in shape as $\delta\to 0$, 
+and are compared to each other on a rescaled coordinate in the inset. 
+Inset shows $|\phi|$ for Mode 1 as a function of $(y-\hg)/\delta$. The modes approach a universal shape, indicating that an asymptotic limit has been reached. 
+The limit is not yet reached for the case $\delta/H = 0.01$ due to the influence of bottom boundary; the grass height in this case is comparable to the boundary layer thickness.}
 \label{Asymptotic_mode}
 \end{figure}
 
 On the other hand, Mode 1 asymptotically localizes to the boundary layer near the grass tip, and exhibits a different asymptotic behavior with $k \sim O(H/\delta)$, and $\Rey \sim (H/\delta)$ (or $\Rey \propto {\Ndg}^{1/2}$) at the threshold. 
+
 This limit can be understood through asymptotically estimating the sizes of the terms in \eqref{Orr-somerfield} using $D\sim \delta^{-1}$, $\sigma \sim \delta^{-1}$, and $U\sim \delta$; the magnitude of the advection term is $\Rey/\delta^3 \sim \Rey^2 \Ndg $, and the viscous term (or the vegetation drag term, which is found to scale identically) in the boundary layer is $\delta^{-4} \sim (\Rey \Ndg)^{4/3}$. The terms balance when $\Rey \sim {\Ndg}^{1/2}$ (or $\Rey \sim H/\delta$), explaining the numerically observed asymptote (see figure \ref{Re_vs_delta}). This analysis predicts that the mode structure is self-similar over the length scale $\delta$; the verification of this expectation is shown in figure \ref{Asymptotic_mode}, supporting this argument.
 
 From these asymptotic behaviors, Mode 1 may be interpreted as the instability of the flow in the boundary layer, whereas Mode 2 may be understood as the instability on the scale of the water column. 
