@@ -100,7 +100,7 @@ Finally, the thickness of the free shear layer, defined as the momentum thicknes
 and therefore inconsistent with the assumptions of the free shear layer instability. 
 These drawbacks of existing theory suggest that flow through vegetation requires further investigation for better understanding of the phenomenon.
 
-In this paper we present a mathematical \shreyas model exhibiting a rich behavior, which is not only consistent within itself, but also with lab experiments and field observations of the phenomenon.
+In this paper we present a mathematical model exhibiting a rich behavior, which is not only consistent within itself, but also with lab experiments and field observations of the phenomenon.
 The synchronous waving may be understood to be arising from the linear instability of a uniform flow over the grass bed. 
 The threshold condition for the onset of the instability and the resulting waving frequency compares well with experimental observations.
 In the limit of a dense grass bed, two distinct unstable modes can be asymptotically distinguished, with one of them sharing many characteristics with the Kelvin-Helmholtz instability. 
@@ -183,7 +183,8 @@ Considering small perturbations $u, v, p$ about the base profile $U$ and $P$ res
 These equations can be non-dimensionalized using half channel height $H$, velocity $U_0$, and the associated advection time $H/U_0$. 
 We are left with three non-dimensional parameters in the model, viz. $\Rey$, $\Ndg$, and the submergence ratio of the grass $h_g/H$. 
 We also use $\delta/H$ in lieu of $\Ndg$ to parametrize the grass density and help elucidate the mechanism of the instability. 
-With these scaling, and using a stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance, we seek a wave solution of the form $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$ to  obtain a modified Orr-Sommerfield equation. 
+With these scaling, and using a stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance, we seek a wave solution of 
+the form $\left(u,v,\psi \right)= \left(\hat u, \hat v, \hat\phi \right)e^{ikx+\sigma t}$ to  obtain a modified Orr-Sommerfield equation. 
 The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency associated with a perturbation of wavelength $2\pi/k$ through the solution of
 \begin{equation}
 \begin{split}
@@ -194,19 +195,29 @@ The eigenvalue $\sigma$ for a given $k$ provides growth rate and frequency assoc
 \end{equation}
 where $D=d/dy$, and subject to the boundary conditions $D\phi = D^2\phi = 0$ at $y=0$ and $y=2$. 
 
-A threshold in $\Rey$ for the onset of the instability naturally emerges from the solution of \eqref{Orr-somerfield}. 
-The dependence of this critical $\Rey$, and the corresponding fastest growing wavenumber $k$, on the $\delta/H$ and $\hg/H$ is shown in figure \ref{Re_vs_delta}, and compared with experimental observation of the threshold\cite{Ghisal02}. 
+A threshold in $\Rey$ for the onset of the instability naturally emerges from the solution of \eqref{Orr-somerfield}, which were not predicted in the previous calculation of 
+flow instability of free shear layer profile \cite{Raupach96}\cite{Delangre06}.
+The dependence of this critical $\Rey$ and the corresponding fastest growing wavenumber $k$, on the $\delta/H$ and $\hg/H$ is shown in figure \ref{Re_vs_delta}, 
+and compared with experimental observation of the threshold\cite{Ghisal02}. 
+The primary reason for existence of this threshold is the dissipation due to grass drag which has to be overcome by flow instability.
+The increase in the value of critical $Rey$ with the increase in grass number density can be attributed to the existence of increased dissipation  Dissipation due to grass drag increases with the increase in $\tilde{Ng}$; hence a higher $\Rey$ for flow instability to occur.
 
-Comparison of frequency (Im$(\sigma)$) of the fastest growing mode with that of experimental observations of frequencies in the lab scale experiments, for cases where the vegetation was sufficiently dense to be modeled by a continuum drag field, is also shown in 
-Figure \ref{Re_vs_delta}. The observed frequencies are associated with the peaks in velocity spectra, frequency of monami and frequency of vortex passage \cite{Ghisal02}\shreyas{cite someone}. The deviation of predicted frequency from the observed may be attributed to the various 
+Comparison of frequency (Im$(\sigma)$) of the fastest growing mode with that of experimental observations of frequencies in the lab scale experiments, for cases where the 
+vegetation was sufficiently dense to be modeled by a continuum drag field, is also shown in 
+Figure \ref{Re_vs_delta}. The observed frequencies are associated with the peaks in velocity spectra, frequency of monami and frequency of 
+vortex passage \cite{Ghisal02}\shreyas{cite someone}. The deviation of predicted frequency from the observed may be attributed to the various 
 simplification we have made in our model. In a real canopy, the drag coefficients are known to
-vary from bottom to tip of the grass blades\cite{Vivoni98,Nepf00}. The turbulent viscosity is also known to vary between the flow of unvegetated region and flow through the canopy\cite{Ghisal02}. Although these variation
-are not central to the mechanism leading to the instability of flow, we believe an improved analysis of flow with these variation in the model might lead to a better agreement between the
+vary from bottom to tip of the grass blades\cite{Vivoni98,Nepf00}. The turbulent viscosity is also known to vary between the flow of unvegetated region and 
+flow through the canopy\cite{Ghisal02}. Although these variation
+are not central to the mechanism leading to the instability of flow, we believe an improved analysis of flow with these variation in the model might lead to 
+a better agreement between the
 observed frequency and the predicted frequency.
 
-To better understand the mechanism of waving, we consider the behavior of the instability, especially the fastest growing wavenumber, as a function of the vegetation drag, especially as it becomes asymptotically large, i.e. $\Ndg \gg 1$ (or $\delta \ll H$).
+To better understand the mechanism of waving, we consider the behavior of the instability, especially the fastest growing wavenumber, as a function of the vegetation drag, especially as it becomes 
+asymptotically large, i.e. $\Ndg \gg 1$ (or $\delta \ll H$).
 The fastest growing wavenumber first increases proportional to $H/\delta$, but at a critical grass density discontinuously jumps and remains $O(1)$. 
-To aid in explaining the behavior, we show heat maps of Re$(\sigma)$ as a function of $\Rey$ and $k$ \shreyas{Make sure to remone $H$ from $kH$ because $k$ is dimensionless.}, for different $\hg/H$ and $\Ndg$ in figure \ref{K_Re_sigma_set3}. 
+To aid in explaining the behavior, we show heat maps of Re$(\sigma)$ as a function of $\Rey$ and $k$ \shreyas{Make sure to remone $H$ from $kH$ because $k$ is dimensionless.}, 
+for different $\hg/H$ and $\Ndg$ in figure \ref{K_Re_sigma_set3}. 
 The lowest $\Rey$ on the neutral curve sets the threshold. 
 We observe that as $\Ndg$ increases, the unstable region splits into two. We refer to the unstable region with the higher $k$ as ``Mode 1'', and the one with the lower $k$ as ``Mode 2''. 
 The unstable region for Mode 1, depending on $\hg/H$ either recedes to higher $\Rey$ or shrinks to zero size, as the grass density increases, causing the discontinuity in the most unstable mode.
@@ -214,27 +225,38 @@ The unstable region for Mode 1, depending on $\hg/H$ either recedes to higher $\
 The distinct asymptotic behavior of the two modes as $\Ndg \gg 1$ allows us to understand the mechanism of the instability. 
 Mode 2 has a threshold $\Rey \sim ({\delta}/{H})^{-3/2}$ (or $\Rey \propto \Ndg$) for $k\sim O(1)$, shown in figure \ref{Re_vs_delta}, which can be understood by asymptotic analysis of \eqref{Orr-somerfield}.
 Noting that for large $\Ndg$, the non-dimensional steady flow velocity inside the grass is $U_g \sim (\Rey \Ndg)^{-1/2}$. 
-Using this estimate, and $\Rey\gg1$, \eqref{Orr-somerfield} within the grass simplifies into $\sigma\left(D^2-k^2\right)\phi = -2{(\Ndg/\Rey)^{1/2}}D^2\phi$ \shreyas{check sign}, while in the unvegetated region it simplifies to the Rayleigh equation $ \left(\sigma+ikU\right) \left(D^2-k^2\right)\phi =  ikU_{yy}\phi$. 
+Using this estimate, and $\Rey\gg1$, \eqref{Orr-somerfield} within the grass simplifies into $\sigma\left(D^2-k^2\right)\phi = -2{(\Ndg/\Rey)^{1/2}}D^2\phi$ \shreyas{check sign}, while in the unvegetated region it simplifies to 
+the Rayleigh equation $ \left(\sigma+ikU\right) \left(D^2-k^2\right)\phi =  ikU_{yy}\phi$. 
 This analysis predicts that the mode shape would converge as $\Rey\gg 1$ and $\Ndg \gg 1$ but $\Rey/\Ndg \sim O(1)$, in agreement with out numerical results shown in figure \ref{Asymptotic_mode}. 
 
 
-We interpret this as the instability of an inviscid flow, with the vegetation modeled by a continuum drag field, and for which the boundary layer near the grass tip plays no role. The only remaining parameter $\Rey/\Ndg$ sets the threshold, leading to the asymptotic behavior $\Rey \propto \Ndg$ (or $\Rey \sim ({\delta}/{H})^{-3/2}$).
+We interpret this as the instability of an inviscid flow, with the vegetation modeled by a continuum drag field, and for which the boundary layer near the grass tip plays no role. The only remaining parameter $\Rey/\Ndg$ 
+sets the threshold, leading to the asymptotic behavior $\Rey \propto \Ndg$ (or $\Rey \sim ({\delta}/{H})^{-3/2}$).
 
 
 \begin{figure}
 \includegraphics[]{Asymptotic_noshear}
-\caption{Plot of mode shape $|\phi|$ for different shear layer thickness in limit of small shear layer thickness for representative values of grass density. Mode 1 is shown in solid and Mode 2 is shown in dashed. The parameters Mode 2 shapes are chosen such that $\Rey \gg 1$, $\Ndg \gg 1$ (specifying in terms of $\delta/H$) but $\Rey/\Ndg = O(1)$. The mode shapes approach each other for these small values of $\delta/H$ indicating that the large grass density asymptote is reached. Mode 2 shapes appear self-similar in shape as $\delta\to 0$, and are compared to each other on a rescaled coordinate in the inset. Inset shows $|\phi|$ for Mode 1 as a function of $(y-\hg)/\delta$. The modes approach a universal shape, indicating that an asymptotic limit has been reached. The limit is not yet reached for the case $\delta/H = 0.01$ due to the influence of bottom boundary; the grass height in this case is comparable to the boundary layer thickness.}
+\caption{Plot of mode shape $|\phi|$ for different shear layer thickness in limit of small shear layer thickness for representative values of grass density. 
+Mode 1 is shown in solid and Mode 2 is shown in dashed. The parameters Mode 2 shapes are chosen such that $\Rey \gg 1$, $\Ndg \gg 1$ (specifying in terms of $\delta/H$) but $\Rey/\Ndg = O(1)$. 
+The mode shapes approach each other for these small values of $\delta/H$ indicating that the large grass density asymptote is reached. Mode 2 shapes appear self-similar in shape as $\delta\to 0$, 
+and are compared to each other on a rescaled coordinate in the inset. Inset shows $|\phi|$ for Mode 1 as a function of $(y-\hg)/\delta$. The modes approach a universal shape, indicating that an asymptotic limit has been reached. 
+The limit is not yet reached for the case $\delta/H = 0.01$ due to the influence of bottom boundary; the grass height in this case is comparable to the boundary layer thickness.}
 \label{Asymptotic_mode}
 \end{figure}
 
 On the other hand, Mode 1 asymptotically localizes to the boundary layer near the grass tip, and exhibits a different asymptotic behavior with $k \sim O(H/\delta)$, and $\Rey \sim (H/\delta)$ (or $\Rey \propto {\Ndg}^{1/2}$) at the threshold. 
-This limit can be understood through asymptotically estimating the sizes of the terms in \eqref{Orr-somerfield} using $D\sim \delta^{-1}$, $\sigma \sim \delta^{-1}$, and $U\sim \delta$; the magnitude of the advection term is $\Rey/\delta^3 \sim \Rey^2 \Ndg $, and the viscous term (or the vegetation drag term, which has the same magnitude) in the boundary layer is $\delta^{-4} \sim (\Rey \Ndg)^{4/3}$. The terms balance when $\Rey \sim {\Ndg}^{1/2}$ (or $\Rey \sim H/\delta$), explaining the numerically observed asymptote (see figure \ref{Re_vs_delta}. This analysis predicts that the mode structure is self-similar over the length scale $\delta$; the verification of this expectation is shown in figure \ref{Asymptotic_mode}, supporting this argument.
+This limit can be understood through asymptotically estimating the sizes of the terms in \eqref{Orr-somerfield} using $D\sim \delta^{-1}$, $\sigma \sim \delta^{-1}$, and $U\sim \delta$; the magnitude of the advection term is $\Rey/\delta^3 \sim \Rey^2 \Ndg $, 
+and the viscous term (or the vegetation drag term, which has the same magnitude) in the boundary layer is $\delta^{-4} \sim (\Rey \Ndg)^{4/3}$. The terms balance when $\Rey \sim {\Ndg}^{1/2}$ (or $\Rey \sim H/\delta$), 
+explaining the numerically observed asymptote (see figure \ref{Re_vs_delta}. This analysis predicts that the mode structure is self-similar over the length scale $\delta$; the verification of this expectation is shown in figure \ref{Asymptotic_mode}, supporting this argument.
 
-From these asymptotic behaviors, Mode 1 may be interpreted as the instability of the flow in the boundary layer, whereas Mode 2 may be understood as the instability on the scale of the water column. Table \ref{tab:comparison} compares the two modes to each other, and to the Kelvin-Helmholtz instability. Mode 1 appears to be closely related to the Kelvin Helmholtz mechanism, whereas Mode 2 arises purely from the interaction between the unvegetated water column and the flow through the vegetation.
+From these asymptotic behaviors, Mode 1 may be interpreted as the instability of the flow in the boundary layer, whereas Mode 2 may be understood as the instability on the scale of the water column. 
+Table \ref{tab:comparison} compares the two modes to each other, and to the Kelvin-Helmholtz instability. Mode 1 appears to be closely related to the Kelvin Helmholtz mechanism, whereas Mode 2 arises purely from the interaction between the unvegetated water column and the flow through the vegetation.
 
 Similar phenomenon of large amplitude coherent oscillation of terrestrial canopies in atmospheric flow known as ho-nami\cite{Inoue56,Raupach96}, have also been observed.
 A crucial difference between the atmospheric and aquatic flow is that the atmospheric flows are essentially unbounded vertically\cite{Vivoni98,Nepf00}. 
-Another major difference between the two is the considerable difference of stiffness of canopies; terrestrial canopies tend to be much more rigid, whereas aquatic canopies are buoyant\cite{Vivoni98,Ghisal02}. Despite these differences, in the framework of this letter, the limit of $\hg/H \ll 1$ while $\delta/\hg$ = constant can be used to represents the hydrodynamic instability for the terrestrial case with stiff grass blades. We find that in this case, the transition from Mode 1 to Mode 2 appens at such a large grass density, so as to make Mode 2 irrelevant. We recover the Kelvin-Helmholtz-like characteristics observed in the terrestrial case, and explain the existence of a threshold flow speed. 
+Another major difference between the two is the considerable difference of stiffness of canopies; terrestrial canopies tend to be much more rigid, whereas aquatic canopies are buoyant\cite{Vivoni98,Ghisal02}. 
+Despite these differences, in the framework of this letter, the limit of $\hg/H \ll 1$ while $\delta/\hg$ = constant can be used to represents the hydrodynamic instability for the terrestrial case with stiff grass blades. 
+We find that in this case, the transition from Mode 1 to Mode 2 appens at such a large grass density, so as to make Mode 2 irrelevant. We recover the Kelvin-Helmholtz-like characteristics observed in the terrestrial case, and explain the existence of a threshold flow speed. 
 
 In conclusion we note that linear stability analysis of flow in presence of canopy reveals two distinct modes of flow instability which might lead to monami. 
 The occurrence of these modes for flow instability in a canopy depends on its submergence ratio and shear layer thickness. Our analysis predict a threshold criteria characterized by a Reynolds number. 
