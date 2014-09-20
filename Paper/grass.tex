@@ -51,15 +51,28 @@ The predictions of the model for threshold condition and the resulting dominant 
 \end{abstract}
 \maketitle
 %\section{Introduction}
-Sea grasses exhibit rich set of dynamics due to their interaction with the flow of water and can considerably affect surrounding hydrodynamic conditions.
-Resulting changes in hydrodynamic conditions can influence number of environmental variables and processes such as transport of sediments, contaminants, dissolved oxygen, plant growth, and biomass production, etc \cite{Fonseca87,Grizzle96,Nepf99,Nepf2012}. 
-Flexible grass canopies respond to steady currents in the form of coherent large amplitude oscillations, known as \monami \cite{AckermanOkubo93}. Such motion is considered to play a central role in the recruitment 
-of microscopic marine organisms, such as blue mussel larvae\cite{Grizzle96}.
-The hydrodynamic mechanism underlying \monami is the focus of this paper. 
+Sea grasses exhibit a rich set of dynamical behavier due to their
+ collective interaction with both steady and oscillatory flows. 
+%interaction with the flow of water and can considerably affect surrounding hydrodynamic conditions.
+%Resulting 
+The resulting changes in hydrodynamic conditions can influence number of environmental processes such as transport of sediments, contaminants, dissolved oxygen, plant growth, and biomass production \cite{Fonseca87,Grizzle96,Nepf99,Nepf2012}.
+The simplet response of these flexible grass canopies 
+%Flexible grass canopies respond 
+to steady currents 
+%in the form of 
+is the formation of coherent large amplitude oscillations, known as \monami \cite{AckermanOkubo93}. 
+%Such motion is considered to play a central role in the recruitment 
+%of microscopic marine organisms, such as blue mussel larvae\cite{Grizzle96}.
+%The hydrodynamic mechanism underlying \monami is the focus of this paper. 
+In this letter we provide a hydrodynamic mechanism for the onset of these coherent oscillations.
 
-Existing explanation of \monami invokes the existence of strong shear near the top of the canopy \cite{Ghisal02,Raupach96} due to different amounts of drag experienced by fluid in and above the canopy. 
-This shear layer is interpreted to become unstable to coherent vortices through a mechanism similar to Kelvin-Helmholtz instability. 
-Influence of these coherent eddies over sea grasses is manifested in their large amplitude synchronous oscillations.
+%Existing 
+Current explanations of \monami invoke the existence of a shear layer near the top of the canopy \cite{Ghisal02,Raupach96} and its instability 
+%due to different amounts of drag experienced by fluid in and above the canopy. 
+%This shear layer is interpreted to become unstable to coherent vortices 
+through a mechanism similar to the Kelvin-Helmholtz instability. This is thought to lead to coherent eddies over the sea grass canopy which then drives 
+%Influence of these coherent eddies over sea grasses is manifested in their 
+large amplitude synchronous oscillations.
 
 \begin{figure}
 \includegraphics[scale=1]{Grass_Base_Nepf_shear}
@@ -71,24 +84,28 @@ The dependence of the boundary layer thickness (estimated numerically as $|U/U_y
 \label{basicflow}
 \end{figure}
 
-While the shear layer model successfully appears to predict frequency of \monami for number of experimental observations, several aspect of existing theory remain unsatisfactory. 
-First, while the free shear layer is established due to the vegetation drag, the linear stability analysis\cite{Raupach96} does not take this drag into account, rendering this explanation inconsistent. 
-Second, classical free shear flow is known to be unstable for all Reynolds number\cite{drazin}, whereas observations in the lab\cite{Ghisal02} and the field\cite{Grizzle96} indicate the existence of a threshold 
-flow speed below which waving is not observed. 
-Finally, the thickness of the free shear layer, defined as the momentum thickness of the boundary layer near the grass tip, is in many cases comparable to the unvegetated layer thickness,
+While the shear layer model appears to predict the frequency of \monami consistent with experimental observations, several aspect of existing theory remain unsatisfactory. 
+(i) While the free shear layer is established due to the vegetation drag, linear stability analysis\cite{Raupach96} does not account for this, rendering this explanation inconsistent. 
+(ii) Classical free shear flow is known to be unstable for all Reynolds number\cite{drazin}, whereas observations in the lab\cite{Ghisal02} and the field\cite{Grizzle96} indicate the existence of a threshold 
+flow speed below which \monami is not observed. 
+(iii)The thickness of the free shear layer, defined as the momentum thickness of the boundary layer near the grass tip, is in many cases comparable to the unvegetated layer thickness,
 and therefore inconsistent with the assumptions of the free shear layer instability. 
 % These drawbacks of existing theory suggest that flow through vegetation requires further investigation for better understanding of the phenomenon.
 
-In this paper we present a mathematical model exhibiting a rich behavior, which is not only consistent within itself, but also with lab experiments and field observations of the phenomenon.
-Using this model, the synchronous waving may be understood to be arising from the linear hydrodynamic instability of a uniform flow over the grass bed, such that the principal role of the vegetation is to exert a drag on the flow. 
-A threshold flow speed arises naturally for the onset of the instability; this threshold condition and the resulting waving frequency compares well with experimental observations.
-The vegetation drag introduces a damping mechanism in the flow, in addition to the viscous damping, and overcoming this damping is the primary consideration that sets the threshold flow.
-We deduce this numerically and through an asymptotic scaling analysis in the limit of dense grass.
-
+Here we present a self-consistent mathematical model that account correctly for these effects while also explaining 
+%exhibiting a rich behavior, which is not only consistent within itself, but also with 
+lab experiments and field observations.
+%Using this model, the synchronous waving may be understood to be arising from the linear hydrodynamic instability of a uniform flow over the grass bed, such that the principal role of the vegetation is to exert a drag on the flow. 
+%A threshold flow speed arises naturally for the onset of the instability; this threshold condition and the resulting waving frequency compares well with experimental observations.
+%The vegetation drag introduces a damping mechanism in the flow, in addition to the viscous damping, and overcoming this damping is the primary consideration that sets the threshold flow.
+%We deduce this numerically and through an asymptotic scaling analysis in the limit of dense grass.
+\newline
 The drag exerted by the grass bed on the flow is central to the hypothesized mechanism\cite{Ghisal02} of the instability underlying \monami because it realizes the shear layer structure of the flow. 
-The flexibility of the grass blades, on the other hand, is considered to merely aid in visualizing the flow structure resulting from the instability\cite{Nepf2012}. 
+The flexibility of the grass blades, on the other hand, serves merely aid in visualizing the flow structure resulting from the instability\cite{Nepf2012}. 
 It has been demonstrated that the instability and the resulting flow structures are present even when the grass blades are replaced with rigid dowels\cite{Ghisal02}. 
-Therefore, in the interest of deriving the simplest mathematical model for the linear instability, we consider the grass bed to form a rigid structure that exchanges momentum with the surrounding fluid but does not deform. 
+Therefore, for simplicity, 
+%mathematical model for the linear instability, 
+we consider the grass bed to form a rigid structure that exchanges momentum with the surrounding fluid but does not deform. 
 Indeed, a more detailed calculation undertaken for terrestrial grass demonstrated\cite{Delangre06} that when the timescale of the instability is well-separated from the period of natural oscillations of the grass bed, 
 the flow instability is similar to the instability of a shear layer. 
 
@@ -106,29 +123,40 @@ Ghisalberti and Nepf \cite{Ghisal02} and Vivoni \cite{Vivoni98}. In order to est
 \label{Re_vs_delta}
 \end{figure}
 We use a mean field model for the coupling between the flow and the canopy. 
-Drag force exerted by the grass is approximated via a continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$ in the fluid momentum balance\cite{Vivoni98,Nepf99,Ghisal02,Delangre04,Delangre06} as
+The force exerted by the grass is approximated via a continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$,  
+where $\mathbf{f_{d}}$ is drag force per unit length of the grass blade, $N_g$ the grass number density per unit area. In the canopy the equations of continuity \& momentum balance can be written as 
+%in the fluid momentum balance\cite{Vivoni98,Nepf99,Ghisal02,Delangre04,Delangre06} as
 \begin{equation}
-\rho \left(\bu_{t}+\bu.\grad\bu \right) = -\grad P+\mu\grad^{2}\bu +\mathbf{f}+\rho\mathbf{g}, \quad \grad\cdot\bu = 0,
+\quad \grad\cdot\bu = 0,\hspace{3mm} \rho \left(\bu_{t}+\bu.\grad\bu \right) = -\grad P+\mu\grad^{2}\bu +\mathbf{f}+\rho\mathbf{g}
 \label{navier-stokes}
 \end{equation}
-where $\mathbf{f_{d}}$ is drag force per unit length of the grass blade, $N_g$ the grass number density per unit area, $\rho$ the fluid density, $\mathbf{u}$ the velocity, 
+%where $\mathbf{f_{d}}$ is drag force per unit length of the grass blade, $N_g$ the grass number density per unit area, 
+where $\rho$ the fluid density, $\mathbf{u}$ the velocity, 
 $P$ the pressure, $\mu$ the turbulent viscosity and $\mathbf{g}$ the acceleration due to gravity. 
-The Reynolds number of the flow on the scale of a grass blade is expected to be O($10^2$-$10^3$), and hence the drag force is dominated by form drag, and is modeled as 
+The Reynolds number of the flow based on the scale of a grass blade is expected to be O($10^2$-$10^3$), and hence the drag force is dominated by pressure and modeled as 
 $\mathbf{f_{d}}=C_N \rho u_{N}^{2}d\bn + C_{T}\rho u_{T}^{2}d\bt$ \shreyas{citation needed} 
-where $d$ is average width of grass blade $C_{N}$ and $C_{T}$ are normal and tangential drag coefficients respectively; $u_{T}$, $u_{N}$ are velocity components along and
+where $d$ is average width of grass blade $C_{N}$ and $C_{T}$ are the normal and tangential drag coefficients respectively; $u_{T}$, $u_{N}$ are velocity components along and
 normal to grass while $\bt,\bn$ being unit vector along and normal to grass. 
 We expect $C_T \ll C_N$ and take $C_T=0$ for rest of analysis. 
 In the field, both $C_N$ and $N_g$ vary with distance from the bottom but we do not expect these variation to be central to the mechanism and therefore take $C_N$ and $N_g$ to be constants. 
 Based on previous experiments\cite{Vivoni98}, we take $C_N \approx 1$.
 
-For consistency of analysis, we calculate the steady flow $\bu = U(y)\boldsymbol{\hat{x}}$ as a solution of \eqref{navier-stokes}, and examine its linear stability. 
-Such a steady state flow driven by constant pressure gradient satisfies $-{dP}/{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0$, where $S(y)=1$ in the vegetated layer $0<y<\hg$ and $S(y)=0$ in the unvegetated layer $\hg< y< 2H$.
-The flow in the laboratory experiments is better approximated by zero shear at the bottom ($y=0$) and top ($y=2H$) of the fluid layer, as can be seen from the comparison between sample solutions and mean flow observed in laboratory experiment shown in Figure \ref{basicflow}. 
-Flow consist of a region within grass of approximately constant velocity $U_g \sim \sqrt{\frac{dP/dx}{\rho C_N dN_g}}$ arising from balance of drag force with pressure gradient and a parabolic velocity profile in unvegetated region due to balance of viscous force and pressure gradient. 
-Continuity of flow speed and shear stress at canopy top gives rise to a boundary layer in the flow profile near the tip of the grass. 
+To understand the onset of, we first calculate the steady flow $\bu = U(y)\boldsymbol{\hat{x}}$ as a solution of \eqref{navier-stokes}, and examine its linear stability. 
+Such a steady state flow driven by constant pressure gradient satisfies 
+\begin{equation}
+ -{dP}/{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0
+\end{equation}
+where $S(y)=1$ in the vegetated layer $0<y<\hg$ and $S(y)=0$ in the unvegetated layer $\hg< y< 2H$. In the limit of large grass density, shear stress exerted by the bottom surface is estimated to be negligible in comparison with the drag and hence the bottom surface ($y=0$) is approximated by zero shear.   
+%The flow in the laboratory experiments is better approximated by zero shear at the bottom ($y=0$) and top ($y=2H$) of the fluid layer, 
+%as can be seen from the comparison between sample solutions and mean flow observed in laboratory experiment shown in Figure \ref{basicflow}. 
+A comparison of laboratory mean profile with the steady flow profile is shown in figure \ref{basicflow}.
+Flow within grass has approximately constant velocity $U_g \sim \sqrt{\frac{dP/dx}{\rho C_N dN_g}}$ arising from the balance between drag and with pressure gradient. Flow outside has a simple parabolic velocity profile due to the balance between viscous forces and the pressure gradient. 
+Continuity of flow speed and shear stresses at canopy top gives rise to a boundary layer 
+%in the flow profile 
+near the tip of the grass. 
 
-The boundary layer near the canopy top results from purely local dynamics independent of the influence of the boundaries, and may therefore be identified as a free shear layer\cite{Ghisal02} in the previous explanation of \monami. 
-In our model, this leads to a shear layer thickness $\delta = (\Rey\Ndg)^{-1/3} H$, where $\Ndg = \left(C_N d H N_g\right)$ is the vegetation frontal area per bed area, $\Rey=\rho U_0 H/\mu$ is the Reynolds number of the flow, and $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity. 
+This boundary layer near the canopy top results from purely local dynamics independent of the influence of the boundaries, and we identify it as a free shear layer\cite{Ghisal02} in the previous explanation of \monami. 
+In our model shear layer thickness can be estimated from the the balance between viscous forces and drag in the boundary layer near canopy top along with the continuity of shear stress at the grass tip. This leads to a shear layer thickness $\delta = (\Rey\Ndg)^{-1/3} H$, where $\Ndg = \left(C_N d H N_g\right)$ is the vegetation frontal area per bed area, $\Rey=\rho U_0 H/\mu$ is the Reynolds number of the flow, and $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity. 
 This dependence of the boundary layer thickness on the grass density $N_g$, shown in Figure \ref{basicflow}, gives us a way to systematically control it and investigate its effect on the instability mechanism.
 The asymptotic regime of a thin boundary layer is expected to hold for $\Rey \Ndg \gtrsim 100$; minor departures from this scaling can be seen in the inset of figure \ref{basicflow}.
 
