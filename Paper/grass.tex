@@ -115,6 +115,12 @@ Such a steady state flow driven by constant pressure gradient satisfies
  -{dP}/{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0
 \label{base_equ}
 \end{equation}
+where $S(y)=1$ in the vegetated layer $0<y<\hg$ and $S(y)=0$ in the unvegetated layer $\hg< y< 2H$. 
+In the limit of large grass density, shear stress exerted by the bottom surface is estimated to be negligible in comparison with the vegetation drag and hence the bottom surface ($y=0$) is approximated by zero shear.   
+A comparison of laboratory mean profile with the steady flow profile is shown in figure \eqref{basicflow}.
+Flow within grass has approximately constant velocity $U_g \sim \sqrt{\frac{dP/dx}{\rho C_N dN_g}}$ arising from the balance between drag and with pressure gradient. 
+Flow outside has a simple parabolic velocity profile due to the balance between viscous forces and the pressure gradient. 
+Continuity of flow speed and shear stresses at canopy top gives rise to a boundary layer near the tip of the grass.
 \begin{figure}
 \includegraphics[scale=1]{Grass_Base_Nepf_shear}
 \caption{Comparison of steady flow profile from the experiments by Ghisalberti and Nepf\cite{Nepf04} (Case-I from Table-1 with 1250 plants/m$^2$, 
@@ -124,20 +130,11 @@ The steady velocity profile can be decomposed into three regions, (i) A paraboli
 The dependence of the boundary layer thickness (estimated numerically as $|U/U_y|$ at $y=\hg$) on the vegetation density parameter $\Rey \Ndg$ is shown in the inset.}
 \label{basicflow}
 \end{figure}
-where $S(y)=1$ in the vegetated layer $0<y<\hg$ and $S(y)=0$ in the unvegetated layer $\hg< y< 2H$. 
-In the limit of large grass density, shear stress exerted by the bottom surface is estimated to be negligible in comparison with the vegetation drag and hence the bottom surface ($y=0$) is approximated by zero shear.   
-A comparison of laboratory mean profile with the steady flow profile is shown in figure \eqref{basicflow}.
-Flow within grass has approximately constant velocity $U_g \sim \sqrt{\frac{dP/dx}{\rho C_N dN_g}}$ arising from the balance between drag and with pressure gradient. 
-Flow outside has a simple parabolic velocity profile due to the balance between viscous forces and the pressure gradient. 
-Continuity of flow speed and shear stresses at canopy top gives rise to a boundary layer near the tip of the grass. 
-\newline
 This boundary layer near the canopy top results from purely local dynamics independent of the influence of the boundaries, and we identify it as a free shear layer\cite{Ghisal02} in the previous explanation of \monami. 
-In our model the balance between viscous forces and the drag force in the shear layer 
-together with the continuity of shear stress across the grass tip leads to a shear layer thickness $\delta=(\Rey\tilde{N_g})^{-1/3}H$.
-% and velocity $u \sim \delta U_0$ in the shear layer. 
-Where $\Ndg = \left(C_N d H N_g\right)$ is the vegetation frontal area per bed area, $\Rey=\rho U_0 H/\mu$ is the Reynolds number of the flow, and $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity. 
+In our model the balance between viscous forces and the drag force in the shear layer $(\mu u_{sl}/\delta^2 \sim \rho C_N d N_g u_{sl}^2)$ and the continuity of shear stress across the grass tip $(u_{sl}/\delta \sim U_0/H)$ leads to a shear layer thickness $\delta=(\Rey\tilde{N_g})^{-1/3}H$. Where $\Ndg = \left(C_N d H N_g\right)$ is the vegetation frontal area per bed area, $\Rey=\rho U_0 H/\mu$ is the Reynolds number of the flow, $u_{sl}$ is the velocity in shear layer and $U_0 = {(dP/dx)~H^2}/{\mu}$ is scale for velocity. 
 This dependence of the boundary layer thickness on the grass density $N_g$, shown in Figure \ref{basicflow}, gives us a way to systematically control it and investigate its effect on the instability mechanism.
 The asymptotic regime of a thin boundary layer is expected to hold for $\Rey \Ndg \gtrsim 100$; minor departures from this scaling can be seen in the inset of figure \ref{basicflow}.
+\newline
 Considering small perturbations $u, v, p$ about the base profile $U$ and $P$ given by the solution of \eqref{base_equ}. Substituting them in equation \eqref{navier-stokes} and expanding  to linear order in the perturbation variable we obtain.
 \begin{equation}
 \begin{split}
@@ -187,7 +184,7 @@ The threshold Reynolds number increases with the grass density, indicating a com
 destabilizing shear in the flow, and the stabilizing effect of damping due to vegetation drag.
 Previous linear stability calculations for terrestrial grass do not exhibit a threshold flow condition 
 either due to the exclusion of the vegetation drag in their model\cite{Raupach96}, or because of ad-hoc
-assumptions such as for the mean velocity profile\cite{Raupach96,Delangre06}.
+assumptions for the mean velocity profile\cite{Raupach96,Delangre06}.
 
 
 \begin{figure*}
@@ -212,7 +209,7 @@ For $\Ndg$ below a critical value, the Mode 1 sets the threshold $\Rey$ whereas 
 \end{figure*}
 
 Comparison of frequency (Im$(\sigma)$) of the fastest growing mode with that of experimental observations of frequencies in
-the lab scale experiments, for cases where the vegetation was sufficiently dense to be modeled by a continuum drag field, is shown in the inset in figure \ref{Re_vs_delta}b. 
+the lab scale experiments, for cases where the vegetation was sufficiently dense to be modeled by a continuum drag field, is also shown in the inset in figure \ref{Re_vs_delta}b. 
 The observed frequencies are associated with the peaks in velocity spectra, frequency of $\monami$ and frequency of 
 vortex passage \cite{Ghisal02}, and compare well with the predicted frequencies. 
 %Regardless of the assumptions, the introduction of vegetation drag is observed to damp the linear modes\cite{Delangre06}.
@@ -242,33 +239,7 @@ We observe that as $\Ndg$ increases, the unstable region splits into two. We ref
 The unstable region for Mode 1, depending on $\hg/H$ either recedes to higher $\Rey$ or shrinks to zero size, as the grass density increases, causing the discontinuity in the most unstable mode.
 
 The distinct asymptotic behavior of the two modes as $\Ndg \gg 1$ allows us to understand the mechanism of the instability. 
-Mode 2 has a threshold $\Rey \sim ({\delta}/{H})^{-3/2}$ (or $\Rey \propto \Ndg$) for $k\sim O(1)$, shown in figure \ref{Re_vs_delta}, which can be understood by an asymptotic scaling analysis of \eqref{Orr-somerfield} by assuming $\Rey \gg 1$ but $\Rey/\Ndg \sim O(1)$,.
-Note that for large $\Ndg$, the non-dimensional steady flow velocity inside the grass is $U_g \sim (\Rey \Ndg)^{-1/2}$. 
-This estimate simplifies \eqref{Orr-somerfield} to 
-\begin{align}
-\begin{split}
-\sigma\left(D^2-k^2\right)\phi = -2{(\Ndg/\Rey)^{1/2}}D^2\phi,   &\text{ for $y<\hg$}  \\
-\left(\sigma+ikU\right) \left(D^2-k^2\right)\phi =  ikU_{yy}\phi, &\text{ for $y>\hg$}.
-\end{split}
-\end{align}
-Since $\Rey/\Ndg$ is the only remaining parameter, the mode shape would converge in the aforementioned limit, in agreement with our numerical results for Mode 2 shown in figure \ref{Asymptotic_mode}. 
-
-We interpret Mode 2 as the instability of an inviscid flow, with the vegetation modeled by a continuum drag field, and for which the boundary layer near the grass tip plays no role. The only remaining parameter $\Rey/\Ndg$ 
-sets the threshold, leading to the asymptotic behavior $\Rey \propto \Ndg$ (or $\Rey \sim ({\delta}/{H})^{-3/2}$).
-
-\begin{figure}
-\includegraphics[]{Asymptotic_noshear}
-\caption{Plot of mode shape $|\phi|$ for different shear layer thickness in limit of small shear layer thickness for representative values of grass density. 
-Mode 1 is shown in solid and Mode 2 is shown in dashed. The parameters Mode 2 shapes are chosen such that $\Rey \gg 1$, $\Ndg \gg 1$ (specified in terms of $\delta/H$) but $\Rey/\Ndg = O(1)$. 
-The mode shapes approach each other for these small values of $\delta/H$ indicating that the large grass density asymptote is reached. Mode 1 shapes appear self-similar in shape as $\delta\to 0$, 
-and are compared to each other on a rescaled coordinate in the inset. 
-Inset shows $|\phi|$ for Mode 1 as a function of $(y-\hg)/\delta$. The modes approach a universal shape, indicating that an asymptotic limit has been reached. 
-The limit is not yet reached for the case $\delta/H = 0.005$ due to the influence of bottom boundary; the grass height in this case is comparable to the boundary layer thickness.}
-\label{Asymptotic_mode}
-\end{figure}
-
-On the other hand, Mode 1 asymptotically localizes to the boundary layer near the grass tip, and exhibits a different asymptotic behavior with $k \sim O(H/\delta)$, and $\Rey \sim (H/\delta)$ (or $\Rey \propto {\Ndg}^{1/2}$) at the threshold. 
-
+Mode 1 asymptotically localizes to the boundary layer near the grass tip, and exhibits an asymptotic behavior with $k \sim O(H/\delta)$, and $\Rey \sim (H/\delta)$ (or $\Rey \propto {\Ndg}^{1/2}$) at the threshold. 
 This limit can be understood through asymptotically estimating the sizes of the terms in \eqref{Orr-somerfield} using $D\sim \delta^{-1}$, $\sigma \sim \delta^{-1}$, and $U\sim \delta$; the magnitude of the advection term is $\Rey/\delta^3 \sim \Rey^2 \Ndg $, and the viscous term (or the vegetation drag term, which is found to scale identically) in the boundary layer is $\delta^{-4} \sim (\Rey \Ndg)^{4/3}$. 
 The terms balance when $\Rey \sim {\Ndg}^{1/2}$ (or $\Rey \sim H/\delta$), leading to a simplification of \eqref{Orr-somerfield} as
 \begin{align}
@@ -280,12 +251,46 @@ The terms balance when $\Rey \sim {\Ndg}^{1/2}$ (or $\Rey \sim H/\delta$), leadi
 Since, $\Rey/\Ndg^{1/2}$ is the only remaining parameter in this model, explaining the numerically observed asymptote (see figure \ref{Re_vs_delta}). (this language should be improved)
 This analysis concludes that the mode structure is self-similar over the length scale $\delta$; the verification of this expectation is shown in figure \ref{Asymptotic_mode}, supporting this argument.
 
+On the other hand Mode 2 has a threshold $\Rey \sim ({\delta}/{H})^{-3/2}$ (or $\Rey \propto \Ndg$) for $k\sim O(1)$, shown in figure \ref{Re_vs_delta}, which can be understood by an asymptotic scaling analysis of \eqref{Orr-somerfield} by assuming $\Rey \gg 1$ but $\Rey/\Ndg \sim O(1)$,.
+Note that for large $\Ndg$, the non-dimensional steady flow velocity inside the grass is $U_g \sim (\Rey \Ndg)^{-1/2}$. 
+This estimate simplifies \eqref{Orr-somerfield} to 
+\begin{align}
+\begin{split}
+\sigma\left(D^2-k^2\right)\phi = -2{(\Ndg/\Rey)^{1/2}}D^2\phi,   &\text{ for $y<\hg$}  \\
+\left(\sigma+ikU\right) \left(D^2-k^2\right)\phi =  ikU_{yy}\phi, &\text{ for $y>\hg$}.
+\end{split}
+\end{align}
+\begin{figure}
+\includegraphics[]{Asymptotic_noshear}
+\caption{Plot of mode shape $|\phi|$ for different shear layer thickness in limit of small shear layer thickness for representative values of grass density. 
+Mode 1 is shown in solid and Mode 2 is shown in dashed. The parameters Mode 2 shapes are chosen such that $\Rey \gg 1$, $\Ndg \gg 1$ (specified in terms of $\delta/H$) but $\Rey/\Ndg = O(1)$. 
+The mode shapes approach each other for these small values of $\delta/H$ indicating that the large grass density asymptote is reached. Mode 1 shapes appear self-similar in shape as $\delta\to 0$, 
+and are compared to each other on a rescaled coordinate in the inset. 
+Inset shows $|\phi|$ for Mode 1 as a function of $(y-\hg)/\delta$. The modes approach a universal shape, indicating that an asymptotic limit has been reached. 
+The limit is not yet reached for the case $\delta/H = 0.005$ due to the influence of bottom boundary; the grass height in this case is comparable to the boundary layer thickness.}
+\label{Asymptotic_mode}
+\end{figure}
+Since $\Rey/\Ndg$ is the only remaining parameter, the mode shape would converge in the aforementioned limit, in agreement with our numerical results for Mode 2 shown in figure \ref{Asymptotic_mode}. 
+We interpret Mode 2 as the instability of an inviscid flow, with the vegetation modeled by a continuum drag field, and for which the boundary layer near the grass tip plays no role. The only remaining parameter $\Rey/\Ndg$ 
+sets the threshold, leading to the asymptotic behavior $\Rey \propto \Ndg$ (or $\Rey \sim ({\delta}/{H})^{-3/2}$).
+%On the other hand, Mode 1 asymptotically localizes to the boundary layer near the grass tip, and exhibits a different asymptotic behavior with $k \sim O(H/\delta)$, and $\Rey \sim (H/\delta)$ (or $\Rey \propto {\Ndg}^{1/2}$) at the threshold. 
+
+%This limit can be understood through asymptotically estimating the sizes of the terms in \eqref{Orr-somerfield} using $D\sim \delta^{-1}$, $\sigma \sim \delta^{-1}$, and $U\sim \delta$; the magnitude of the advection term is $\Rey/\delta^3 \sim \Rey^2 \Ndg $, and the viscous term (or the vegetation drag term, which is found to scale identically) in the boundary layer is $\delta^{-4} \sim (\Rey \Ndg)^{4/3}$. 
+%The terms balance when $\Rey \sim {\Ndg}^{1/2}$ (or $\Rey \sim H/\delta$), leading to a simplification of \eqref{Orr-somerfield} as
+%\begin{align}
+% \begin{split}
+%  \text{blah for $y<\hg$} \\
+%  \text{blah for $y>\hg$.}
+% \end{split}
+%\end{align}
+%Since, $\Rey/\Ndg^{1/2}$ is the only remaining parameter in this model, explaining the numerically observed asymptote (see figure \ref{Re_vs_delta}). (this language should be improved)
+%This analysis concludes that the mode structure is self-similar over the length scale $\delta$; the verification of this expectation is shown in figure \ref{Asymptotic_mode}, supporting this argument.
 From these asymptotic behaviors, Mode 1 may be interpreted as the instability of the flow in the boundary layer, whereas Mode 2 may be understood as the instability on the scale of the water column. 
 Table \ref{tab:comparison} compares the two modes to each other, and to the Kelvin-Helmholtz instability. 
 Mode 1 appears to be closely related to the Kelvin Helmholtz mechanism, whereas Mode 2 arises purely from the interaction between the unvegetated water column and the flow through the vegetation. 
 Vegetation drag plays a dominant role in the mechanism for both the modes, which distinguishes our analysis from the traditional Kelvin-Helmholtz instability. 
 The appearance of vegetation drag parameter in the dominant balance of \eqref{Orr-somerfield} and the threshold criteria demonstrates its role in setting the threshold.
-
+\newline
 Similar phenomenon of large amplitude coherent oscillation of terrestrial canopies in atmospheric flow known as \textit{honami}\cite{Inoue56,Raupach96}, have also been observed.
 A crucial difference between the atmospheric and aquatic flow is that the atmospheric flows are essentially unbounded vertically\cite{Vivoni98,Nepf00}. 
 Another major difference between the two is the considerable difference of stiffness of canopies; terrestrial canopies tend to be much more rigid, whereas aquatic canopies are buoyant\cite{Vivoni98,Ghisal02}. 
@@ -295,13 +300,12 @@ The deviation of our model predictions from the observed may be attributed to th
 In a real canopy, the drag coefficients are known to vary from bottom to tip of the grass blades\cite{Vivoni98,Nepf00}. 
 The turbulent viscosity is also known to vary between the flow of unvegetated region and flow through the canopy\cite{Ghisal02}. 
 Although an improved analysis of flow with these variation in the model might lead to a better agreement between the observed and the predicted quantities, these variation are not central to the mechanism leading to the instability of flow.
-\newline
+\newline\newline
 In conclusion, we note that the threshold flow condition observed in the field and in lab experiments arises due to the presence of vegetation drag. 
 We show the origin of this threshold using a consistent continuum hydrodynamic stabiity analysis for the shear flow that develops as a result of the drag. 
 Such an analysis not only explains quantitative observations, but also provides an understanding of the hydrodynamic instability mechanism. 
 The extent of the structure of Mode 2 throughout the depth of the water column implies an efficient transport of suspended tracers compared to that due to the localized structure of Mode 1 near the canopy top. 
 Our analysis also informs flow structure formation in many other related scenarios, such as flow over coral reefs, permeable sediments, etc. and therefore is expected to have a wider impact.
-
 \bibliography{Grass}{}
 \bibliographystyle{plain}
 \end{document}
