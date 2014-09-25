@@ -112,7 +112,7 @@ Based on previous experiments\cite{Vivoni98}, we take $C_N \approx 1$.
 To understand the onset of \monami, we first calculate the steady flow $\bu = U(y)\boldsymbol{\hat{x}}$ as a solution of \eqref{navier-stokes}, and examine its linear stability. 
 Such a steady state flow driven by constant pressure gradient satisfies 
 \begin{equation}
- -{dP}/{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0
+ -\frac{dP}{dx}+\mu U''(y) +S(y) \rho C_N d N_gU^2=0
 \label{base_equ}
 \end{equation}
 where $S(y)=1$ in the vegetated layer $0<y<\hg$ and $S(y)=0$ in the unvegetated layer $\hg< y< 2H$. 
@@ -245,7 +245,7 @@ The terms balance when $\Rey \sim {\Ndg}^{1/2}$ (or $\Rey \sim H/\delta$) leadin
 \begin{align}
 (D^2-k^2)^2 \phi- 2 \Rey \Ndg D( SUD\phi) = \Rey \sigma (D^2-k^2)\phi,
 \end{align} 
-in a region of O($\delta$) near $y=\hg$.
+in a region of thickness O($\delta$) near $y=\hg$.
 Since the relative magnitude of the terms on the r.h.s. to those on the l.h.s. of this equation is $\Rey/\Ndg^{1/2}$, we expect identical asymptotic behavior for fixed $\Rey/\Ndg^{1/2}$. Therefore the threshold obtained for Mode 1 is $\Rey \propto \Ndg^{1/2}$ explaining the numerically observation (see figure \ref{Re_vs_delta}). 
 This analysis also concludes that the mode structure is self-similar over the length scale $\delta$ for fixed $\Rey/\Ndg^{1/2}$; the verification of this expectation is shown in figure \ref{Asymptotic_mode}, supporting this argument.
 
