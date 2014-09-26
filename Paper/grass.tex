@@ -99,8 +99,8 @@ In the canopy the equations of continuity and momentum balance can be written as
 \end{equation}
 %where $\mathbf{f_{d}}$ is drag force per unit length of the grass blade, $N_g$ the grass number density per unit area, 
 where $\rho$ is the fluid density, $\mathbf{u}$ the velocity, 
-$P$ the pressure, $\mu$ the turbulent viscosity and $\mathbf{g}$ the acceleration due to gravity. 
-The Reynolds number (\Rey) of the flow based on the scale of a grass blade is expected to be $O(10^2-10^3)$, and hence the drag force is dominated by pressure and modeled as 
+$P$ the pressure, $\mu$ the eddy viscosity (the flow is usually turbulent) and $\mathbf{g}$ the acceleration due to gravity. 
+The Reynolds number of the flow based on the scale of a grass blade is expected to be $O(10^2-10^3)$, and hence the drag force is dominated by pressure and modeled as 
 $\mathbf{f_{d}}=C_N \rho u_{N}^{2}d\bn + C_{T}\rho u_{T}^{2}d\bt$ \shreyas{citation needed} 
 where $d$ is average width of grass blade $C_{N}$ and $C_{T}$ are the normal and tangential drag coefficients respectively; $u_{T}$, $u_{N}$ are velocity components along and
 normal to grass while $\bt,\bn$ are unit vectors along and normal to grass. 
@@ -175,7 +175,7 @@ where $D=d/dy$, and subject to the boundary conditions $D\phi = D^2\phi = 0$ at 
 %The observed frequencies are associated with the peaks in velocity spectra, frequency of $\monami$ and frequency of 
 %vortex passage \cite{Ghisal02}, and compare well with the predicted frequencies. 
 
-We solve this eigenvalue problem and a threshold in $\Rey$ of $O(100)$, above which the flow is unstable (Re($\sigma$)$>$0), emerges from the 
+We solve this eigenvalue problem and a threshold in $\Rey$ of $O(100)$, above which the flow is unstable (real part of $\sigma$ is positive), emerges from the 
 solution of eq.~\eqref{Orr-somerfield}. The dependence of this critical $\Rey$, and the corresponding fastest growing wavenumber $k$, on $\delta/H$ and $\hg/H$ is shown 
 in fig.~\ref{Re_vs_delta}, and is found to compare well with experimental observations \cite{Ghisal02}.
 The threshold Reynolds number increases with the grass density, indicating a competition between the 
@@ -241,7 +241,7 @@ Mode 1 asymptotically localizes to the boundary layer near the grass tip, and ex
 This limit can be understood through asymptotically estimating the sizes of the terms in eq.~\eqref{Orr-somerfield} using $D\sim \delta^{-1}$, $\sigma \sim \delta^{-1}$, and $U\sim \delta$; the magnitude of the advection term is $\Rey/\delta^3 \sim \Rey^2 \Ndg $, and the viscous term (or the vegetation drag term, which is found to scale identically) in the boundary layer is $\delta^{-4} \sim (\Rey \Ndg)^{4/3}$. 
 The terms balance when $\Rey \sim {\Ndg}^{1/2}$ (or $\Rey \sim H/\delta$) leading to a simplification of eq.~\eqref{Orr-somerfield} as
 \begin{align}
-(D^2-k^2)^2 \phi- 2 \Rey \Ndg D( SUD\phi) = \Rey \sigma (D^2-k^2)\phi,
+(D^2-k^2)^2 \phi- 2 \Rey \Ndg D( SUD\phi) = \sigma \Rey (D^2-k^2)\phi,
 \label{eqn:mode1asymp}
 \end{align} 
 in a region of thickness O($\delta$) near $y=\hg$.
@@ -306,7 +306,7 @@ The extent of the structure of Mode 2 throughout the depth of the water column i
 Our analysis also informs flow structure formation in many other related scenarios, such as flow over coral reefs, permeable sediments, etc. and therefore is expected to have a wider impact.
 
 \acknowledgments
-MMB was hosted by Brown University during this work and was supported by the OIST Graduate University with subsidy funding from the Cabinet Office, Japan.
+MMB was hosted by Brown University during this work and was supported by the OIST Graduate University with subsidy funding from the Cabinet Office, Japan. We thanks Heidi Nepf and Marco Ghisalberti for helpful discussions.
 
 \bibliography{Grass}{}
 \bibliographystyle{plain}
