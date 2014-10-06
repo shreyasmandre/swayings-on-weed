@@ -1,85 +1,167 @@
-\begin{thebibliography}{10}
-
-\bibitem{AckermanOkubo93}
-J.~D. Ackerman and A.~Okubo.
-\newblock {Reduced mixing in a marine macrophyte canopy}.
-\newblock {\em Functional Ecology}, 7:305--309, 1993.
-
-\bibitem{Fonseca98}
-M.~Fonseca.
-\newblock {\em Exploring the basic pattern expression in seagrass landscape}.
-\newblock PhD thesis, University of California, Berkeley, 1998.
-
-\bibitem{Fonseca87}
-M.~S. Fonseca and W.~J. Kenworthy.
-\newblock {Effects of current on photosynthesis and distribution of
-  seagrasses}.
-\newblock {\em Aquatic Botany}, 27(1):59--78, 1987.
-\newblock Environmental Impacts On Seagrasses.
-
-\bibitem{Nepf04}
-M~Ghisalberti and HM~Nepf.
-\newblock The limited growth of vegetated shear layers.
-\newblock {\em Water Resources Research}, 40(7), 2004.
-
-\bibitem{Grizzle96}
-R.~E. Grizzle, F.~T. Short, C.~R. Newell, H.~Hoven, and L.~Kindblom.
-\newblock {Hydrodynamically induced synchronous waving of seagrasses:
-  {\lq}monami{\rq} and its possible effects on larval mussel settlement}.
-\newblock {\em Journal of Experimental Marine Biology and Ecology},
-  206(1--2):165--177, 1996.
-
-\bibitem{Inoue56}
-E.~Inoue.
-\newblock {Studies of the Phenomena of Waving Plants Caused by Wind}.
-\newblock {\em J. of Agri. Meteor.}, 11(4):147--151, 1956.
-
-\bibitem{Ghisal02}
-{M. Ghisalberti and H. M. Nepf}.
-\newblock {Mixing layer and cohrent structures in vegetated aquatic flows}.
-\newblock {\em J. Geophys. Res.}, 107, 2002.
-
-\bibitem{Nepf99}
-H.~M. Nepf.
-\newblock Drag, turbulence, and diffusion in flow through emergent vegetation.
-\newblock {\em Water resources research}, 35(2):479--489, 1999.
-
-\bibitem{Nepf2012}
-H.~M. Nepf.
-\newblock Flow and transport in regions with aquatic vegetation.
-\newblock {\em Annual Review of Fluid Mechanics}, 44:123--142, 2012.
-
-\bibitem{Nepf00}
-H.~M. Nepf and E.~R. Vivoni.
-\newblock {Flow structure in depth-limited vegetated flow}.
-\newblock {\em J. Geophys. Res.}, 105:28,547--28,557, 2006.
-
-\bibitem{Delangre04}
-C.~Py, E.~{De Langre}, and B.~Moulia.
-\newblock {The mixing layer instability of wind over a flexible crop canopy}.
-\newblock {\em Elevier}, pages 613--618, 2004.
-
-\bibitem{Delangre06}
-C.~Py, E.~{De Langre}, and B.~Moulia.
-\newblock {A frequency lock-in mechanism in the interaction between wind and
-  crop canopies}.
-\newblock {\em J. Fluid Mech.}, 568:425--449, 2006.
-
-\bibitem{Raupach96}
-M.~R. Raupach, J.~J. Finnigan, and Y.Brunet.
-\newblock {Cohrent eddies and turbulence in vegetation canopies: The mixing
-  layer analogy}.
-\newblock {\em Boundary-Layer Meteorology}, 78:351--382, 1996.
-
-\bibitem{Vivoni98}
-E.~R. Vivoni.
-\newblock Turbulence structure of a model seagrass meadow.
-\newblock Master's thesis, MIT, 1998.
-
-\bibitem{White07}
-B.~L. White and H.~M. Nepf.
-\newblock Shear instability and coherent structures in shallow flow adjacent to
-  a porous layer.
-\newblock {\em Journal of Fluid Mechanics}, 593:1--32, 2007.
-
-\end{thebibliography}
+%merlin.mbs aipauth4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (9) reversed initials
+%Control: editor formatted (0) differently from author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{15}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Ackerman}\ and\ \citenamefont
+  {Okubo}(1993)}]{AckermanOkubo93}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Ackerman},
+  \bibfnamefont {J.~D.}}\ and\ \bibinfo {author} {\bibnamefont {Okubo},
+  \bibfnamefont {A.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Functional Ecology}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo
+  {pages} {305} (\bibinfo {year} {1993})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fonseca}(1998)}]{Fonseca98}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Fonseca}, \bibfnamefont
+  {M.}},\ }\emph {\bibinfo {title} {Exploring the basic pattern expression in
+  seagrass landscape}},\ \href@noop {} {Ph.D. thesis},\ \bibinfo  {school}
+  {University of California, Berkeley} (\bibinfo {year} {1998})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Fonseca}\ and\ \citenamefont
+  {Kenworthy}(1987)}]{Fonseca87}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Fonseca}, \bibfnamefont
+  {M.~S.}}\ and\ \bibinfo {author} {\bibnamefont {Kenworthy}, \bibfnamefont
+  {W.~J.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Aquatic
+  Botany}\ }\textbf {\bibinfo {volume} {27}},\ \bibinfo {pages} {59} (\bibinfo
+  {year} {1987})},\ \bibinfo {note} {environmental Impacts On
+  Seagrasses}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ghisalberti}\ and\ \citenamefont
+  {Nepf}(2004)}]{Nepf04}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Ghisalberti},
+  \bibfnamefont {M.}}\ and\ \bibinfo {author} {\bibnamefont {Nepf},
+  \bibfnamefont {H.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Water Resources Research}\ }\textbf {\bibinfo {volume} {40}}
+  (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Grizzle}\ \emph {et~al.}(1996)\citenamefont
+  {Grizzle}, \citenamefont {Short}, \citenamefont {Newell}, \citenamefont
+  {Hoven},\ and\ \citenamefont {Kindblom}}]{Grizzle96}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Grizzle}, \bibfnamefont
+  {R.~E.}}, \bibinfo {author} {\bibnamefont {Short}, \bibfnamefont {F.~T.}},
+  \bibinfo {author} {\bibnamefont {Newell}, \bibfnamefont {C.~R.}}, \bibinfo
+  {author} {\bibnamefont {Hoven}, \bibfnamefont {H.}}, \ and\ \bibinfo {author}
+  {\bibnamefont {Kindblom}, \bibfnamefont {L.}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Experimental Marine Biology and
+  Ecology}\ }\textbf {\bibinfo {volume} {206}},\ \bibinfo {pages} {165}
+  (\bibinfo {year} {1996})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Inoue}(1956)}]{Inoue56}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Inoue}, \bibfnamefont
+  {E.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J. of
+  Agri. Meteor.}\ }\textbf {\bibinfo {volume} {11}},\ \bibinfo {pages} {147}
+  (\bibinfo {year} {1956})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{M. Ghisalberti and H. M. Nepf}}(2002)}]{Ghisal02}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{M. Ghisalberti and H.
+  M. Nepf}},},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J.
+  Geophys. Res.}\ }\textbf {\bibinfo {volume} {107}} (\bibinfo {year}
+  {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nepf}(1999)}]{Nepf99}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Nepf}, \bibfnamefont
+  {H.~M.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Water
+  resources research}\ }\textbf {\bibinfo {volume} {35}},\ \bibinfo {pages}
+  {479} (\bibinfo {year} {1999})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nepf}(2012)}]{Nepf2012}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Nepf}, \bibfnamefont
+  {H.~M.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Annual
+  Review of Fluid Mechanics}\ }\textbf {\bibinfo {volume} {44}},\ \bibinfo
+  {pages} {123} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nepf}\ and\ \citenamefont {Vivoni}(2006)}]{Nepf00}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Nepf}, \bibfnamefont
+  {H.~M.}}\ and\ \bibinfo {author} {\bibnamefont {Vivoni}, \bibfnamefont
+  {E.~R.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J.
+  Geophys. Res.}\ }\textbf {\bibinfo {volume} {105}},\ \bibinfo {pages}
+  {28,547} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Py}, \citenamefont {{De Langre}},\ and\ \citenamefont
+  {Moulia}(2004)}]{Delangre04}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Py}, \bibfnamefont
+  {C.}}, \bibinfo {author} {\bibnamefont {{De Langre}}, \bibfnamefont {E.}}, \
+  and\ \bibinfo {author} {\bibnamefont {Moulia}, \bibfnamefont {B.}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Elevier}\ ,\
+  \bibinfo {pages} {613}} (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Py}, \citenamefont {{De Langre}},\ and\ \citenamefont
+  {Moulia}(2006)}]{Delangre06}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Py}, \bibfnamefont
+  {C.}}, \bibinfo {author} {\bibnamefont {{De Langre}}, \bibfnamefont {E.}}, \
+  and\ \bibinfo {author} {\bibnamefont {Moulia}, \bibfnamefont {B.}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J. Fluid Mech.}\
+  }\textbf {\bibinfo {volume} {568}},\ \bibinfo {pages} {425} (\bibinfo {year}
+  {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Raupach}, \citenamefont {Finnigan},\ and\
+  \citenamefont {Y.Brunet}(1996)}]{Raupach96}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Raupach}, \bibfnamefont
+  {M.~R.}}, \bibinfo {author} {\bibnamefont {Finnigan}, \bibfnamefont {J.~J.}},
+  \ and\ \bibinfo {author} {\bibnamefont {Y.Brunet},},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Boundary-Layer Meteorology}\
+  }\textbf {\bibinfo {volume} {78}},\ \bibinfo {pages} {351} (\bibinfo {year}
+  {1996})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Vivoni}(1998)}]{Vivoni98}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Vivoni}, \bibfnamefont
+  {E.~R.}},\ }\emph {\bibinfo {title} {Turbulence Structure of a Model Seagrass
+  Meadow}},\ \href@noop {} {Master's thesis},\ \bibinfo  {school} {MIT}
+  (\bibinfo {year} {1998})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {White}\ and\ \citenamefont {Nepf}(2007)}]{White07}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {White}, \bibfnamefont
+  {B.~L.}}\ and\ \bibinfo {author} {\bibnamefont {Nepf}, \bibfnamefont
+  {H.~M.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal
+  of Fluid Mechanics}\ }\textbf {\bibinfo {volume} {593}},\ \bibinfo {pages}
+  {1} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\end{thebibliography}%
