@@ -14,6 +14,7 @@
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 
 \graphicspath{ {images/}{images/Growth_Rate_Cont_Plots/} }
+\newcommand{\bx}{{\boldsymbol{\hat{x}}}}
 \newcommand{\bn}{{\boldsymbol{\hat{n}}}}
 \newcommand{\bt}{{\boldsymbol{\hat{t}}}}
 \newcommand{\bu}{\mathbf{u}}
@@ -53,22 +54,16 @@ Current explanations of \monami ~invoke the existence of a free shear layer at t
 Its instability, through a mechanism similar to the Kelvin-Helmholtz instability, is thought to lead to coherent eddies over the grass bed, and drive large amplitude synchronous oscillations.
 This model has been applied successfully to ...!
 \newline
-% While the shear layer model appears to predict the frequency of \monami ~consistent with experimental observations, s
 However, several aspects of the shear layer model remain unsatisfactory: 
 (i)   The velocity profile of the free shear layer is assumed \textit{ad hoc} to be piecewise linear \cite{Delangre06} or hyperbolic tangent \cite{Ghisal02,Raupach96}. 
 (ii)  The role of drag in damping the perturbations to the shear profile is sometimes ignored \cite{Raupach96}. 
-% (i) While the free shear layer is established due to the vegetation drag, linear stability analysis \cite{Raupach96} does not account for this, rendering this explanation inconsistent (however, see ref. \cite{White07}). 
-(iii) Observations in the lab \cite{Ghisal02} and the field \cite{Grizzle96} indicate the existence of a threshold flow speed below which \monami ~is not observed. No existing theory has explained this threshold condition. 
+(iii) No existing theory has explained the threshold flow speed, observed in the lab \cite{Ghisal02} and the field \cite{Grizzle96}, below which \monami ~is not observed.
 (iv)  The thickness of the free shear layer is in many cases comparable to the unvegetated layer thickness, and therefore inconsistent with the definition of the free shear layer.
 Here we present a mathematical model for the linear instability that accounts correctly for these effects, while also explaining lab experiments and field observations.
 \newline
 Although \monami ~is manifest in the motion of the grass, the drag exerted by the grass bed on the flow is central to the hypothesized instability. 
 The instability and the resulting flow structures persist in lab experiments even when flexible grass mimics are replaced by rigid dowels \cite{Ghisal02}. 
-% Therefore, we consider the grass bed to be rigid to probe the essential features of the instability. 
-% Therefore, assuming that the restoring force of buoyancy is sufficiently strong, we neglect the motion of the grass blades in this analysis.
-% Therefore we neglect the motion of the grass blades in this analysis, assuming that a small deviation from its equilibrium position generates sufficient restoring force to balance the fluid drag. 
-Therefore, to develop the essential mathematical model, we assume the vegetation to be rigid, and verify the assumption \textit{a posteriori}.
-% Indeed, a more detailed calculation modeling terrestrial grass demonstrated \cite{Delangre06} that when the timescale of the instability is well-separated from the period of natural oscillations of the grass bed, the flow instability is similar to the instability of a shear layer. 
+Therefore, to develop the essential mathematical model, we assume the grass blades to be rigid, on average oriented along the $y$ direction, and verify the assumption \textit{a posteriori}.
 \begin{figure}
 \includegraphics[scale=1]{Grass_Base_Nepf_shear}
 \caption{Schematic setup and comparison of a steady flow profile from the experiments by Ghisalberti and Nepf \cite{Nepf04} (Case-I from Table-1 with 1250 plants/m$^2$, 
@@ -93,7 +88,7 @@ In order to estimate the $\Rey$ for these experiments, a representative value of
 \end{figure}
 
 % We use a mean field model for the coupling between the flow and the vegetation. 
-The drag exerted by the vegetation on the flow is approximated by a continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$,  where $\mathbf{f_{d}}$ is the drag force per unit length of the grass blade, and $N_g$ the grass blade number density per unit horizontal area \cite{Vivoni98,Nepf99,Ghisal02,Delangre04,Delangre06}. 
+The vegetation drag on the flow is approximated by a continuous body force $\mathbf{f}=-N_g\mathbf{f_d}$,  where $\mathbf{f_{d}}$ is the drag force per unit length of the grass blade, and $N_g$ the grass blade number density per unit horizontal area \cite{Vivoni98,Nepf99,Ghisal02,Delangre04,Delangre06}. 
 This drag enters the governing equations of continuity and momentum balance, written as 
 \begin{equation}
 \quad \grad\cdot\bu = 0,\hspace{3mm} \rho \left(\bu_{t}+\bu.\grad\bu \right) = -\grad p+\mu\grad^{2}\bu +\mathbf{f}+\rho\mathbf{g}
@@ -101,10 +96,10 @@ This drag enters the governing equations of continuity and momentum balance, wri
 \end{equation}
 where $\rho$ is the fluid density, $\mathbf{u}$ the velocity, 
 $p$ the pressure, $\mu$ the eddy viscosity (the flow is turbulent) and $\mathbf{g}$ the acceleration due to gravity. 
-The Reynolds number of the flow based on the scale of the grass blade is $O(10^2-10^3)$; therefore the form drag on the vegetation dominates over the skin-friction. 
-We model it as 
-$\mathbf{f_{d}}=C_N \rho u_{N}^{2}d\bn$, 
-where $d$ is the average width of grass blade projected in the flow direction, $C_{N}$ the drag coefficient, and $u_{N}$ and $\bn$ are the velocity component and unit vector normal to the grass (see fig.~\ref{basicflow} for a schematic). 
+The Reynolds number of the flow based on the scale of the grass blade is $O(10^2-10^3)$; therefore, neglecting the skin friction, we model it based on the form drag on the vegetation, $\mathbf{f_{d}}=C_N \rho u^{2}d\bx$, where $d$ is the average width of grass blade projected in the flow direction, $C_{N}$ the drag coefficient. 
+% We model it as 
+% $\mathbf{f_{d}}=C_N \rho u_{N}^{2}d\bn$, 
+% where $d$ is the average width of grass blade projected in the flow direction, $C_{N}$ the drag coefficient, and $u_{N}$ and $\bn$ are the velocity component and unit vector normal to the grass (see fig.~\ref{basicflow} for a schematic). 
 In the field, both $C_N$ and $N_g$ vary with position, but we do not expect these variations to be central to the instability mechanism, and therefore take $C_N$ and $N_g$ to be constants. 
 Based on previous experiments \cite{Vivoni98}, we take $C_N \approx 1$.
 \newline
@@ -158,7 +153,7 @@ Next we substitute $\bu = (U+\tilde{u}, \tilde{v})$, $p=P+\tilde{p}$ in eq.~\eqr
 \begin{split}
 \rho(u_t+U u_x+vU_y) &= -p_x+ {\mu}\nabla^2u-2S\rho C_{N}dN_{g}Uu, \\
 \rho(v_t+ Uv_x) &= -p_y+ {\mu}\nabla^2v, \hspace{0.3cm} \nabla\cdot\bu=0.
-\end{split}
+\end{split} \nonumber
 \end{equation}
 These equations can be non-dimensionalized using half channel height $H$, velocity $U_0$, and the associated advection time $H/U_0$, leading to three non-dimensional parameters, \textit{viz.} $\Rey$, $\Ndg$, and the submergence ratio of the vegetation $h_g/H$. 
 We also use $\delta/H$ in lieu of $\Ndg$ to parametrize the vegetation density and help elucidate the mechanism of the instability. 
