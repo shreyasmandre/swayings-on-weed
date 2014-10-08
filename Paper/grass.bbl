@@ -58,6 +58,13 @@
   \bibfnamefont {A.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
   {journal} {Functional Ecology}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo
   {pages} {305} (\bibinfo {year} {1993})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Drazin}\ and\ \citenamefont {Reid}(1981)}]{Drazin81}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Drazin}, \bibfnamefont
+  {P.~G.}}\ and\ \bibinfo {author} {\bibnamefont {Reid}, \bibfnamefont
+  {W.~H.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Cambridge U. Press, Cambridge}\ } (\bibinfo {year} {1981})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Fonseca}(1998)}]{Fonseca98}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibnamefont {Fonseca}, \bibfnamefont
@@ -79,7 +86,7 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibnamefont {Ghisalberti},
   \bibfnamefont {M.}}\ and\ \bibinfo {author} {\bibnamefont {Nepf},
-  \bibfnamefont {H.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  \bibfnamefont {H.~M.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
   {journal} {Water Resources Research}\ }\textbf {\bibinfo {volume} {40}}
   (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Grizzle}\ \emph {et~al.}(1996)\citenamefont
@@ -118,21 +125,13 @@
   {H.~M.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Annual
   Review of Fluid Mechanics}\ }\textbf {\bibinfo {volume} {44}},\ \bibinfo
   {pages} {123} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Nepf}\ and\ \citenamefont {Vivoni}(2006)}]{Nepf00}%
+\bibitem [{\citenamefont {Nepf}\ and\ \citenamefont {Vivoni}(2000)}]{Nepf00}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibnamefont {Nepf}, \bibfnamefont
   {H.~M.}}\ and\ \bibinfo {author} {\bibnamefont {Vivoni}, \bibfnamefont
   {E.~R.}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J.
   Geophys. Res.}\ }\textbf {\bibinfo {volume} {105}},\ \bibinfo {pages}
-  {28,547} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Py}, \citenamefont {{De Langre}},\ and\ \citenamefont
-  {Moulia}(2004)}]{Delangre04}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibnamefont {Py}, \bibfnamefont
-  {C.}}, \bibinfo {author} {\bibnamefont {{De Langre}}, \bibfnamefont {E.}}, \
-  and\ \bibinfo {author} {\bibnamefont {Moulia}, \bibfnamefont {B.}},\
-  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Elevier}\ ,\
-  \bibinfo {pages} {613}} (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+  {28,547} (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Py}, \citenamefont {{De Langre}},\ and\ \citenamefont
   {Moulia}(2006)}]{Delangre06}%
   \BibitemOpen
