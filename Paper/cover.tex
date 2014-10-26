@@ -2,6 +2,15 @@
 \usepackage{fullpage}
 \usepackage{hyperref}
 \usepackage{palatino}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+
+\geometry{headheight = 0.7in,tmargin=1in}
+\fancypagestyle{firstpage}{\fancyhf{}\fancyhead[L]{\includegraphics[height=0.9in, keepaspectratio=true]{logo}}}
+\fancypagestyle{plain}{\fancyhf{}\fancyhead[L]{\includegraphics[height=0.9in, keepaspectratio=true]{logo}}}
+\pagestyle{plain}
+\renewcommand{\headrulewidth}{0pt}
 \name{Shreyas Mandre}
 \date{\today}
 % \address{
