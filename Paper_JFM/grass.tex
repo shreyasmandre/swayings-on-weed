@@ -112,7 +112,7 @@ This drag enters the fluid mass and momentum balance equations as
 \end{equation}
 where $\rho$, $\bu$, and $p$ are the fluid density, velocity, and pressure respectively, $\mu$ the dynamic eddy viscosity and $\mathbf{g}$ the acceleration due to gravity. 
 The Reynolds number of the flow based on the scale of the grass blade is $O(10^2-10^3)$; therefore, neglecting the skin friction, we model it as the form drag on the vegetation, $\mathbf{f}=N_g C_N \rho u |u| d\bx$ \cite{Nepf99,Nepf00,Nepf04}, where  $N_g$ is the blade number density per unit horizontal area, $C_{N}$ the drag coefficient, and $d$ the average blade width projected perpendicular to the flow. 
-In the interest of simplicity, we model the turbulence using an eddy viscosity. 
+In the interest of simplicity, we model the turbulence using an eddy viscosity; see \S\ref{subsec:turbulencemodel} for a detailed discussion. 
 In the field, both $C_N$, $N_g$ and $\mu$ vary with position, but we do not expect these variations to be central to the instability mechanism, and therefore take them to be constants. 
 Based on previous experiments \cite{Vivoni98,Nepf00}, we take $C_N = 1$.
 
@@ -307,6 +307,10 @@ Instead, the dynamics are coupled with the flow in the grass bed described by \e
 The absence of $U_{yy}$ in \eqref{eqn:mode2asympa} indicates that $U_{yy}$ is approximated to be zero in $y<\hg$, and therefore the negative values of $U_{yy}$ that occurs in the boundary layer do not affect this mode of instability to leading order.
 Furthermore, the presence of the critical parameter $\Rey/\Ndg$ in \eqref{eqn:mode2asympa} indicates the presence of alternative destabilizing dynamics, involving the interaction of flow in the unvegetated region governed by \eqref{eqn:Rayleigh} with the flow in the vegetated region incorporating the drag.
 Based on this analysis, we conclude that Mode 2 is distinct from the Kelvin-Helmholtz instability, and bears its existence purely because of the vegetation drag.
+
+\subsection{Role of turbulence model}\label{subsec:turbulencemodel}
+We have modeled turbulence using a constant eddy viscosity. 
+While such a model is too simplistic and 
 
 \section{Conclusion}
 We now test the assumption of an undeformable grass bed due to the dominant restoring force of buoyancy, using the criteria that the buoyancy time scale be much shorter than the hydrodynamic time scale $H/U_0$.
