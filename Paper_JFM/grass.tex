@@ -175,7 +175,7 @@ where the tilde are dropped.
 These equations are non-dimensionalized using half channel height $H$, velocity $U_0$, and time $H/U_0$, leading to three non-dimensional parameters, \textit{viz.} $\Rey$, $\Ndg$, and the vegetation submergence ratio $\hg/H$. 
 We also use $\delta/H$ in lieu of $\Ndg$ to parametrize the vegetation density and help elucidate the instability mechanism. 
 Using a stream function $\psi$ with $u = \psi_{y}, v= -\psi_x$ to satisfy mass balance, we seek a solution of 
-the form $\left(u,v,\psi \right)= \left(\hat u(y), \hat v(y), \phi(y) \right)e^{ikx+\sigma t}$ to obtain a modified Orr-Sommerfield equation \cite{Drazin81} 
+the form $\left(u,v,\psi \right)= \left(\hat u(y), \hat v(y), \phi(y) \right)e^{ikx+\sigma t}$ to obtain a modified Orr-Sommerfeld equation \cite{Drazin81} 
 \begin{equation}
 \begin{split}
 \left(D^2 -k^{2} \right)^2\phi &= \Rey \left[ \left({\sigma}+ikU\right) \left(D^2-k^2\right) -ikU_{yy}\right]\phi \\
@@ -227,9 +227,14 @@ The unstable region for Mode 1, depending on $\hg/H$ either recedes to higher $\
 \section{Discussion -- comparison of unstable modes with Kelvin Helmholtz}
 The distinct asymptotic behavior of the two modes as $\Ndg \gg 1$ distinguishes it from the Kelvin-Helmholtz instability. 
 \subsection{Mode 1}
-Our numerical calculation show that Mode 1 asymptotically localizes to the boundary layer near the grass top, and exhibits highest growth for a for a perturbation of  $k \sim H/\delta$. We also observe that critcal Reynolds number above which perturbation become unstable scales as  $\Rey (\sim H/\delta)^2$ (or $\Rey \propto {\Ndg}^{2}$). The behavior of this critical Reynolds number can be understood by asymptotically estimating the size of various terms in boundary layer in ~\eqref{Orr-somerfield}. Using $D\sim H/\delta$, $\sigma \sim O(1)$, and $\ubl \sim \delta/H$; the magnitude of the advection term is $\Rey (H/\delta)^2$  (or $\Rey^{5/3} \Ndg^{2/3}$), and the viscous as well as vegetation drag term are $(\delta/H)^{-4}$ (or $(\Rey \Ndg)^{4/3})$. The advection term, viscous term and vegetation drag terms balances when $\Rey \sim (H/\delta)^2$ (or $\Rey \sim {\Ndg}^{2}$), confirming our numerical finding.
-\newline
-Inorder to further understand the mechanism of Mode-1, we rescale \eqref{Orr-somerfield} in the the boundary layer using $\eta = y/\delta$, 
+We numerically observe that critical Reynolds number above which perturbation become unstable scales as  $\Rey \sim (H/\delta)^2$ (or $\Rey \propto {\Ndg}^{2}$). 
+Our calculations also show that Mode 1 asymptotically localizes to the boundary layer near the grass top, and exhibits highest growth for a perturbation of  $k \sim H/\delta$ (see Fig.~\ref{Re_vs_delta}). 
+The behavior of this critical Reynolds number can be understood by considering the limit $\Rey \gg 1$ and $\Ndg \gg 1$.
+Estimating the size of various terms of ~\eqref{Orr-somerfield} within the boundary layer in this limit help us understand the behavior of the critical $\Rey$. 
+Using $D\sim H/\delta$, $\sigma \sim O(1)$, and $U=\ubl \sim \delta/H$ in the boundary layer; the magnitude of the advection term is $\Rey (H/\delta)^2$  (or $\Rey^{5/3} \Ndg^{2/3}$), and the viscous as well as vegetation drag term are $(\delta/H)^{-4}$ (or $(\Rey \Ndg)^{4/3})$. 
+The advection term, viscous term and vegetation drag terms balances when $\Rey \sim (H/\delta)^2$ (or $\Rey \sim {\Ndg}^{2}$).
+
+To further understand the mechanism of Mode 1, we rescale \eqref{Orr-somerfield} in the the boundary layer using $\eta = y/\delta$, 
 $U(y) = (\delta/H)\bar{U}(\eta)$ and $k = (H/\delta) \bar{k}$, with these scalings ~\eqref{Orr-somerfield} simplifies to
 \begin{equation}
 \begin{split}
@@ -238,11 +243,25 @@ $U(y) = (\delta/H)\bar{U}(\eta)$ and $k = (H/\delta) \bar{k}$, with these scalin
 \label{eqn:mode1asymp}
 \end{split}
 \end{equation}
+in a region of thickness O($\delta$) near $y=\hg$, where $\bar{D} = d/d\eta$. 
+Since $(\Rey/\Ndg^2)$ is the only remaining parameter in \eqref{eqn:mode1asymp}, the mode shape and solution are expected to converge in the limit $\Rey \gg 1$, $\Ndg \gg 1$, but $\Rey/\Ndg^2$ fixed.
+Our numerical finding confirm this expectation; the critical $\Rey$ scales as $\Ndg^2$ as shown in Fig.~\ref{Re_vs_delta} and the mode shapes are self-similar with length scale $\delta$, as shown in Fig \ref{Asymptotic_mode}. 
 
-in a region of thickness O($\delta$) near $y=\hg$. Since $(\Rey/\Ndg^2)$ is the only remaining parameter in \eqref{eqn:mode1asymp}, the mode shape and soulution will converge in the limit of $R \sim \Ndg^2$, confirming our numerial finding which is shown in Fig \ref{Asymptotic_mode}. 
-\newline
-Since by increasing $\Rey$ in the above equation for a  fixed $\Ndg$ we recover the linearized dynamics of Kelvin-Helmholtz equation, signifying that Mode-1 is similar to Kelvin-Helmholtz instability. We can further corroborate this claim by observing that both Kelvin-Helmholtz and Mode-1 shows that (i) Critical wavenumber $k \sim O(H/\delta$, (ii) Strong shear in the boundary layer plays crucial role in the flow instability
-(iii) Dominant mode of instability is localized near the boundary layer. 
+Mode 1 shares many characteristics with the Kelvin-Helmholtz instability (see Table \ref{tab:comparison}). 
+The fastest growing wavenumber at the critical $\Rey$ scales as $k \propto (H/\delta)$, similar to Kelvin-Helmholtz instability. 
+The extend of the unstable mode is also localized to the boundary layer region.
+Furthermore, the strong vorticity gradient $U_{yy}$ in the boundary layer plays a central role in destabilizing the flow and localizing the instability to that region. 
+
+Our detailed description of Mode 1, given by \eqref{eqn:mode1asymp} also highlights key differences with formulations of Kelvin-Helmholtz. 
+Kelvin-Helmholtz is usually described using the inviscid Rayleigh's equation \eqref{eqn:Rayleigh}, and is therefore not parametrized by the Reynolds number.
+Describing the instability using the Orr-Sommerfeld equation introduces the Reynolds number as a parameter, but shear flows with tanh-profiles are unstable for all values of the parameter \cite{Drazin81}.
+Therefore, based on the inviscid and viscous formulations of Kelvin-Helmholtz instability, the origin of the threshold flow conditions observed in experiments and the field is unclear.
+
+In our model, the vegetation, even if made very dense, may not simply be modeled by a no-slip condition.
+Instead the porous nature of the vegetation implies that the flow penetrates a thin boundary layer region and establishes a strong shear profile. 
+The (turbulent eddy) viscosity sets the scale of the boundary layer, and therefore for Mode 1, in this formulation.
+The threshold flow condition arises from a competition between of the destabilizing role fluid inertia, which is very similar to the one played in Kelvin-Helmholtz, and the vegetation drag.
+The vegetation drag may not be neglected within this boundary layer, and therefore plays a central role in the Mode 1 instability mechanism.
 
 %We expect identical asymptotic behavior for a fixed relative magnitude of the terms on the r.h.s. to those on the l.h.s. of \eqref{eqn:mode1asymp}, which is $(\Rey \delta/H)^{3/2}$ (or $\Rey/\Ndg^{1/2}$).
 %Therefore the threshold obtained for Mode 1 is $\Rey \propto H/\delta$ (or $\Rey \propto \Ndg^{1/2}$) explaining the numerically observed asymptote (see Fig.~\ref{Re_vs_delta}). 
