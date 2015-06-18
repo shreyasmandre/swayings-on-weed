@@ -3,6 +3,7 @@
 */grass.log
 */grass.aux
 */grass.dvi
+*.tex.backup
 *.acn
 *.acr
 *.alg
