@@ -303,6 +303,7 @@ This convergence indicates that we have identified the correct asymptotic limit 
 The parameter $\Rey/\Ndg$ therefore sets the threshold, justifying the numerically observed asymptotic behavior $\Rey \propto \Ndg$ (or $\Rey \sim ({\delta}/{H})^{-3/2}$; see Fig.~\ref{Re_vs_delta} for comparison with numerical results).
 The structure of this mode in the aforementioned limit is such that $\phi$ is continuous at $y=h_g$, but $D\phi$ undergoes a rapid transition there on the scale of boundary layer thickness $\delta$.
 The eigenvalues and the mode shape are otherwise independent of $\delta$, and therefore we conclude that the boundary layer only plays a secondary role of regularizing the discontinuity in tangential velocity arising at $y=\hg$ in this instability mechanism.
+The enhanced shear in the boundary layer plays no role for this mode of instability.
 % We interpret Mode 2 as the instability of an inviscid fluid, with the vegetation modeled by a continuum drag field, and for which the boundary layer near the grass top plays no role. 
 % On the other hand, Mode 1 asymptotically localizes to the boundary layer near the grass tip, and exhibits a different asymptotic behavior with $k \sim O(H/\delta)$, and $\Rey \sim (H/\delta)$ (or $\Rey \propto {\Ndg}^{1/2}$) at the threshold. 
 
@@ -330,11 +331,33 @@ However, for our $U(y)$ profiles, $U_{yy}(y) = -1$ above the grass and therefore
 Instead, the dynamics are coupled with the flow in the grass bed described by \eqref{eqn:mode2asympa} in $y< \hg$.
 The absence of $U_{yy}$ in \eqref{eqn:mode2asympa} indicates that $U_{yy}$ is approximated to be zero in $y<\hg$, and therefore the positive values of $U_{yy}$ that occurs in the boundary layer do not affect this mode of instability to leading order.
 Furthermore, the presence of the critical parameter $\Rey/\Ndg$ in \eqref{eqn:mode2asympa} indicates the presence of alternative destabilizing dynamics, involving the interaction of flow in the unvegetated region governed by \eqref{eqn:Rayleigh} with the flow in the vegetated region incorporating the drag.
-Based on this analysis, we conclude that Mode 2 is distinct from the Kelvin-Helmholtz instability, and bears its existence purely because of the vegetation drag.
+Based on this analysis, we conclude that Mode 2 is distinct from the Kelvin-Helmholtz instability, and owes its existence to the vegetation drag.
 
 \subsection{Role of turbulence model}\label{subsec:turbulencemodel}
 We have modeled turbulence using a constant eddy viscosity. 
-While such a model is too simplistic and 
+The simplicity of this model allows us to make progress and capture the essential features of the instability without accounting for the rich and detailed characteristics of the turbulence. 
+However, this simplicity in some cases only provides a qualitatively accurate description of the flow. 
+In this subsection, we present an account of the advantages and shortcomings of assuming a constant eddy viscosity to model the turbulence.
+
+As a consequence of the constant eddy viscosity, the boundary layer thickness $\delta$ scales as $\ReyNdg^{-1/3}$.
+Experimental observations show that the boundary layer thickness scales instead as $\Ndg^{-1}$.
+While the precise thickness of the boundary layer is governed by the details of the turbulence model, the existence of this boundary layer for dense vegetation is a general feature of the flow. 
+We have captured one realization of this feature using constant eddy viscosity.
+Experiments have also shown that a mixing length $l$ model better approximates the turbulent characteristics of the flow with $l = \delta$; the boundary layer itself establishes eddies to transport momentum. 
+The eddy viscosity corresponding to this model is $\mu = \rho U \delta$, and the leading order balance between turbulent momentum transport and vegetation drag is $\mu U/\delta^2 = \rho C_N d N_g U^2$.
+Substituting $\mu$ yields $\delta/H = \Ndg^{-1}$, in agreement with the experimental observations.
+This simple scaling analysis shows that the boundary layer thickness depends on the turbulence model, and indicates that turbulence models based on mixing lengths will yield more realistic scalings for boundary layer thickness.
+
+The Mode 1 instability is driven by the intense shear on the scale of the boundary layer.
+The driving mechanism for this instability is similar to that of Kelvin-Helmholtz, and relies only on the presence of this shear as presented in the $U_{\eta\eta}$ term in equation \eqref{eqn:mode1asymp}. 
+Therefore, we expect Mode 1 instability to be exhibited independent of the turbulence model. 
+We further expect the fastest growing wavenumber to be proportional to $1/\delta$, and the mode to be localized to the boundary layer.
+The threshold parameters for Mode 1, however, may depend on the precise turbulence model used.
+ 
+For the Mode 2 instability, the turbulent momentum transport is found to be irrelevant to leading order.
+In the asymptotic limit of dense grass, \eqref{eqn:mode2asymp} shows that the instability is driven by the interaction of the unvegetated flow with the vegetation drag.
+The precise turbulence model used influences the regularization of the sharp transition in tangential velocity across the grass top.
+Therefore we expect Mode 2 to be present and its features to be preserved even if a different turbulence model is used.
 
 \section{Conclusion}
 We now test the assumption of an undeformable grass bed due to the dominant restoring force of buoyancy, using the criteria that the buoyancy time scale be much shorter than the hydrodynamic time scale $H/U_0$.
