@@ -252,7 +252,7 @@ Since by increasing $\Rey$ in the above equation for a  fixed $\Ndg$ we recover 
 The threshold condition for Mode 2 is numerically observed to be $\Rey \propto ({\delta}/{H})^{-3/2}$ (or $\Rey \propto \Ndg$) for $k\sim O(1)$, shown in Fig.~\ref{Re_vs_delta}, which can be understood by assuming $\Rey \gg 1$ but fixed $\Rey/\Ndg \sim O(1)$.
 % Note that for large $\Ndg$, the non-dimensional steady flow velocity inside the vegetation is $U_g \sim (\Rey \Ndg)^{-1/2}$. 
 In this limit, the non-dimensional flow in the grass bed is $U\sim (\Rey \Ndg)^{-1/2} \ll 1$, and therefore $\sigma + ikU \approx \sigma$ to leading order. 
-Furthermore, $U_{yy}$ decays to zero outside the boundary layer. 
+Furthermore, $U_{yy}$ decays to zero outside the boundary layer and within the grass. 
 Outside the grass, the turbulent viscous stress term is negligible compared to the inertial term. Thus, \eqref{Orr-somerfield} simplifies to 
 \begin{subequations}
 \begin{align}
@@ -301,15 +301,15 @@ In the framework of our model, the limit of $\hg/H \ll 1$ while $\delta/\hg$ = c
 We find that in this case, the transition from Mode 1 to Mode 2 happens at such a large vegetation density, so as to make Mode 2 irrelevant. 
 In this manner, we recover the Kelvin-Helmholtz-like characteristics observed in the terrestrial case. 
 
-Mode 2 is has characteristics distinct from Kelvin-Helmholtz. Outside the grass, the unstable mode shape is governed by the inviscid Rayleigh's equation
+Mode 2 has characteristics distinct from Kelvin-Helmholtz. Outside the grass, the unstable mode shape is governed by the inviscid Rayleigh's equation
 \begin{align}
 \left(\sigma+ikU\right) \left(D^2-k^2\right)\phi =  ikU_{yy}\phi. 
 \label{eqn:Rayleigh}
 \end{align}
 An inflection point in $U(y)$ is necessary condition for instability arising from \eqref{eqn:Rayleigh} according to Rayleigh's criteria \cite{Rayleigh1879}. 
-However, for our $U(y)$ profiles, $U_{yy}(y) = -1$, and therefore does not change sign $y>\hg$. 
+However, for our $U(y)$ profiles, $U_{yy}(y) = -1$ above the grass and therefore does not change sign for $y>\hg$. 
 Instead, the dynamics are coupled with the flow in the grass bed described by \eqref{eqn:mode2asympa} in $y< \hg$.
-The absence of $U_{yy}$ in \eqref{eqn:mode2asympa} indicates that $U_{yy}$ is approximated to be zero in $y<\hg$, and therefore the negative values of $U_{yy}$ that occurs in the boundary layer do not affect this mode of instability to leading order.
+The absence of $U_{yy}$ in \eqref{eqn:mode2asympa} indicates that $U_{yy}$ is approximated to be zero in $y<\hg$, and therefore the positive values of $U_{yy}$ that occurs in the boundary layer do not affect this mode of instability to leading order.
 Furthermore, the presence of the critical parameter $\Rey/\Ndg$ in \eqref{eqn:mode2asympa} indicates the presence of alternative destabilizing dynamics, involving the interaction of flow in the unvegetated region governed by \eqref{eqn:Rayleigh} with the flow in the vegetated region incorporating the drag.
 Based on this analysis, we conclude that Mode 2 is distinct from the Kelvin-Helmholtz instability, and bears its existence purely because of the vegetation drag.
 
@@ -317,8 +317,7 @@ Based on this analysis, we conclude that Mode 2 is distinct from the Kelvin-Helm
 We now test the assumption of an undeformable grass bed due to the dominant restoring force of buoyancy, using the criteria that the buoyancy time scale be much shorter than the hydrodynamic time scale $H/U_0$.
 For a common seagrass, \textit{Zostera Marina}, the relative density difference $\Delta \rho /\rho \approx 0.25$, the volume fraction $V_f \approx 0.1$ and $H=1$ m \cite{Fonseca98}, yielding the buoyancy time scale $\sqrt{\rho H/V_f \Delta \rho g} \approx 2$ s.
 The hydrodynamic time scale assuming $U_0 \approx 0.1$ m/s is 10 s, and therefore longer than the hydrodynamic time scale.
-We have neither accounted 
-Accounting for the pre-factors appearing in the scaling argument, or considering cases when the time-scale separation is not so evident can lead to further interesting behavior \cite{Delangre06}.
+We have neither accounted for the pre-factors appearing in the scaling argument, or considered cases when the time-scale separation is not so evident. Accounting for these factors  can lead to further interesting behavior \cite{Delangre06}.
 % Indeed, the case where these time-scales are comparable can lead to interesting behavior\cite{Delangre06}, and motivates further investigation. 
 
 % The deviation of our model predictions from the observed may be attributed to the various simplifications we have made in our model. 
