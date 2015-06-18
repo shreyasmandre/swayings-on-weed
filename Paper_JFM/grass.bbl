@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{19}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \def\au#1{#1} \def\ed#1{#1} \def\yr#1{#1}\def\at#1{#1}\def\jt#1{\textit{#1}}
   \def\bt#1{#1}\def\bvol#1{\textbf{#1}} \def\vol#1{#1} \def\pg#1{#1}
@@ -10,12 +10,12 @@
   \pg{305--309}.
 
 \bibitem[Drazin \& Reid(1981)]{Drazin81}
-{\sc \au{Drazin, P.~G.} \& \au{Reid, W.~H.}} \yr{1981}  \at{Hydrodynamic
-  stability}.  \jt{Cambridge U. Press, Cambridge} .
+{\sc \au{Drazin, P.~G.} \& \au{Reid, W.~H.}} \yr{1981}  \at{{Hydrodynamic
+  stability}}.  \jt{Cambridge U. Press, Cambridge} .
 
 \bibitem[Fonseca(1998)]{Fonseca98}
-{\sc \au{Fonseca, M.}} \yr{1998}  \at{Exploring the basic pattern expression in
-  seagrass landscape}. PhD thesis, University of California, Berkeley.
+{\sc \au{Fonseca, M.}} \yr{1998}  \at{{Exploring the basic pattern expression
+  in seagrass landscape}}. PhD thesis, University of California, Berkeley.
 
 \bibitem[Fonseca \& Kenworthy(1987)]{Fonseca87}
 {\sc \au{Fonseca, M.~S.} \& \au{Kenworthy, W.~J.}} \yr{1987}  \at{{Effects of
@@ -23,13 +23,13 @@
   Botany}  \bvol{27}~(1),  \pg{59--78}, environmental Impacts On Seagrasses.
 
 \bibitem[Ghisalberti \& Nepf(2004)]{Nepf04}
-{\sc \au{Ghisalberti, M.} \& \au{Nepf, H.~M.}} \yr{2004}  \at{The limited
-  growth of vegetated shear layers}.  \jt{Water Resources Research}
+{\sc \au{Ghisalberti, M.} \& \au{Nepf, H.~M.}} \yr{2004}  \at{{The limited
+  growth of vegetated shear layers}}.  \jt{Water Resources Research}
   \bvol{40}~(7).
 
 \bibitem[Ghisalberti \& Nepf(2006)]{Nepf06}
-{\sc \au{Ghisalberti, M.} \& \au{Nepf, H.~M.}} \yr{2006}  \at{The sructures of
-  shear layer in flows over rigid and flexible canopies}.  \jt{Enviornmental
+{\sc \au{Ghisalberti, M.} \& \au{Nepf, H.~M.}} \yr{2006}  \at{{The sructures of
+  shear layer in flows over rigid and flexible canopies}}.  \jt{Enviornmental
   Fluid Mechanics}  \pg{pp. 277--301}.
 
 \bibitem[Grizzle {\em et~al.\/}(1996)Grizzle, Short, Newell, Hoven \&
@@ -49,19 +49,24 @@
 {\sc \au{Inoue, E.}} \yr{1956}  \at{{Studies of the Phenomena of Waving Plants
   Caused by Wind}}.  \jt{J. of Agri. Meteor.}  \bvol{11}~(4),  \pg{147--151}.
 
+\bibitem[{Lord Rayleigh}(1879)]{Rayleigh1879}
+{\sc \au{{Lord Rayleigh}}} \yr{1879}  \at{{On the stability, or instability, of
+  certain fluid motions}}.  \jt{Proceedings of the London Mathematical Society}
+   \bvol{1}~(1),  \pg{57--72}.
+
 \bibitem[{M. Ghisalberti and H. M. Nepf}(2002)]{Ghisal02}
 {\sc \au{{M. Ghisalberti and H. M. Nepf}}} \yr{2002}  \at{{Mixing layer and
   cohrent structures in vegetated aquatic flows}}.  \jt{J. Geophys. Res.}
   \bvol{107}.
 
 \bibitem[Nepf(1999)]{Nepf99}
-{\sc \au{Nepf, H.~M.}} \yr{1999}  \at{Drag, turbulence, and diffusion in flow
-  through emergent vegetation}.  \jt{Water resources research}  \bvol{35}~(2),
-  \pg{479--489}.
+{\sc \au{Nepf, H.~M.}} \yr{1999}  \at{{Drag, turbulence, and diffusion in flow
+  through emergent vegetation}}.  \jt{Water resources research}  \bvol{35}~(2),
+   \pg{479--489}.
 
 \bibitem[Nepf(2012)]{Nepf2012}
-{\sc \au{Nepf, H.~M.}} \yr{2012}  \at{Flow and transport in regions with
-  aquatic vegetation}.  \jt{Annual Review of Fluid Mechanics}  \bvol{44},
+{\sc \au{Nepf, H.~M.}} \yr{2012}  \at{{Flow and transport in regions with
+  aquatic vegetation}}.  \jt{Annual Review of Fluid Mechanics}  \bvol{44},
   \pg{123--142}.
 
 \bibitem[Nepf \& Vivoni(2000)]{Nepf00}
@@ -70,10 +75,10 @@
   \pg{28,547--28,557}.
 
 \bibitem[Okamoto {\em et~al.\/}(2012)Okamoto, Nezu \& Ikeda]{Okamoto12}
-{\sc \au{Okamoto, T.}, \au{Nezu, I.} \& \au{Ikeda, H.}} \yr{2012}  \at{Vertical
-  mass and momentum transport in open-channel flows with submerged
-  vegetations}.  \jt{Journal of Hydro-environment Research}  \bvol{6}~(4),
-  \pg{287--297}.
+{\sc \au{Okamoto, T.}, \au{Nezu, I.} \& \au{Ikeda, H.}} \yr{2012}
+  \at{{Vertical mass and momentum transport in open-channel flows with
+  submerged vegetations}}.  \jt{Journal of Hydro-environment Research}
+  \bvol{6}~(4),  \pg{287--297}.
 
 \bibitem[Py {\em et~al.\/}(2006)Py, {De Langre} \& Moulia]{Delangre06}
 {\sc \au{Py, C.}, \au{{De Langre}, E.} \& \au{Moulia, B.}} \yr{2006}  \at{{A
@@ -86,12 +91,12 @@
   analogy}}.  \jt{Boundary-Layer Meteorology}  \bvol{78},  \pg{351--382}.
 
 \bibitem[Vivoni(1998)]{Vivoni98}
-{\sc \au{Vivoni, E.~R.}} \yr{1998} Turbulence structure of a model seagrass
-  meadow. Master's thesis, MIT.
+{\sc \au{Vivoni, E.~R.}} \yr{1998} {Turbulence Structure of a Model Seagrass
+  Meadow}. Master's thesis, MIT.
 
 \bibitem[White \& Nepf(2007)]{White07}
-{\sc \au{White, B.~L.} \& \au{Nepf, H.~M.}} \yr{2007}  \at{Shear instability
-  and coherent structures in shallow flow adjacent to a porous layer}.
+{\sc \au{White, B.~L.} \& \au{Nepf, H.~M.}} \yr{2007}  \at{{Shear instability
+  and coherent structures in shallow flow adjacent to a porous layer}}.
   \jt{Journal of Fluid Mechanics}  \bvol{593},  \pg{1--32}.
 
 \end{thebibliography}
