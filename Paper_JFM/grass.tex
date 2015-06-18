@@ -227,10 +227,10 @@ The unstable region for Mode 1, depending on $\hg/H$ either recedes to higher $\
 \section{Discussion -- comparison of unstable modes with Kelvin Helmholtz}
 The distinct asymptotic behavior of the two modes as $\Ndg \gg 1$ distinguishes it from the Kelvin-Helmholtz instability. 
 \subsection{Mode 1}
-Mode 1 asymptotically localizes to the boundary layer near the grass top, and exhibits an asymptotic behavior with $k \sim H/\delta$, and $\Rey (\sim H/\delta)^2$ (or $\Rey \propto {\Ndg}^{2}$) at the threshold. 
-This limit can be understood by asymptotically estimating the sizes of the terms in ~\eqref{Orr-somerfield} using $D\sim H/\delta$, $\sigma \sim O(1)$, and $\ubl \sim \delta/H$; the magnitude of the advection term is $\Rey (H/\delta)^2$  (or $\Rey^{5/3} \Ndg^{2/3}$), and the viscous and the vegetation drag term in the boundary layer are $(\delta/H)^{-4}$ (or $(\Rey \Ndg)^{4/3})$. 
-The terms balance when $\Rey \sim (H/\delta)^2$ (or $\Rey \sim {\Ndg}^{2}$). Using the boundary layer co-ordinate $\eta = y/\delta$, velocity scaling 
-$U(y) = (\delta/H)\bar{U}(\eta)$ and scaling of wavenumber $k = (H/\delta) \bar{k}$ in the boundary layer ~\eqref{Orr-somerfield} simplifies to
+Our numerical calculation show that Mode 1 asymptotically localizes to the boundary layer near the grass top, and exhibits highest growth for a for a perturbation of  $k \sim H/\delta$. We also observe that critcal Reynolds number above which perturbation become unstable scales as  $\Rey (\sim H/\delta)^2$ (or $\Rey \propto {\Ndg}^{2}$). The behavior of this critical Reynolds number can be understood by asymptotically estimating the size of various terms in boundary layer in ~\eqref{Orr-somerfield}. Using $D\sim H/\delta$, $\sigma \sim O(1)$, and $\ubl \sim \delta/H$; the magnitude of the advection term is $\Rey (H/\delta)^2$  (or $\Rey^{5/3} \Ndg^{2/3}$), and the viscous as well as vegetation drag term are $(\delta/H)^{-4}$ (or $(\Rey \Ndg)^{4/3})$. The advection term, viscous term and vegetation drag terms balances when $\Rey \sim (H/\delta)^2$ (or $\Rey \sim {\Ndg}^{2}$), confirming our numerical finding.
+\newline
+Inorder to further understand the mechanism of Mode-1, we rescale \eqref{Orr-somerfield} in the the boundary layer using $\eta = y/\delta$, 
+$U(y) = (\delta/H)\bar{U}(\eta)$ and $k = (H/\delta) \bar{k}$, with these scalings ~\eqref{Orr-somerfield} simplifies to
 \begin{equation}
 \begin{split}
 \left(\bar{D}^2 -\bar{k}^{2} \right)^2\phi &= (\Rey/\Ndg^2)^{1/3} \left[ \left({\sigma}+i\bar{k}\bar{U}\right) \left(\bar{D}^2-\bar{k}^2\right) -i\bar{k}\bar{U}_{\eta\eta}\right]\phi \\
@@ -238,10 +238,15 @@ $U(y) = (\delta/H)\bar{U}(\eta)$ and scaling of wavenumber $k = (H/\delta) \bar{
 \label{eqn:mode1asymp}
 \end{split}
 \end{equation}
-in a region of thickness O($\delta$) near $y=\hg$. Since $(\Rey/\Ndg^2)$ is the only remaining parameter in \eqref{eqn:mode1asymp}, the mode shape and soultion will converge in the limit of $R \sim \Ndg^2$, confirming our numerial finding.
+
+in a region of thickness O($\delta$) near $y=\hg$. Since $(\Rey/\Ndg^2)$ is the only remaining parameter in \eqref{eqn:mode1asymp}, the mode shape and soulution will converge in the limit of $R \sim \Ndg^2$, confirming our numerial finding which is shown in Fig \ref{Asymptotic_mode}. 
+\newline
+Since by increasing $\Rey$ in the above equation for a  fixed $\Ndg$ we recover the linearized dynamics of Kelvin-Helmholtz equation, signifying that Mode-1 is similar to Kelvin-Helmholtz instability. We can further corroborate this claim by observing that both Kelvin-Helmholtz and Mode-1 shows that (i) Critical wavenumber $k \sim O(H/\delta$, (ii) Strong shear in the boundary layer plays crucial role in the flow instability
+(iii) Dominant mode of instability is localized near the boundary layer. 
+
 %We expect identical asymptotic behavior for a fixed relative magnitude of the terms on the r.h.s. to those on the l.h.s. of \eqref{eqn:mode1asymp}, which is $(\Rey \delta/H)^{3/2}$ (or $\Rey/\Ndg^{1/2}$).
 %Therefore the threshold obtained for Mode 1 is $\Rey \propto H/\delta$ (or $\Rey \propto \Ndg^{1/2}$) explaining the numerically observed asymptote (see Fig.~\ref{Re_vs_delta}). 
-This analysis also concludes that the mode structure is self-similar over the length scale $\delta$ for fixed $\Rey/\Ndg^{2}$; the verification of this idea is shown in Fig.~\ref{Asymptotic_mode} (inset).
+%This analysis also concludes that the mode structure is self-similar over the length scale $\delta$ for fixed $\Rey/\Ndg^{2}$; the verification of this idea is shown in Fig.~\ref{Asymptotic_mode} (inset).
 
 \subsection{Mode 2}
 Similarly, the threshold condition for Mode 2 is numerically observed to be $\Rey \propto ({\delta}/{H})^{-3/2}$ (or $\Rey \propto \Ndg$) for $k\sim O(1)$, shown in Fig.~\ref{Re_vs_delta}, which can be understood by assuming $\Rey \gg 1$ but fixed $\Rey/\Ndg \sim O(1)$.
