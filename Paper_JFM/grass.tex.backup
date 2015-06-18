@@ -87,7 +87,7 @@ The dependence of the boundary layer thickness (estimated as $|U/U_y|$ at $y=\hg
 \end{figure}
 \begin{figure}
 \begin{center}
-\includegraphics[scale = 0.85]{new_graph_R_vs_delta}\includegraphics[]{new_graph_K_vs_delta}
+\centerline{\includegraphics[]{new_graph_R_vs_delta} \includegraphics[]{K_vs_shear_width_noshear}}
 % \includegraphics[width=12cm]{Critical_Re_vs_delta_noshear} \\
 % \vspace{-6mm} \hspace{-5mm}
 % \includegraphics[width=12cm]{K_vs_shear_width_noshear}

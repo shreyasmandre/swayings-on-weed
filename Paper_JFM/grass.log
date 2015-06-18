@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.6.9)  3 MAR 2015 15:03
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.6.9)  18 JUN 2015 10:25
 entering extended mode
  %&-line parsing enabled.
 **grass.tex
@@ -278,95 +278,12 @@ Package: natbib 2000/07/24 7.0a (PWD)
 LaTeX Info: Redefining \cite on input line 508.
 \c@NAT@ctr=\count117
 )
-
-Package natbib Warning: Citation `Fonseca87' on page 1 undefined on input line 
-58.
-
-
-Package natbib Warning: Citation `Grizzle96' on page 1 undefined on input line 
-58.
-
-
-Package natbib Warning: Citation `Nepf99' on page 1 undefined on input line 58.
-
-
-
-Package natbib Warning: Citation `Nepf2012' on page 1 undefined on input line 5
-8.
-
-
-Package natbib Warning: Citation `AckermanOkubo93' on page 1 undefined on input
- line 59.
-
-
-Package natbib Warning: Citation `Ikeda96' on page 1 undefined on input line 62
-.
-
-
-Package natbib Warning: Citation `Ghisal02' on page 1 undefined on input line 6
-2.
-
-
-Package natbib Warning: Citation `Raupach96' on page 1 undefined on input line 
-62.
-
-
-Package natbib Warning: Citation `Nepf00' on page 1 undefined on input line 64.
-
-
-
-Package natbib Warning: Citation `Ghisal02' on page 1 undefined on input line 6
-4.
-
-
-Package natbib Warning: Citation `Nepf04' on page 1 undefined on input line 64.
-
-
-
-Package natbib Warning: Citation `Okamoto12' on page 1 undefined on input line 
-64.
-
-
-Package natbib Warning: Citation `Delangre06' on page 1 undefined on input line
- 67.
-
-
-Package natbib Warning: Citation `Ghisal02' on page 1 undefined on input line 6
-7.
-
-
-Package natbib Warning: Citation `Raupach96' on page 1 undefined on input line 
-67.
-
-
-Package natbib Warning: Citation `Raupach96' on page 1 undefined on input line 
-68.
-
-
-Package natbib Warning: Citation `Ghisal02' on page 1 undefined on input line 6
-9.
-
-
-Package natbib Warning: Citation `Grizzle96' on page 1 undefined on input line 
-69.
-
-
-Package natbib Warning: Citation `Ghisal02' on page 1 undefined on input line 7
-4.
-
-
-Package natbib Warning: Citation `Nepf06' on page 1 undefined on input line 74.
-
-
 <../Paper/images/Grass_Base_Nepf_shear.pdf, id=1, 236.885pt x 169.63374pt>
 File: ../Paper/images/Grass_Base_Nepf_shear.pdf Graphic file (type pdf)
 
 <use ../Paper/images/Grass_Base_Nepf_shear.pdf>
-
-Package natbib Warning: Citation `Nepf04' on page 1 undefined on input line 85.
-
-
 LaTeX Font Info:    Try loading font information for U+msa on input line 85.
+
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
@@ -375,164 +292,71 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 85.
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-<../Paper/images/new_graph_R_vs_delta.pdf, id=2, 235.88126pt x 188.705pt>
+<../Paper/images/new_graph_R_vs_delta.pdf, id=2, 186.6975pt x 170.6375pt>
 File: ../Paper/images/new_graph_R_vs_delta.pdf Graphic file (type pdf)
 
 <use ../Paper/images/new_graph_R_vs_delta.pdf>
-<../Paper/images/K_vs_shear_width_noshear.pdf, id=3, 234.8775pt x 138.5175pt>
-File: ../Paper/images/K_vs_shear_width_noshear.pdf Graphic file (type pdf)
+<../Paper/images/new_graph_K_vs_delta.pdf, id=3, 187.70125pt x 169.63374pt>
+File: ../Paper/images/new_graph_K_vs_delta.pdf Graphic file (type pdf)
 
-<use ../Paper/images/K_vs_shear_width_noshear.pdf>
-
-Package natbib Warning: Citation `Ghisal02' on page 1 undefined on input line 1
-03.
-
-
-Package natbib Warning: Citation `Ghisal02' on page 1 undefined on input line 1
-03.
-
-
-Package natbib Warning: Citation `Vivoni98' on page 1 undefined on input line 1
-03.
-
-
-Package natbib Warning: Citation `Nepf99' on page 1 undefined on input line 114
-.
-
-
-Package natbib Warning: Citation `Nepf00' on page 1 undefined on input line 114
-.
-
-
-Package natbib Warning: Citation `Nepf04' on page 1 undefined on input line 114
-.
-
-
-Package natbib Warning: Citation `Vivoni98' on page 1 undefined on input line 1
-17.
-
-
-Package natbib Warning: Citation `Nepf00' on page 1 undefined on input line 117
-.
-
-
+<use ../Paper/images/new_graph_K_vs_delta.pdf>
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 Non-PDF special ignored!]
-<../Paper/images/Growth_Rate_Cont_Plots/SetAll_imgsc.pdf, id=19, 486.81876pt x 
+Underfull \vbox (badness 2662) has occurred while \output is active []
+
+ [2 <../Paper/images/Grass_Base_Nepf_shear.pdf> <../Paper/images/new_graph_R_vs
+_delta.pdf> <../Paper/images/new_graph_K_vs_delta.pdf>]
+<../Paper/images/Growth_Rate_Cont_Plots/SetAll_imgsc.pdf, id=79, 486.81876pt x 
 199.74625pt>
 File: ../Paper/images/Growth_Rate_Cont_Plots/SetAll_imgsc.pdf Graphic file (typ
 e pdf)
  <use ../Paper/images/Growth_Rate_Cont_Plots/SetAll_imgsc.pdf>
-
-Package natbib Warning: Citation `Nepf00' on page 2 undefined on input line 152
-.
-
-
-Package natbib Warning: Citation `Ghisal02' on page 2 undefined on input line 1
-61.
-
-
-Package natbib Warning: Citation `Nepf04' on page 2 undefined on input line 161
-.
-
-[2 <../Paper/images/Grass_Base_Nepf_shear.pdf>]
-
-Package natbib Warning: Citation `Drazin81' on page 3 undefined on input line 1
-76.
-
-[3 <../Paper/images/new_graph_R_vs_delta.pdf> <../Paper/images/K_vs_shear_width
-_noshear.pdf>]
-
-Package natbib Warning: Citation `Ghisal02' on page 4 undefined on input line 1
-89.
-
-
-Package natbib Warning: Citation `White07' on page 4 undefined on input line 19
-1.
-
-
-Package natbib Warning: Citation `Raupach96' on page 4 undefined on input line 
-192.
-
-
-Package natbib Warning: Citation `Raupach96' on page 4 undefined on input line 
-192.
-
-
-Package natbib Warning: Citation `Delangre06' on page 4 undefined on input line
- 192.
-
-
-Package natbib Warning: Citation `Ghisal02' on page 4 undefined on input line 1
-95.
-
-
-Overfull \hbox (36.1335pt too wide) in paragraph at lines 202--214
+[3 <../Paper/images/Growth_Rate_Cont_Plots/SetAll_imgsc.pdf>]
+Overfull \hbox (36.1335pt too wide) in paragraph at lines 200--212
 [][] 
  []
 
-[4 <../Paper/images/Growth_Rate_Cont_Plots/SetAll_imgsc.pdf>]
-<../Paper/images/Asymptotic_noshear.pdf, id=113, 236.885pt x 145.54375pt>
+[4] <../Paper/images/Asymptotic_noshear.pdf, id=113, 236.885pt x 145.54375pt>
 File: ../Paper/images/Asymptotic_noshear.pdf Graphic file (type pdf)
 
-<use ../Paper/images/Asymptotic_noshear.pdf> [5]
-
-Package natbib Warning: Citation `Inoue56' on page 6 undefined on input line 27
-6.
-
-
-Package natbib Warning: Citation `Raupach96' on page 6 undefined on input line 
-276.
-
-
-Package natbib Warning: Citation `Fonseca98' on page 6 undefined on input line 
-284.
-
-
-Package natbib Warning: Citation `Delangre06' on page 6 undefined on input line
- 287.
-
-[6 <../Paper/images/Asymptotic_noshear.pdf>]
-No file grass.bbl.
-
-Package natbib Warning: There were undefined citations.
-
-[7] (./grass.aux) ) 
+<use ../Paper/images/Asymptotic_noshear.pdf> [5] [6 <../Paper/images/Asymptotic
+_noshear.pdf>] (./grass.bbl) [7] (./grass.aux) ) 
 Here is how much of TeX's memory you used:
- 3351 strings out of 495061
- 39556 string characters out of 1182622
+ 3365 strings out of 495061
+ 39589 string characters out of 1182622
  120496 words of memory out of 3000000
- 6482 multiletter control sequences out of 15000+50000
+ 6494 multiletter control sequences out of 15000+50000
  15317 words of font info for 56 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 41i,19n,35p,1066b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cmextra/cmex9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi5.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti
-10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on grass.pdf (7 pages, 414462 bytes).
+ 41i,19n,35p,1066b,285s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbxti10
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmti8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam1
+0.pfb>
+Output written on grass.pdf (7 pages, 440216 bytes).
 PDF statistics:
  228 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
