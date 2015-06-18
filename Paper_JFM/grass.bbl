@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{21}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \def\au#1{#1} \def\ed#1{#1} \def\yr#1{#1}\def\at#1{#1}\def\jt#1{\textit{#1}}
   \def\bt#1{#1}\def\bvol#1{\textbf{#1}} \def\vol#1{#1} \def\pg#1{#1}
@@ -8,6 +8,16 @@
 {\sc \au{Ackerman, J.~D.} \& \au{Okubo, A.}} \yr{1993}  \at{{Reduced mixing in
   a marine macrophyte canopy}}.  \jt{Functional Ecology}  \bvol{7},
   \pg{305--309}.
+
+\bibitem[Chen \& Jirka(1997)]{Chen97}
+{\sc \au{Chen, D.} \& \au{Jirka, G.~H.}} \yr{1997}  \at{{Absolute and
+  convective instabilities of plane turbulent wakes in a shallow water layer}}.
+   \jt{Journal of Fluid Mechanics}  \bvol{338},  \pg{157--172}.
+
+\bibitem[Chu {\em et~al.\/}(1991)Chu, Wu \& Khayat]{Chu91}
+{\sc \au{Chu, V.~H.}, \au{Wu, {J-H}} \& \au{Khayat, R.~E.}} \yr{1991}
+  \at{{Stability of transverse shear flows in shallow open channels}}.
+  \jt{Journal of Hydraulic Engineering}  \bvol{117}~(10),  \pg{1370--1388}.
 
 \bibitem[Drazin \& Reid(1981)]{Drazin81}
 {\sc \au{Drazin, P.~G.} \& \au{Reid, W.~H.}} \yr{1981}  \at{{Hydrodynamic
