@@ -23,10 +23,6 @@
 {\sc \au{Drazin, P.~G.} \& \au{Reid, W.~H.}} \yr{1981}  \at{{Hydrodynamic
   stability}}.  \jt{Cambridge U. Press, Cambridge} .
 
-\bibitem[Fonseca(1998)]{Fonseca98}
-{\sc \au{Fonseca, M.}} \yr{1998}  \at{{Exploring the basic pattern expression
-  in seagrass landscape}}. PhD thesis, University of California, Berkeley.
-
 \bibitem[Fonseca \& Kenworthy(1987)]{Fonseca87}
 {\sc \au{Fonseca, M.~S.} \& \au{Kenworthy, W.~J.}} \yr{1987}  \at{{Effects of
   current on photosynthesis and distribution of seagrasses}}.  \jt{Aquatic
@@ -83,6 +79,11 @@
 {\sc \au{Nepf, H.~M.} \& \au{Vivoni, E.~R.}} \yr{2000}  \at{{Flow structure in
   depth-limited vegetated flow}}.  \jt{J. Geophys. Res.}  \bvol{105},
   \pg{28,547--28,557}.
+
+\bibitem[Nepf {\em et~al.\/}(2007)Nepf, White \& Murphy]{Nepf07}
+{\sc \au{Nepf, H.~M.}, \au{White, B.} \& \au{Murphy, E.}} \yr{2007}
+  \at{{Retention time and dispersion associated with submerged aquatic
+  canopies}}.  \jt{Water Resources Research}  \bvol{43}.
 
 \bibitem[Okamoto {\em et~al.\/}(2012)Okamoto, Nezu \& Ikeda]{Okamoto12}
 {\sc \au{Okamoto, T.}, \au{Nezu, I.} \& \au{Ikeda, H.}} \yr{2012}
