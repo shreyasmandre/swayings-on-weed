@@ -1,0 +1,113 @@
+\begin{thebibliography}{21}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\def\au#1{#1} \def\ed#1{#1} \def\yr#1{#1}\def\at#1{#1}\def\jt#1{\textit{#1}}
+  \def\bt#1{#1}\def\bvol#1{\textbf{#1}} \def\vol#1{#1} \def\pg#1{#1}
+  \def\publ#1{#1}\def\arxiv#1{#1}\def\org#1{#1}\def\st#1{\textit{#1}}
+
+\bibitem[Ackerman \& Okubo(1993)]{AckermanOkubo93}
+{\sc \au{Ackerman, J.~D.} \& \au{Okubo, A.}} \yr{1993}  \at{{Reduced mixing in
+  a marine macrophyte canopy}}.  \jt{Functional Ecology}  \bvol{7},
+  \pg{305--309}.
+
+\bibitem[Chen \& Jirka(1997)]{Chen97}
+{\sc \au{Chen, D.} \& \au{Jirka, G.~H.}} \yr{1997}  \at{{Absolute and
+  convective instabilities of plane turbulent wakes in a shallow water layer}}.
+   \jt{Journal of Fluid Mechanics}  \bvol{338},  \pg{157--172}.
+
+\bibitem[Chu {\em et~al.\/}(1991)Chu, Wu \& Khayat]{Chu91}
+{\sc \au{Chu, V.~H.}, \au{Wu, {J-H}} \& \au{Khayat, R.~E.}} \yr{1991}
+  \at{{Stability of transverse shear flows in shallow open channels}}.
+  \jt{Journal of Hydraulic Engineering}  \bvol{117}~(10),  \pg{1370--1388}.
+
+\bibitem[Drazin \& Reid(1981)]{Drazin81}
+{\sc \au{Drazin, P.~G.} \& \au{Reid, W.~H.}} \yr{1981}  \at{{Hydrodynamic
+  stability}}.  \jt{Cambridge U. Press, Cambridge} .
+
+\bibitem[Fonseca \& Kenworthy(1987)]{Fonseca87}
+{\sc \au{Fonseca, M.~S.} \& \au{Kenworthy, W.~J.}} \yr{1987}  \at{{Effects of
+  current on photosynthesis and distribution of seagrasses}}.  \jt{Aquatic
+  Botany}  \bvol{27}~(1),  \pg{59--78}, environmental Impacts On Seagrasses.
+
+\bibitem[Ghisalberti \& Nepf(2002)]{Ghisal02}
+{\sc \au{Ghisalberti, M.} \& \au{Nepf, H.~M.}} \yr{2002}  \at{{Mixing layer and
+  cohrent structures in vegetated aquatic flows}}.  \jt{J. Geophys. Res.}
+  \bvol{107}.
+
+\bibitem[Ghisalberti \& Nepf(2004)]{Nepf04}
+{\sc \au{Ghisalberti, M.} \& \au{Nepf, H.~M.}} \yr{2004}  \at{{The limited
+  growth of vegetated shear layers}}.  \jt{Water Resources Research}
+  \bvol{40}~(7).
+
+\bibitem[Ghisalberti \& Nepf(2006)]{Nepf06}
+{\sc \au{Ghisalberti, M.} \& \au{Nepf, H.~M.}} \yr{2006}  \at{{The sructures of
+  shear layer in flows over rigid and flexible canopies}}.  \jt{Enviornmental
+  Fluid Mechanics}  \pg{pp. 277--301}.
+
+\bibitem[Grizzle {\em et~al.\/}(1996)Grizzle, Short, Newell, Hoven \&
+  Kindblom]{Grizzle96}
+{\sc \au{Grizzle, R.~E.}, \au{Short, F.~T.}, \au{Newell, C.~R.}, \au{Hoven, H.}
+  \& \au{Kindblom, L.}} \yr{1996}  \at{{Hydrodynamically induced synchronous
+  waving of seagrasses: {\lq}monami{\rq} and its possible effects on larval
+  mussel settlement}}.  \jt{Journal of Experimental Marine Biology and Ecology}
+   \bvol{206}~(1--2),  \pg{165--177}.
+
+\bibitem[Ikeda \& Kanazawa(1996)]{Ikeda96}
+{\sc \au{Ikeda, S.} \& \au{Kanazawa, M.}} \yr{1996}  \at{{Three-dimensional
+  organized vortices above flexible water plants}}.  \jt{Journal of Hydraulic
+  Engineering}  \bvol{122}~(11),  \pg{634--640}.
+
+\bibitem[Inoue(1956)]{Inoue56}
+{\sc \au{Inoue, E.}} \yr{1956}  \at{{Studies of the Phenomena of Waving Plants
+  Caused by Wind}}.  \jt{J. of Agri. Meteor.}  \bvol{11}~(4),  \pg{147--151}.
+
+\bibitem[{Lord Rayleigh}(1879)]{Rayleigh1879}
+{\sc \au{{Lord Rayleigh}}} \yr{1879}  \at{{On the stability, or instability, of
+  certain fluid motions}}.  \jt{Proceedings of the London Mathematical Society}
+   \bvol{1}~(1),  \pg{57--72}.
+
+\bibitem[Nepf(1999)]{Nepf99}
+{\sc \au{Nepf, H.~M.}} \yr{1999}  \at{{Drag, turbulence, and diffusion in flow
+  through emergent vegetation}}.  \jt{Water resources research}  \bvol{35}~(2),
+   \pg{479--489}.
+
+\bibitem[Nepf(2012)]{Nepf2012}
+{\sc \au{Nepf, H.~M.}} \yr{2012}  \at{{Flow and transport in regions with
+  aquatic vegetation}}.  \jt{Annual Review of Fluid Mechanics}  \bvol{44},
+  \pg{123--142}.
+
+\bibitem[Nepf \& Vivoni(2000)]{Nepf00}
+{\sc \au{Nepf, H.~M.} \& \au{Vivoni, E.~R.}} \yr{2000}  \at{{Flow structure in
+  depth-limited vegetated flow}}.  \jt{J. Geophys. Res.}  \bvol{105},
+  \pg{28,547--28,557}.
+
+\bibitem[Nepf {\em et~al.\/}(2007)Nepf, White \& Murphy]{Nepf07}
+{\sc \au{Nepf, H.~M.}, \au{White, B.} \& \au{Murphy, E.}} \yr{2007}
+  \at{{Retention time and dispersion associated with submerged aquatic
+  canopies}}.  \jt{Water Resources Research}  \bvol{43}.
+
+\bibitem[Okamoto {\em et~al.\/}(2012)Okamoto, Nezu \& Ikeda]{Okamoto12}
+{\sc \au{Okamoto, T.}, \au{Nezu, I.} \& \au{Ikeda, H.}} \yr{2012}
+  \at{{Vertical mass and momentum transport in open-channel flows with
+  submerged vegetations}}.  \jt{Journal of Hydro-environment Research}
+  \bvol{6}~(4),  \pg{287--297}.
+
+\bibitem[Py {\em et~al.\/}(2006)Py, {De Langre} \& Moulia]{Delangre06}
+{\sc \au{Py, C.}, \au{{De Langre}, E.} \& \au{Moulia, B.}} \yr{2006}  \at{{A
+  frequency lock-in mechanism in the interaction between wind and crop
+  canopies}}.  \jt{J. Fluid Mech.}  \bvol{568},  \pg{425--449}.
+
+\bibitem[Raupach {\em et~al.\/}(1996)Raupach, Finnigan \& Y.Brunet]{Raupach96}
+{\sc \au{Raupach, M.~R.}, \au{Finnigan, J.~J.} \& \au{Y.Brunet}} \yr{1996}
+  \at{{Cohrent eddies and turbulence in vegetation canopies: The mixing layer
+  analogy}}.  \jt{Boundary-Layer Meteorology}  \bvol{78},  \pg{351--382}.
+
+\bibitem[Vivoni(1998)]{Vivoni98}
+{\sc \au{Vivoni, E.~R.}} \yr{1998} {Turbulence Structure of a Model Seagrass
+  Meadow}. Master's thesis, MIT.
+
+\bibitem[White \& Nepf(2007)]{White07}
+{\sc \au{White, B.~L.} \& \au{Nepf, H.~M.}} \yr{2007}  \at{{Shear instability
+  and coherent structures in shallow flow adjacent to a porous layer}}.
+  \jt{Journal of Fluid Mechanics}  \bvol{593},  \pg{1--32}.
+
+\end{thebibliography}

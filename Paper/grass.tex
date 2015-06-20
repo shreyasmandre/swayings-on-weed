@@ -1,8 +1,9 @@
-\documentclass[aps,prl,reprint,twocolumn,superscriptaddress,sort&compress,10pt]{revtex4-1}  % for review and submission
+%\documentclass[aps,prl,reprint,twocolumn,superscriptaddress,sort&compress,10pt]{revtex4-1}  % for review and submission
 % \documentclass[aps,preprint,12pt]{revtex4-1}  % for review and submission
 %\documentclass[aps,twocolumn,floatfix,prl,10pt]{revtex4-1}
 %\documentclass[letterpaper,10pt,prl,twocolumn,aps]{revtex4-1}
 %\documentclass[aps,preprint,floatfix,prl]{revtex4-1}
+\documentclass{jfm}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -84,8 +85,8 @@ The dependence of the boundary layer thickness (estimated as $|U/U_y|$ at $y=\hg
 \end{figure}
 \begin{figure}
 \begin{center}
-\includegraphics[]{Critical_Re_vs_delta_noshear} \\
-\vspace{-6mm} \hspace{-3mm}
+\includegraphics[]{new_graph_R_vs_delta} \\
+\vspace{-5mm} \hspace{-3mm}
 \includegraphics[]{K_vs_shear_width_noshear}
 % \includegraphics[width=12cm]{Critical_Re_vs_delta_noshear} \\
 % \vspace{-6mm} \hspace{-5mm}
@@ -204,7 +205,7 @@ The experimentally observed \monami ~wavelengths are not available for compariso
  Shear layer thickness	& $\delta$					& \multicolumn{2}{c}{$\delta \sim  H\left(\Rey \Ndg \right)^{-1/3}$} \\
  Linearized dynamics	& $\left(\sigma+ikU\right) \left(D^2-k^2\right)\phi =  ikU_{yy}\phi$		& \multicolumn{2}{c}{Equation \eqref{Orr-somerfield}} \\
  Dense grass limit &  & Equation \eqref{eqn:mode1asymp} & Equation \eqref{eqn:mode2asymp}  \\
- Critical parameters	& none						& $\Rey \propto \Ndg^{1/2}$ 	& $\Rey \propto \Ndg$ \\
+ Critical parameters	& none						& $\Rey \propto \Ndg^{2}$ 	& $\Rey \propto \Ndg$ \\
  Most unstable $k$ as $\delta \to 0$	& $\propto H/\delta$		& $\propto H/\delta$	& $O(1)$ \\
  Mode localized?	& yes, near $y=0$				& yes, near $y=\hg$			& no, spans water column
  \end{tabular}
@@ -219,17 +220,22 @@ We observe that as $\Ndg$ increases, the unstable region splits into two; we ref
 The unstable region for Mode 1, depending on $\hg/H$ either recedes to higher $\Rey$ or shrinks to zero size, as the vegetation density increases, causing the most unstable mode to transition discontinuously.
 
 \words{117} The distinct asymptotic behavior of the two modes as $\Ndg \gg 1$ distinguishes it from the Kelvin-Helmholtz instability. 
-Mode 1 asymptotically localizes to the boundary layer near the grass top, and exhibits an asymptotic behavior with $k \sim H/\delta$, and $\Rey \sim H/\delta$ (or $\Rey \propto {\Ndg}^{1/2}$) at the threshold. 
-This limit can be understood by asymptotically estimating the sizes of the terms in ~\eqref{Orr-somerfield} using $D\sim H/\delta$, $\sigma \sim H/\delta$, and $\ubl \sim \delta/H$; the magnitude of the advection term is $\Rey (H/\delta)^3$  (or $\Rey^2 \Ndg$), and the viscous and the vegetation drag term in the boundary layer are $(\delta/H)^{-4}$ (or $(\Rey \Ndg)^{4/3})$. 
-The terms balance when $\Rey \sim H/\delta$ (or $\Rey \sim {\Ndg}^{1/2}$), simplifying ~\eqref{Orr-somerfield} to
-\begin{align}
-(D^2-k^2)^2 \phi- 2 \Rey \Ndg D( SUD\phi) = \sigma \Rey (D^2-k^2)\phi,
+Mode 1 asymptotically localizes to the boundary layer near the grass top, and exhibits an asymptotic behavior with $k \sim H/\delta$, and $\Rey (\sim H/\delta)^2$ (or $\Rey \propto {\Ndg}^{2}$) at the threshold. 
+This limit can be understood by asymptotically estimating the sizes of the terms in ~\eqref{Orr-somerfield} using $D\sim H/\delta$, $\sigma \sim O(1)$, and $\ubl \sim \delta/H$; the magnitude of the advection term is $\Rey (H/\delta)^2$  (or $\Rey^{5/3} \Ndg^{2/3}$), and the viscous and the vegetation drag term in the boundary layer are $(\delta/H)^{-4}$ (or $(\Rey \Ndg)^{4/3})$. 
+The terms balance when $\Rey \sim (H/\delta)^2$ (or $\Rey \sim {\Ndg}^{2}$). Using the boundary layer co-ordinate $\eta = y/\delta$, velocity scaling 
+$U(y) = (\delta/H)\bar{U}(\eta)$ and scaling of wavenumber $k = (H/\delta) \bar{k}$ in the boundary layer ~\eqref{Orr-somerfield} simplifies to
+\begin{equation}
+\begin{split}
+\left(\bar{D}^2 -\bar{k}^{2} \right)^2\phi &= (\Rey/\Ndg^2)^{1/3} \left[ \left({\sigma}+i\bar{k}\bar{U}\right) \left(\bar{D}^2-\bar{k}^2\right) -i\bar{k}\bar{U}_{\eta\eta}\right]\phi \\
+&+\bar{D}\left(2S \bar{U} D \phi\right),
 \label{eqn:mode1asymp}
-\end{align} 
-\words{93} in a region of thickness O($\delta$) near $y=\hg$.
-We expect identical asymptotic behavior for a fixed relative magnitude of the terms on the r.h.s. to those on the l.h.s. of \eqref{eqn:mode1asymp}, which is $(\Rey \delta/H)^{3/2}$ (or $\Rey/\Ndg^{1/2}$).
-Therefore the threshold obtained for Mode 1 is $\Rey \propto H/\delta$ (or $\Rey \propto \Ndg^{1/2}$) explaining the numerically observed asymptote (see Fig.~\ref{Re_vs_delta}). 
-This analysis also concludes that the mode structure is self-similar over the length scale $\delta$ for fixed $\Rey/\Ndg^{1/2}$; the verification of this idea is shown in Fig.~\ref{Asymptotic_mode} (inset).
+\end{split}
+\end{equation}
+
+\words{93} in a region of thickness O($\delta$) near $y=\hg$. Since $(\Rey/\Ndg^2)$ is the only remaining parameter in \eqref{eqn:mode1asymp}, the mode shape and soultion will converge in the limit of $R \sim \Ndg^2$, confirming our numerial finding.
+%We expect identical asymptotic behavior for a fixed relative magnitude of the terms on the r.h.s. to those on the l.h.s. of \eqref{eqn:mode1asymp}, which is $(\Rey \delta/H)^{3/2}$ (or $\Rey/\Ndg^{1/2}$).
+%Therefore the threshold obtained for Mode 1 is $\Rey \propto H/\delta$ (or $\Rey \propto \Ndg^{1/2}$) explaining the numerically observed asymptote (see Fig.~\ref{Re_vs_delta}). 
+This analysis also concludes that the mode structure is self-similar over the length scale $\delta$ for fixed $\Rey/\Ndg^{2}$; the verification of this idea is shown in Fig.~\ref{Asymptotic_mode} (inset).
 
 \words{45} Similarly, the threshold condition for Mode 2 is numerically observed to be $\Rey \propto ({\delta}/{H})^{-3/2}$ (or $\Rey \propto \Ndg$) for $k\sim O(1)$, shown in Fig.~\ref{Re_vs_delta}, which can be understood by assuming $\Rey \gg 1$ but fixed $\Rey/\Ndg \sim O(1)$.
 % Note that for large $\Ndg$, the non-dimensional steady flow velocity inside the vegetation is $U_g \sim (\Rey \Ndg)^{-1/2}$. 
@@ -254,7 +260,7 @@ Inset shows rescaled $|\phi|$ for Mode 1 as a function of $(y-\hg)/\delta$ appro
 }
 \label{Asymptotic_mode}
 \end{figure}
-\words{54} Since $\Rey/\Ndg$ is the only remaining parameter in \eqref{eqn:mode2asymp}, the mode shape converges in the aforementioned limit, in agreement with our numerical results shown in Fig.~\ref{Asymptotic_mode}. 
+\words{54} Similarly here $\Rey/\Ndg$ is the only remaining parameter in \eqref{eqn:mode2asymp}, the mode shape converges in the aforementioned limit, in agreement with our numerical results shown in Fig.~\ref{Asymptotic_mode}. 
 The parameter $\Rey/\Ndg$ also sets the threshold, leading to the asymptotic behavior $\Rey \propto \Ndg$ (or $\Rey \sim ({\delta}/{H})^{-3/2}$; see Fig.~\ref{Re_vs_delta} for comparison with numerical results).
 % We interpret Mode 2 as the instability of an inviscid fluid, with the vegetation modeled by a continuum drag field, and for which the boundary layer near the grass top plays no role. 
 % On the other hand, Mode 1 asymptotically localizes to the boundary layer near the grass tip, and exhibits a different asymptotic behavior with $k \sim O(H/\delta)$, and $\Rey \sim (H/\delta)$ (or $\Rey \propto {\Ndg}^{1/2}$) at the threshold. 
