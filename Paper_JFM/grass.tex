@@ -85,7 +85,7 @@ To better understand the flow instability mechanisms and to compare them with th
 We find two modes of instability labeled Mode 1 and Mode 2.  
 We find that Mode 1 resembles many characteristics of KH instability but is modified by the presence of the vegetation drag. 
 We also find another mode of instability, Mode 2, unrelated to the KH instability mechanism, arising purely due to the interaction of an inviscid layer of fluid with submerged rigid vegetation.
-The presence of vegetation drag leads to a finite threshold flow condition for onset of the instability for both these modes.
+The presence of dissipation due to vegetation drag leads to a finite threshold flow condition for onset of the instability for both these modes.
 
 \section{Mathematical model}
 Although \monami ~is manifested in the motion of the grass, the drag exerted by the grass bed on the flow is central to the hypothesized instability. 
@@ -136,7 +136,7 @@ This drag enters the fluid mass and momentum balance equations as
 \label{navier-stokes}
 \end{equation}
 where $\rho$, $\bu$, and $p$ are the fluid density, velocity, and pressure respectively, $\mu$ the dynamic eddy viscosity and $\mathbf{g}$ the acceleration due to gravity. 
-The Reynolds number of the flow based on the scale of the grass blade is $O(10^2-10^3)$; therefore, neglecting the skin friction, we model it as the form drag on the vegetation, $\mathbf{f}=-N_g C_N \rho u |u| d\bx$ \cite{Nepf99,Nepf00,Nepf04}, where  $N_g$ is the blade number density per unit horizontal area, $C_{N}$ the drag coefficient, and $d$ the average blade width projected perpendicular to the flow. 
+The Reynolds number of the flow based on the scale of the grass blade is $O(10^2-10^3)$; therefore, neglecting the skin friction, we model it as the form drag on the vegetation, $\mathbf{f}=-N_g C_N \rho u |u| d\bx$ (\cite{Nepf99,Nepf00,Nepf04}), where  $N_g$ is the blade number density per unit horizontal area, $C_{N}$ the drag coefficient, and $d$ the average blade width projected perpendicular to the flow. 
 In the interest of simplicity, we model the turbulence using an eddy viscosity; see \S\ref{subsec:turbulencemodel} for a detailed discussion. 
 In the field, both $C_N$, $N_g$ and $\mu$ vary with position, but we do not expect these variations to be central to the instability mechanism, and therefore take them to be constants. 
 % Based on previous experiments \cite{Vivoni98,Nepf00}, we take $C_N = 1$.
@@ -211,7 +211,7 @@ the form $\left(u,v,\psi \right)= \left(\hat u(y), \hat v(y), \phi(y) \right)e^{
 \label{Orr-somerfield}
 \end{split}
 \end{equation}
-where $D=d/dy$, and subject to the boundary conditions $D\phi = D^2\phi = 0$ at $y=0$ and $y=2$. 
+where $D=d/dy$, and subject to the boundary conditions $\phi = D^2\phi = 0$ at $y=0$ and $y=2$. 
 The growth rate $\sigma$ for a given wave number $k$ appears as an eigenvalue that allows a non-trivial solution $\phi$ of  \eqref{Orr-somerfield}.
 We solve \eqref{Orr-somerfield} numerically for $\sigma$ and $\phi$.
 
@@ -272,7 +272,7 @@ $U(y) = (\delta/H)\bar{U}(\eta)$ and $k = (H/\delta) \bar{k}$, with these scalin
 \end{equation}
 in a region of thickness O($\delta$) near $y=\hg$, where $\bar{D} = d/d\eta$. 
 Since $(\Rey/\Ndg^2)$ is the only remaining parameter in \eqref{eqn:mode1asymp}, the mode shape and solution are expected to converge in the limit $\Rey \gg 1$, $\Ndg \gg 1$, but $\Rey/\Ndg^2$ fixed.
-Our numerical finding confirm this expectation; the critical $\Rey$ scales as $\Ndg^2$ as shown in Fig.~\ref{Re_vs_delta} and the mode shapes are self-similar with length scale $\delta$, as shown in Fig \ref{Asymptotic_mode}. 
+Our numerical finding confirm this expectation; the critical $\Rey$ scales as $(H/\delta)^2$ as shown in Fig.~\ref{Re_vs_delta} and the mode shapes are self-similar with length scale $\delta$, as shown in Fig \ref{Asymptotic_mode}. 
 
 Mode 1 shares many characteristics with the KH instability (see Table \ref{tab:comparison}). 
 The fastest growing wavenumber at the critical $\Rey$ scales as $k \propto (H/\delta)$, similar to KH instability. 
@@ -347,7 +347,7 @@ However, for our $U(y)$ profiles, $U_{yy}(y) = -1$ above the grass and therefore
 Instead, the dynamics are coupled with the flow in the grass bed described by \eqref{eqn:mode2asympa} in $y< \hg$.
 The absence of $U_{yy}$ in \eqref{eqn:mode2asympa} indicates that $U_{yy}$ is approximated to be zero in $y<\hg$, and therefore the positive values of $U_{yy}$ that occurs in the boundary layer do not affect this mode of instability to leading order.
 Furthermore, the presence of the critical parameter $\Rey/\Ndg$ in \eqref{eqn:mode2asympa} indicates the presence of alternative destabilizing dynamics, involving the interaction of flow in the unvegetated region governed by \eqref{eqn:Rayleigh} with the flow in the vegetated region incorporating the drag.
-Based on this analysis, we conclude that Mode 2 is distinct from the KH instability, and owes its existence to the vegetation drag.
+Based on this analysis, we conclude that Mode 2 is distinct from the KH instability as well, and owes its existence to the vegetation drag.
 
 % \subsection{Comparison with KH}
 % Table \ref{tab:comparison} compares the two modes to each other, and to the KH instability. 
@@ -362,7 +362,7 @@ The simplicity of this model allows us to make progress and capture the essentia
 However, this simplicity in some cases only provides a qualitatively accurate description of the flow. 
 In this subsection, we present an account of the advantages and shortcomings of assuming a constant eddy viscosity to model the turbulence.
 
-As a consequence of the constant eddy viscosity, the boundary layer thickness $\delta$ scales as $\ReyNdg^{-1/3}$.
+As a consequence of the constant eddy viscosity, the boundary layer thickness $\delta$ scales as $H(\ReyNdg)^{-1/3}$.
 Experimental observations show that the boundary layer thickness scales instead as $\Ndg^{-1}$ \citep{Nepf07}.
 While the precise thickness of the boundary layer is governed by the details of the turbulence model, the existence of this boundary layer for dense vegetation is a general feature of the flow. 
 We have captured one possible realization of this feature using constant eddy viscosity.
