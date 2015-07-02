@@ -66,7 +66,7 @@ In this article, we provide a hydrodynamic mechanism for the onset of these cohe
 Current explanations of \monami~\citep{Ikeda96,Ghisal02,Raupach96} invoke the existence of a shear layer at the top of the grass bed (henceforth called grass top) due to vegetation drag. 
 Its instability, through a mechanism similar to the Kelvin-Helmholtz (KH) instability, is thought to lead to coherent eddies over the grass bed.
 The grass responds to these eddies by deforming, which manifests itself as large amplitude synchronous oscillations.
-Basic application of this model predict the observed frequency of \monami~and to understand transport in the seagrass bed \citep{Nepf00,Ghisal02,Nepf04,Okamoto12}.
+Basic application of this model predicts the observed frequency of \monami~and helps understand transport in the seagrass bed \citep{Nepf00,Ghisal02,Nepf04,Okamoto12}.
 
 \begin{figure}
 \centerline{\includegraphics[scale=.99]{Grass_Base_Nepf_shear} }
@@ -107,15 +107,21 @@ This comparison is the focus of this article.
 % The presence of dissipation due to vegetation drag leads to a finite threshold flow condition for onset of the instability for both these modes.
 
 \section{Mathematical model}
-%We show that the drag of the grass results in an instability mode different from the KH instability.
 \begin{figure}
-\centerline{\includegraphics[]{new_graph_freq}}
-\caption{Comparison of experimental observations of the experimentally measured dominant frequency $f_o$ (in Hz) with the predictions $f_p=\text{Im}(\sigma)$ from the solution of ~\eqref{Orr-somerfield}. 
-The experimental data in the inset is obtained from \cite{Ghisal02} (Ghisalberti) and \cite{Vivoni98} (Vivoni). 
+\begin{center}
+\includegraphics[scale = 0.95]{new_graph_R_vs_delta}\includegraphics[scale = 0.95]{new_graph_K_vs_delta}
+% \includegraphics[width=12cm]{Critical_Re_vs_delta_noshear} \\
+% \vspace{-6mm} \hspace{-5mm}
+% \includegraphics[width=12cm]{K_vs_shear_width_noshear}
+\end{center}
+\caption{
+Critical Reynolds number, threshold Reynolds number for Mode 1 and Mode 2 (left) and the corresponding marginally stable wave number (right) for different submergence ratio as a function of vegetation density parametrized by the boundary layer thickness. 
+Parameters from experiments reported by \cite{Ghisal02} to exhibit or suppress synchronous waving are also included in the left panel. 
 In order to estimate the $\Rey$ for these experiments, a representative value of $\mu=0.1$ Pa~s was assumed.
 }
-\label{frequency_comparison}
+\label{Re_vs_delta}
 \end{figure}
+%We show that the drag of the grass results in an instability mode different from the KH instability.
 The vegetation is assumed sufficiently dense so that the drag exerted by it may be modeled by a continuous body force $\mathbf{f}$ entering the equation governing the flow as.
 \begin{equation}
 \grad\cdot\bu = 0,\hspace{3mm} \rho \left(\bu_{t}+\bu.\grad\bu \right) = -\grad p+\mu\grad^{2}\bu +\mathbf{f}, %+\rho\mathbf{g}
@@ -150,18 +156,12 @@ This dependence of $\delta$ on $N_g$ gives us a way to systematically investigat
 Fig. \ref{basicflow} also shows that the asymptotic regime of a thin boundary layer is expected to hold for $\ReyNdg \gtrsim 100$. 
 In this notation, $U_g/U_0 = (\Rey \Ndg)^{-1/2}$ (used for deriving \eqref{eqn:mode2asymp}). 
 \begin{figure}
-\begin{center}
-\includegraphics[scale = 0.95]{new_graph_R_vs_delta}\includegraphics[scale = 0.95]{new_graph_K_vs_delta}
-% \includegraphics[width=12cm]{Critical_Re_vs_delta_noshear} \\
-% \vspace{-6mm} \hspace{-5mm}
-% \includegraphics[width=12cm]{K_vs_shear_width_noshear}
-\end{center}
-\caption{
-Critical Reynolds number, threshold Reynolds number for Mode 1 and Mode 2 (left) and the corresponding marginally stable wave number (right) for different submergence ratio as a function of vegetation density parametrized by the boundary layer thickness. 
-Parameters from experiments reported by \cite{Ghisal02} to exhibit or suppress synchronous waving are also included in the left panel. 
+\centerline{\includegraphics[]{new_graph_freq}}
+\caption{Comparison of experimental observations of the experimentally measured dominant frequency $f_o$ (in Hz) with the predictions $f_p=\text{Im}(\sigma)$ from the solution of ~\eqref{Orr-somerfield}. 
+The experimental data in the inset is obtained from \cite{Ghisal02} (Ghisalberti) and \cite{Vivoni98} (Vivoni). 
 In order to estimate the $\Rey$ for these experiments, a representative value of $\mu=0.1$ Pa~s was assumed.
 }
-\label{Re_vs_delta}
+\label{frequency_comparison}
 \end{figure}
 
 Next we substitute $\bu = (U+\tilde{u}, \tilde{v})$, $p=P+\tilde{p}$ in ~\eqref{navier-stokes} and expand to linear order to investigate the evolution of small perturbations $(\tilde{u}, \tilde{v})$, which obey
@@ -398,7 +398,7 @@ In this manner, we recover the KH-like characteristics observed in the terrestri
 % Accounting for these factors  can lead to further interesting behavior \citep{Delangre06}.
 
 \begin{figure}
-\centerline{\includegraphics[]{Asymptotic_noshear}}
+\centerline{\includegraphics[width=9cm]{Asymptotic_noshear}}
 % \includegraphics[width=12cm]{Asymptotic_noshear}
 \caption{
 Plot of the neutral Mode 1 (solid) and Mode 2 (dashed) shape $|\phi|$ in the limit of small $\delta/H$ for $\hg/H=0.2$. 
@@ -414,7 +414,7 @@ While predictions of the threshold $\Rey$ for the onset of the instability and t
 The deviation of our model predictions from the observed may be attributed to the various simplifications we have made in our model. 
 In real meadows, the drag coefficients are known to vary from bottom to tip of the grass blades due to variation in vegetation characteristics \citep{Vivoni98,Nepf00}. 
 The turbulence model for the flow through the meadow can also be improved from one with constant eddy viscosity \citep{Ghisal02, Nepf04}. 
-Although these model improvements might lead to a better agreement between the observed and the predicted quantities, the dominance of the physical processes depicted in \eqref{eqn:mode1asymp} and \eqref{eqn:mode2asymp}, and therefore our main conclusions, are expected to remain.
+Although these model improvements might lead to a better agreement between the observed and the predicted quantities, the insight furnished by \eqref{eqn:mode1asymp} and \eqref{eqn:mode2asymp}, and therefore our main conclusions, remain useful.
 
 \section{Conclusion}
 % We now test the assumption of an undeformable grass bed due to the dominant restoring force of buoyancy, using the criteria that the buoyancy time scale be much shorter than the hydrodynamic time scale $H/U_0$.
@@ -429,7 +429,7 @@ While further investigation is needed to understand the sensitivity of the resul
 Our analysis also informs flow structure formation in many other related scenarios, such as flow over coral reefs, permeable sediments, flow through urban environments and therefore is expected to have a wider impact.
 
 \acknowledgments
-MMB was hosted by Brown University during this work and was supported by the OIST Graduate University with subsidy funding from the Cabinet Office, Japan. We thank Heidi Nepf, Marco Ghisalberti, Mitul Luhar, and L. Mahadevan for helpful discussions.
+MMB acknowledges support from the OIST Graduate University with subsidy funding from the Cabinet Office, Japan, while visiting Brown University. We thank Heidi Nepf, Marco Ghisalberti, Mitul Luhar, and L. Mahadevan for helpful discussions.
 
 % Note the spaces between the initials
 \bibliography{Grass}{}
