@@ -60,11 +60,6 @@
 {\sc \au{Inoue, E.}} \yr{1956}  \at{{Studies of the Phenomena of Waving Plants
   Caused by Wind}}.  \jt{J. of Agri. Meteor.}  \bvol{11}~(4),  \pg{147--151}.
 
-\bibitem[{Lord Rayleigh}(1879)]{Rayleigh1879}
-{\sc \au{{Lord Rayleigh}}} \yr{1879}  \at{{On the stability, or instability, of
-  certain fluid motions}}.  \jt{Proceedings of the London Mathematical Society}
-   \bvol{1}~(1),  \pg{57--72}.
-
 \bibitem[Nepf(1999)]{Nepf99}
 {\sc \au{Nepf, H.~M.}} \yr{1999}  \at{{Drag, turbulence, and diffusion in flow
   through emergent vegetation}}.  \jt{Water resources research}  \bvol{35}~(2),
@@ -100,6 +95,11 @@
 {\sc \au{Raupach, M.~R.}, \au{Finnigan, J.~J.} \& \au{Y.Brunet}} \yr{1996}
   \at{{Cohrent eddies and turbulence in vegetation canopies: The mixing layer
   analogy}}.  \jt{Boundary-Layer Meteorology}  \bvol{78},  \pg{351--382}.
+
+\bibitem[{Rayleigh}(1879)]{Rayleigh1879}
+{\sc \au{{Rayleigh}}} \yr{1879}  \at{{On the stability, or instability, of
+  certain fluid motions}}.  \jt{Proceedings of the London Mathematical Society}
+   \bvol{1}~(1),  \pg{57--72}.
 
 \bibitem[Vivoni(1998)]{Vivoni98}
 {\sc \au{Vivoni, E.~R.}} \yr{1998} {Turbulence Structure of a Model Seagrass
