@@ -33,7 +33,8 @@
 \newcommand{\monami}{\textit{monami}}
 \newcommand{\ubl}{U_\text{bl}}
 \newcommand{\words}[1]{\textbf{(#1)~}}
-
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
 
 
 \begin{document}
@@ -134,10 +135,8 @@ The constant eddy viscosity of 0.1 Pa s is chosen based on eddy viscosity profil
 
 \newpage
 \centerline{\textbf{Matched asymptotic solution}}
-Present the complete solution here. Refer to this solution in our response.
-\textbf{Asymptotic Solution of 3.1 below the grass}
 
-Here we present asymptotic solution of equation 3.1, which should be helpful in clarifying many questions referee have related to the boundary layer near the grass tip.
+Here we present asymptotic solution of equation 3.1, which should be helpful in clarifying many questions referee have related to the boundary layer near the grass tip. For simplicity of calculation in this particular calculation we assume grass extend from $y=0$ to $y=H$ ie submergance ratio is 0.5. 
 Using $ U_0 = (-dP/dx)H^2/\mu$ as velocity scale, $H$ as length scale, we rescale velocity as $U= U_0 \bar{U}$ and $y = H \bar{y}$, the equation 3.1 can be transformed into  
 \begin{equation}
 \begin{split}
@@ -145,12 +144,16 @@ Using $ U_0 = (-dP/dx)H^2/\mu$ as velocity scale, $H$ as length scale, we rescal
  \bar{U}_{\bar{y}\bar{y}}+1 - R \Ndg \bar{U}^2=0
 \end{split}
 \end{equation}
-We wil drop the overbar and for further analysis for simplicity and define drag parameter as $D_g = R\Ndg$
+We will drop the overbar and for further analysis for simplicity and define drag parameter as $D_g = R\Ndg$
 \begin{equation}
 \begin{split}
- {U}_{{y}{y}}+1 - D_g{U}^2=0
+ {U}_{{y}{y}}+1 - D_g{U}^2 &=0
 \end{split}
 \end{equation}
+where $D_g = 0$ for $0<y<=1$, grass tip is at $y=0$ and the bottom surface is at $y=-1$, we use the zero shear boundary condition for on both the surface as mentioned in the manuscript.
+
+\textbf{Asymptotic Solution of 3.1 below the grass}
+
 We observe that $U = \sqrt{(1/D_g)}$ is a stationary point of above equation, where both $U_{yy}=0$ and $U_y =0 $. By multiplying with $U_y$ and integrating once will give us following equation
 \begin{equation}
 \begin{split}
@@ -171,30 +174,53 @@ We further use the scaling $U=\frac{1}{\sqrt{D_g}} u $, in the above equation, w
  \frac{du}{(u-1)\sqrt{u+2} } &= {D_g^{1/4}}\sqrt{\frac{2}{3}} dy
 \end{split}
 \end{equation}
-Above equation can be further integrated and provides solution in the region of grass
+Above equation can be integrated which provides solution in the region of grass
 \begin{equation}
 \begin{split}
-u &= 3 \coth \left(\frac{C-y D_g^{1/4}}{\sqrt{2}}  \right)^2-2 \\
-U &= \frac{1}{\sqrt{D_g}} \left( 3 \coth \left(\frac{C-y D_g^{1/4}}{\sqrt{2}}  \right)^2-2    \right)
+u &= 3 \coth \left(\frac{C_1-y D_g^{1/4}}{\sqrt{2}}  \right)^2-2 \\
+U &= \frac{1}{\sqrt{D_g}} \left( 3 \coth^2 \left(\frac{C_1-y D_g^{1/4}}{\sqrt{2}}  \right)-2    \right) \hspace{1cm} \text{for $-1<=y<=0$}
+\label{under_grass_sol}
 \end{split}
 \end{equation}
-Where $C$ is constant of integration, which can be found by matching the shear stress applied by the flow above the grass at the tip of the grass.
+Where $C_1$ is constant of integration, which can be found by matching the shear stress applied by the flow above the grass at the tip of the grass.
+
 \textbf{Solution above the grass}
 
-We use similar scaling for flow above the grass to non-dimensionlize the equation 3.1 
+Above the grass tip the non-dimenlize equation form of equation 3.1 translates in to.
 \begin{equation}
- 
+ U_{yy}+1=0
 \end{equation}
+which can be integrated together with the zero shear boundary condition at top to provided
+\begin{equation}
+ U(y) = y-y^2/2+C_2 \hspace{1cm} \text{for $0<y<1$}
+ \label{above_grass_sol}
+\end{equation}
+Where $C_2$ is constant of integration.
 
+\textbf{Matching the solution obtained by \eqref{under_grass_sol} and \eqref{above_grass_sol} }
 
-
-The origin of approximately constant velocity with in the grass 
-can be understood by well known perturbation theory (Perturbation Methods by E.J. Hinch, Cambridge Texts in Applied Mathematics ). In case of sufficiently high grass density, the dominant balance
-with in vegetation is between pressure gradient term $-\frac{dP}{dx}$ and the drag term experienced by the flow $-\rho C_N dNg U^2$ whereas the viscous term contribute very little 
-to (3.1), so we can treat the viscous term $\mu U_{yy}$ with in the grass as a small perturbation term in equation (3.1) ( $U(y)$ is approximately constant as can be seen from experimental data as well from
-numerical simulation of 3.1). Using the dominant balance of pressure gradient and drag term 
-give rise to a constant velocity $U_g = \sqrt{\frac{-dp/dx}{\rho C_N d N_g}}$, more in depth detailed discussion about such perturbation techniques can be found in the the book by Hinch titles as ``perturbation
-methods''
+The value of $C_1$ and $C_2$ can be determined by matching the solution \eqref{under_grass_sol} and \eqref{above_grass_sol} at the grass tip.
+Matching stress stress at the grass tip results into.
+\begin{equation}
+\frac{3\sqrt{2}}{D_g^{1/4}} \coth(C_1/\sqrt{2}) \csch^2(C_1/\sqrt{2}) = 1;
+\label{C1_eq}
+\end{equation}
+Above equation can be solved through some numerical method like bisection etc, here we will do an asymptotic expansion of terms in \eqref{C1_eq} to get an estimate of dependence of $C_1$ on the drag parameter.
+\begin{equation}
+\begin{split}
+\frac{3\sqrt{2}}{D_g^{1/4}} \frac{\sqrt{2}}{C_1} \frac{2}{C_1^2} &= 1 \\
+C_1 = \frac{(12)^{1/3}}{D_g^{1/12}}
+\end{split}
+\end{equation}
+Through constant $C_1$ a natural length scale $\delta$ arises when $\delta D_g^{1.4}$ balances $C_1$ in equation \eqref{under_grass_sol}, which gives $\delta \sim D_g^{-1/3}$ or $\delta \sim (R\Ndg)^{-1/3}$. We can also obtain scale of velocity in the boundary layer by substituting $y=0$ in the \eqref{under_grass_sol} and using asymptotic expansion of $\coth(x)$, doing this expansion leads to 
+\begin{equation}
+\begin{split}
+U(y)-U_{tip} &\sim \frac{1}{\sqrt{D_g}}\frac{1}{C_1^2}\\
+U(y)-U_{tip} &\sim D_g^{-1/3}\\
+U(y)-U_{tip} &\sim (R\Ndg)^{-1/3}
+\end{split}
+\end{equation}
+near the grass tip. More detailed analysis of similar kind can be understood by well known perturbation theory (Perturbation Methods by E.J. Hinch, Cambridge Texts in Applied Mathematics ).
 \newline
 \textbf{ About the Origin of boundary layer $\delta$}
 
