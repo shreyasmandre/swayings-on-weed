@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{24}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \def\au#1{#1} \def\ed#1{#1} \def\yr#1{#1}\def\at#1{#1}\def\jt#1{\textit{#1}}
   \def\bt#1{#1}\def\bvol#1{\textbf{#1}} \def\vol#1{#1} \def\pg#1{#1}
@@ -23,6 +23,10 @@
 {\sc \au{Drazin, P.~G.} \& \au{Reid, W.~H.}} \yr{1981}  \at{{Hydrodynamic
   stability}}.  \jt{Cambridge U. Press, Cambridge} .
 
+\bibitem[Fonseca(1998)]{Fonseca98}
+{\sc \au{Fonseca, M.}} \yr{1998}  \at{{Exploring the basic pattern expression
+  in seagrass landscape}}. PhD thesis, University of California, Berkeley.
+
 \bibitem[Fonseca \& Kenworthy(1987)]{Fonseca87}
 {\sc \au{Fonseca, M.~S.} \& \au{Kenworthy, W.~J.}} \yr{1987}  \at{{Effects of
   current on photosynthesis and distribution of seagrasses}}.  \jt{Aquatic
@@ -43,6 +47,11 @@
   shear layer in flows over rigid and flexible canopies}}.  \jt{Enviornmental
   Fluid Mechanics}  \pg{pp. 277--301}.
 
+\bibitem[Gosselin \& {De Langre}(2009)]{Gosselin2009}
+{\sc \au{Gosselin, F.} \& \au{{De Langre}, E.}} \yr{2009}  \at{Destabilising
+  effects of plant flexibility in air and aquatic vegetation canopy flows}.
+  \jt{European Journal of Mechanics-B/Fluids}  \bvol{28}~(2),  \pg{271--282}.
+
 \bibitem[Grizzle {\em et~al.\/}(1996)Grizzle, Short, Newell, Hoven \&
   Kindblom]{Grizzle96}
 {\sc \au{Grizzle, R.~E.}, \au{Short, F.~T.}, \au{Newell, C.~R.}, \au{Hoven, H.}
@@ -50,6 +59,10 @@
   waving of seagrasses: {\lq}monami{\rq} and its possible effects on larval
   mussel settlement}}.  \jt{Journal of Experimental Marine Biology and Ecology}
    \bvol{206}~(1--2),  \pg{165--177}.
+
+\bibitem[Hinch(1991)]{Hinch1991}
+{\sc \au{Hinch, E.~J.}} \yr{1991} {\em Perturbation methods\/}.
+  \publ{Cambridge university press}.
 
 \bibitem[Ikeda \& Kanazawa(1996)]{Ikeda96}
 {\sc \au{Ikeda, S.} \& \au{Kanazawa, M.}} \yr{1996}  \at{{Three-dimensional
