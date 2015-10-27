@@ -12,7 +12,7 @@
 % \usepackage{amssymb}	% Math symbols such as \mathbb
 \usepackage{calrsfs}
 \usepackage{fullpage}
-
+\usepackage{color}
 \usepackage[above]{placeins}
 \newcommand{\bv}{\mathbf{v}}
 \newcommand{\bu}{\mathbf{u}}
@@ -55,7 +55,8 @@ The referee did understand the gist of our conclusion, but we would like to take
 
 We remind the referee that the two modes bifurcate above a critical vegetation density from what appears to be a single mode. Below this value, the physical processes underlying the two unstable mode are both active, we have difficulty distinguishing between them. 
 
-Our approach could be stated in terms of two questions: (i) do experiments support our mathematical formulation, and (ii) of the two modes, which one is observed in experiments/field? The answer to the first question is a likely yes. The threshold condition and the waving frequency both are in good agreement with the results of our analysis. The question of which mode is physically observed is more subtle, because it is a question of fluid dynamic mechanism. We think there is a danger of using superficial flow features to deduce the underlying mechanism. Therefore, the approach we took was to distinguish between the modes and the underlying fluid dynamics using the dense grass asymptotic limit. A concise and complete presentation of the difference is presented in Table 1 of the manuscript. One conclusion that can be drawn from our analysis is a challenge to the traditional view that the observed instability is Kelvin-Helmholtz. Instead, we conclude that that there are two modes of instability, and which one is predominantly active in the experiments and the field is still an open question and should be subject of future investigations. 
+Our approach could be stated in terms of two questions: (i) do experiments support our mathematical formulation, and (ii) of the two modes, which one is observed in experiments/field? The answer to the first question is a likely yes. The threshold condition and the waving frequency both are in good agreement with the results of our analysis. The question of which mode is physically observed is more subtle, because it is a question of fluid dynamic mechanism. We think there is a danger of using superficial flow features to deduce the underlying mechanism. Therefore, the approach we took was to distinguish between the modes and the underlying fluid dynamics using the dense grass asymptotic limit. A concise and complete presentation of the difference is presented in Table 1 of the manuscript. One conclusion that can be drawn from our analysis is a challenge to the traditional view that the observed instability is Kelvin-Helmholtz. Instead, we conclude that that there are two modes of instability, and which one 
+is predominantly active in the experiments and the field is still an open question and should be subject of future investigations. 
 
 To clarify this discussion in the manuscript, we now say after \S 4:
 
@@ -125,7 +126,7 @@ The comparison with the case of wind-canopy interactions is interesting but does
 }
 
 It is true that inclusion of flexibility can give interesting results and we thank referee for drawing our attention to the interesting work of \cite{Gosselin2009}, where their model correlates enhancement of growth rate in the frequency lock-in range. 
-While in our present analysis we haven't taken into account the flexibility of plant as marine plants are flexible as compared to the terrestrial plants, we do expect deviation from the current prediction when the frequency of flow is similar to that of natural frequency of plant.  
+While in our present analysis we haven't taken into account the flexibility of plant as marine plants are flexible as compared to the terrestrial plants, we do expect deviation from the current prediction when the frequency of flow {\color{red}instability} is similar to that of natural frequency of plant.  
 We address the flexibility of the grass in item 2 of this response.
 
 In addition, we would like to point out that the instability mode found by \cite{Gosselin2009} is assumed to be KH, but not carefully demonstrated to be so.
@@ -198,7 +199,8 @@ Furthermore, the presence of the inflection point in the velocity profile, which
 Instead the shear gradient switches sign at $y=h_g$.
 
 To clarify the statement in the manuscript about the matching of shear stress determining the boundary layer thickness, we are sure the referee realizes that there are two conditions imposed at $y=h_g$, the continuity of velocity and of shear.
-The continuity of velocity can be imposed by equating the velocity of the parabolic profile outside with the 
+{\color{red} \textbf{We can remove this sentence I guess.}
+The continuity of velocity can be imposed by equating the velocity of the parabolic profile outside with the }
 
 
 \item The referee says:
@@ -325,7 +327,8 @@ U &= \frac{1}{\sqrt{D_g}} \left( 3 \coth^2 \left(\frac{C_1-y D_g^{1/4}}{\sqrt{2}
 \end{split}
  \hspace{1cm} \text{for $-1\le y\le 0$,}
 \end{equation}
-where $C_1$ is constant of integration, which can be found by matching the shear stress applied by the flow above the grass at the tip of the grass.
+where $C_1$ is constant of integration, which can be found by matching the shear stress applied by the flow above the grass at the tip of the grass. {\color{red} Deep inside grass the 
+solution saturates to $U(y)=\frac{1}{\sqrt{D_g}}$ independent of the value of $C_1$ due to the dominant balance between drag and pressure gradient.}
 
 \vspace{2mm}
 \noindent
