@@ -1,0 +1,14 @@
+Reviewer(s)' Comments to Author:
+Referee: 1
+
+Comments to the Author
+The paper proposes an interesting contribution to the problem of flow instabilities over submerged vegetation. The relevance to fundamental and practical aspects of Fluid Mechanics is certain, as can be seen from the recent published literature on the topic.
+The specific contribution of the paper, as stated by the authors is to develop a linear stability analysis that takes into account effects that have been up to now discarded, such as consistent drag effects, role of finite depth on the shear layer, and  self-consistent velocity profile . The authors claim that their approach yields not only the classical Kelvin-Helmholtz   instability modes know for these systems, but also a new type of instability mode. The later is thought to be present in practical cases.
+Overall, the technical derivations are clear and, apparently, very carefully done. I am quite confident that the results are correct.
+I recommend publication of the paper provided the following points are properly taken into account
+1.      The claims of the paper are somehow contradictory, in terms of the application to sea grass beds. The title focuses on “monami in a sea grass bed” whereas motion of the sea grass is excluded from the analysis.  For the conclusions of the paper to be applicable to sea grass motion two things would be needed : (a) a much larger discussion on the possible effects of the unstable modes on the motion of the grass, (b) a discussion on the potential role of sea grass flexibility in the instability of the coupled flow-grass system. As it is, the  title of the paper should rather  be “linear stability of the flow over a submerged sea grass bed”. In other terms, I am not sure that the results of the present paper (except the existence of a threshold) have consequences on the motion of the sea grass.
+2.      The practical existence of a threshold flow condition for monami (or rather,  for flow instability ) to occur is doubtless.  As stated page 6, the inviscid KH instability approach does not yield any threshold, of course. The finding of a threshold by including dissipation and other aspects is no surprise. The main contribution of the paper seems then to be the second mode. This brings back to the issue of the relevance of this new mode to the motion of the sea grass.
+3.      The comparison with the case of wind-canopy interactions is interesting but does not seem consistent with the analysis found in the reference [1]  below, where the instability seems to be more dominantly KH type in water  (when flexibility is assumed).  This would need some discussion, at least to point out the differences.
+
+[1] F. Gosselin, E. de Langre, European Journal of Mechanics B/Fluids 28 (2009) 271–282
+

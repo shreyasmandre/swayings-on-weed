@@ -1,0 +1,419 @@
+\documentclass[letterpaper,10pt]{article}
+% \documentclass{jfm}
+\pagenumbering {roman}
+\usepackage{amsmath}
+
+\usepackage{dcolumn}% Align table columns on decimal point
+
+\usepackage{natbib}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+% \usepackage{bm}% bold math
+% \usepackage{amssymb}	% Math symbols such as \mathbb
+\usepackage{calrsfs}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage[above]{placeins}
+\newcommand{\bv}{\mathbf{v}}
+\newcommand{\bu}{\mathbf{u}}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\bU}{\mathbf{U}}
+\newcommand{\grad}{\mathbf{\nabla}}
+\newcommand{\del}{\partial}
+
+%\newcommand{\bx}{{\boldsymbol{\hat{x}}}}
+\newcommand{\bn}{{\boldsymbol{\hat{n}}}}
+\newcommand{\bt}{{\boldsymbol{\hat{t}}}}
+%\newcommand{\bu}{\mathbf{u}}
+%\newcommand{\grad}{\mathbf{\nabla}}
+%\newcommand{\del}{\partial}
+\newcommand{\hg}{h_g}
+\newcommand{\Rey}{{R}}
+\newcommand{\Ndg}{\tilde{N}_g}
+\newcommand{\monami}{\textit{monami}}
+\newcommand{\ubl}{U_\text{bl}}
+\newcommand{\words}[1]{\textbf{(#1)~}}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\newcommand{\revise}[1]{{\color{blue} {#1}}}
+
+\begin{document}
+
+\centerline{Response to Referee 1}
+We thank the referee for reviewing our work and providing their valuable feedback. 
+We are pleased that the referee finds our contribution interesting, and the relevance of our work to fundamental and practical fluid mechanics certain.
+Here we respond to the questions raised and the feedback provided.
+
+\begin{enumerate}
+\item The referee says:
+\textit{
+The authors claim that their approach yields not only the classical Kelvin-Helmholtz instability modes know[sic] for these systems, but also a new type of instability mode. The later is thought to be present in practical cases.
+}
+
+The referee did understand the gist of our conclusion, but we would like to take this opportunity to clarify further our position on this matter. In summary, we have refrained from making a determination about which mode is observed in experiments and the field. It is so because all experimental and field data available to us exists in a parameter regime in which the two modes cannot be distinguished. 
+
+We remind the referee that the two modes bifurcate above a critical vegetation density from what appears to be a single mode. Below this value, the physical processes underlying the two unstable mode are both active, we have difficulty distinguishing between them. 
+
+Our approach could be stated in terms of two questions: (i) do experiments support our mathematical formulation, and (ii) of the two modes, which one is observed in experiments/field? The answer to the first question is a likely yes. The threshold condition and the waving frequency both are in good agreement with the results of our analysis. The question of which mode is physically observed is more subtle, because it is a question of fluid dynamic mechanism. We think there is a danger of using superficial flow features to deduce the underlying mechanism. Therefore, the approach we took was to distinguish between the modes and the underlying fluid dynamics using the dense grass asymptotic limit. A concise and complete presentation of the difference is presented in Table 1 of the manuscript. One conclusion that can be drawn from our analysis is a challenge to the traditional view that the observed instability is Kelvin-Helmholtz. Instead, we conclude that that there are two modes of instability, and which one 
+is predominantly active in the experiments and the field is still an open question and should be subject of future investigations. 
+
+To clarify this discussion in the manuscript, we now say after \S 4:
+
+\noindent
+\revise{All experimental data we have found corresponds to a vegetation density for which the unstable region in the $\Rey-k$ space has not split into two, so we are unable to determine if flow instability in the lab scale experiments \citep{Ghisal02} are due to Mode 1 or Mode 2.}
+
+and in the conclusion:
+
+\noindent
+\revise{
+We are unable to determine based on observations, and therefore have refrained from identifying, which mode is observed in experiments and it still remains a subtle question and subject of future investigation. Since the two modes merge for the experimental parameters, KH may not be assumed to underlie \monami.
+}
+
+\item The referee says:
+\textit{
+The claims of the paper are somehow contradictory, in terms of the application to sea grass beds. The title focuses on “monami in a sea grass bed” whereas motion of the sea grass is excluded from the analysis.  For the conclusions of the paper to be applicable to sea grass motion two things would be needed : (a) a much larger discussion on the possible effects of the unstable modes on the motion of the grass, (b) a discussion on the potential role of sea grass flexibility in the instability of the coupled flow-grass system. As it is, the  title of the paper should rather  be “linear stability of the flow over a submerged sea grass bed”. In other terms, I am not sure that the results of the present paper (except the existence of a threshold) have consequences on the motion of the sea grass.
+}
+
+While we agree whole-heartedly with the spirit of the referee's comment, we disagree with some of the detailed interpretation. 
+Experimental observations have revealed that the flow structures underlying \monami~ persist when the flexible grass mimics are replaced by rigid woden dowels.
+These observations are interpreted as support for the origin of the \monami~ being a hydrodynamic in nature.
+In this simple picture, the flexible grass simply deforms in response to flow structures.
+In reality, the flexibility of the grass does modify the details of the instability.
+Previous investigations have identified this modification to be in the form of frequency-locking of the hydro-elastic oscillations with the hydrodynamic instability frequency, with different strengths depending on the canopy being terrestrial \citep{Delangre04,Delangre06} or aquatic \cite{Gosselin2009}.
+However, the motion of the vegetation is not \textit{essential} to the existence of the instability, and therefore a minimal model is justified in neglecting it.
+This approach in simplification is similar in spirit to, for example, the one employed by \cite{Gosselin2009}, in which they determine the frequency of the coupled fluid-vegetation oscillations in the absence of the flow, and then use the frequency in a dynamic model in the presence of the flow but assuming the mode shape \textit{ad hoc} instead of solving for it self-consistently. 
+Since the precise mode shape is not an essential feature for the phenomenon of frequency locking, such a substitution yields simplification without reducing the utility of the analysis.
+
+However, we also recognize the referee's concern with the neglect of the vegetation flexibility.
+In particular, we have presented a mathematical model for a rigid vegetation bed, and therefore it will be useful to determine boundaries in the parameter space where our results will be quantitatively applicable, instead of merely being qualitatively useful.
+To alleviate this concern, we present a back-of-the-envelope analysis determining the criteria for neglecting the vegetation flexibility.
+
+We have now added the following analysis to the discussion:
+
+\revise{
+We now test the assumption of an undeformable grass bed due to the dominant restoring force of buoyancy, using the criteria that the buoyancy time scale be much shorter than the hydrodynamic time scale $H/U_0$.
+For a common seagrass, \textit{Zostera Marina}, the relative density difference is $\Delta \rho /\rho \approx 0.25$, the volume fraction is $V_f \approx 0.1$ and $H=1$ m \citep{Fonseca98}, yielding the buoyancy time scale to be $\sqrt{\rho H/V_f \Delta \rho g} \approx 2$ s.
+The hydrodynamic time scale assuming $U_0 \approx 0.1$ m/s is 10 s, and therefore longer than the buoyancy time scale.
+We have neither accounted for the pre-factors appearing in the scaling argument, or considered cases when the time-scale separation is not so evident. 
+Accounting for these factors can lead to further interesting behavior \citep{Delangre06,Gosselin2009}, and motivates further investigation. 
+}
+
+\item The referee says:
+\textit{
+The practical existence of a threshold flow condition for monami (or rather,  for flow instability ) to occur is doubtless.  As stated [on] page 6, the inviscid KH instability approach does not yield any threshold, of course. The finding of a threshold by including dissipation and other aspects is no surprise. The main contribution of the paper seems then to be the second mode. This brings back to the issue of the relevance of this new mode to the motion of the sea grass.
+}
+
+We agree partly with the referee. The existence of a threshold, in our opinion also, is doubtless. 
+But it is not obvious to deduce that including some aspect of dissipation would yield that threshold. 
+We are sure the referee knows that sometimes dissipative effects can be destabilizing \citep{Krechetnikov2007}. 
+In our case, adding viscous (turbulent) dissipation alone does not lead to a threshold in Reynolds number for the shear instability of a tanh profile. 
+Furthermore, adding vegetation-induced drag adds another parameter to the problem, and its interaction with the turbulent dissipation in establishing a threshold is not trivial. 
+In fact, we find very non-trivial dependency of the threshold criteria on both the turbulent dissipation parameter ($\Rey$) and the vegetation drag parameter ($\Ndg$). 
+Therefore, following our analysis, we disagree with the referee that finding the threshold  by including dissipation or other effects is expected. 
+Only an analysis such as ours can conclusively establish the threshold.
+
+We also agree with the referee that a significant contribution of our analysis is the Mode 2 of instability.
+As explained in item 1 of this response, it is not clear which mode of instability underlies \monami.
+Since the existence of the two modes was unknown before our analysis, Mode 2 as a possible candidate for \monami~ was never considered. 
+We are unable to determine which of the two modes predominantly underlies \monami.
+Therefore, Mode 2 remains a possible candidate for the synchronous waving of aquatic vegetation.
+
+\item The referee says:
+\textit{
+The comparison with the case of wind-canopy interactions is interesting but does not seem consistent with the analysis found in the reference [1]  below, where the instability seems to be more dominantly KH type in water  (when flexibility is assumed).  This would need some discussion, at least to point out the differences.
+}
+
+It is true that inclusion of flexibility can give interesting results and we thank referee for drawing our attention to the interesting work of \cite{Gosselin2009}, where their model correlates enhancement of growth rate in the frequency lock-in range. 
+While in our present analysis we have not taken into account the flexibility of plant, marine plants are flexible as compared to the terrestrial plants.
+Buoyancy as a restoring force for marine vegetation dominates over the restoring action of the vegetation bending stiffness.
+For this reason, we do expect deviation from the current prediction when the frequency of flow instability is comparable to that of natural (buoyancy) frequency of grass bed.  
+We address this issue in item 2 of this response.
+
+In addition, we would like to point out that the instability mode found by \cite{Gosselin2009} is assumed to be KH, but not carefully demonstrated to be so.
+Thus, we interpret the referee's comment as saying that the flexibility enhances the instability of whichever mode is observed by \cite{Gosselin2009}. 
+This mode could very well be Mode 2 that we found. 
+Further investigation is needed before this question can be conclusively answered.
+Especially, cleverly designed experiments with observations to distinguish between the two modes are needed in the future.
+
+\end{enumerate}
+
+
+\newpage
+\centerline{Response to Referee 2}
+We thank the referee for reviewing our work and providing their valuable feedback. 
+We are glad that we were able to engage the referee's attention with our presentation.
+Here we respond in detail to his/her comments.
+\begin{enumerate}
+\item The referee says:
+\textit{
+In this paper the authors consider a simple model for a vegetated channel flow and analyse the resulting velocity profile on the basis of a modified Orr-Sommerfeld equation containing both a viscous (Reynolds number) term and a term representing the drag of the vegetated layer at the bottom of the channel. They compare some experimental data from an earlier paper from Nepf’s group with the implications of their theory and, via a detailed analysis of the instability, conclude (perhaps not surprisingly) that it differs from traditional KH instability because of the presence of this vegetated drag force.
+}
+
+We would like to take this opportunity to clarify our position, as well as our understanding of the literature.
+Existing literature on synchronous waving of terrestrial and aquatic vegetation repeatedly implicated KH instability as the underlying mechanism, even in the presence of the vegetation. 
+Therefore, we would invoke the flexibility in the referee's comment to argue that, while it is not surprising \textit{a posteriori}, this possibility has not been recognized before in the existing literature.
+
+\item The referee says:
+\textit{p.1 Fig.1 requires attention. The legend needs to be repositioned for greater
+clarity (perhaps to the left of the velocity profile).}
+
+We have accepted the referee's suggestion. The legend is repositioned. We have also made other changes to the figure to improve its clarity.
+
+\item The referee says:
+\textit{
+p.2, +6 ‘fitted using the experimental observations.
+}
+
+We have corrected the error.
+
+\item The referee says:
+\textit{
+p.3, +4 I think x (hat) needs to be defined here (the unit vector?).
+}
+
+We now introduce $\hat{\bx}$.
+
+\item The referee says:
+\textit{
+p.3, \S 3 It’s not quite clear to me how (3.1) leads to $U(y)$=const. below $y=h_g$. I note (from what follows on p.4) that the shear stress (i.e. $U’(y)$ presumably) is
+matched from upper and lower layers, but this seems insufficient. A little more explanation here would be helpful.
+}
+
+This follows from a matched asymptotic analysis of (3.1). For the referee's perusal, we have included a version of it at the end of this response. However, while the method and the solution is not unique (because different solutions may differ in accounting for higher orders), it is a standard procedure in perturbation methods with standard textbooks on the topic. We now cite one such textbook \citep{Hinch1991} for readers who may be unfamiliar with the topic.
+
+
+\item The referee says:
+\textit{
+p.4, +1,2 On a related point, why does ‘continuity of shear stresses result in a boundary layer of thickness $\delta$’? No natural scale ($\delta$) arises from the solution of (3.1) does it? I cannot see qualitatively what distinguishes this `boundary layer' from the entire `shear layer' (indeed, the authors suggest that they are in fact analogous). The layer is (looking at fig. 1) much less well defined than, say, the strong shear layer just above an urban canopy, where the velocity gradient is clearly very much greater than in the boundary layer above or the canopy below.
+}
+
+We refer the referee to the solution of (3.1) we present at the end of this response.
+Many features of this solution, we assume, will be familiar to readers of the \textit{Journal of Fluid Mechanics}.
+There is a natural boundary layer thickness that arises from the a competition between turbulent viscous stress and vegetation drag.
+It is this thickness we call $\delta$.
+The boundary layer on this thickness scale exists inside the vegetation, but not outside (the velocity profile outside is simply parabolic). 
+The shear established in the boundary layer is, indeed, equal to the shear in the unvegetated region, as a consequence of matching the shear stress.
+However, the shear gradient ($U_{yy}(y)$) in the vegetated region is $O(1/\delta)$ larger than that in the unvegetated region.
+It is this shear gradient that underlies the traditional picture of KH instability in a shear flow.
+Furthermore, the presence of the inflection point in the velocity profile, which is often invoked to suggest the presence of an instability, is absent in our profile.
+Instead the shear gradient switches sign at $y=h_g$.
+
+To clarify the statement in the manuscript about the matching of shear stress determining the boundary layer thickness, we are sure the referee realizes that there are two conditions imposed at $y=h_g$, the continuity of velocity and the shear stress.
+However, only the continuity of shear stress influences the boundary layer thickness, as can be seen from the solution we present at the end of this response. 
+
+
+\item The referee says:
+\textit{
+p.4, +9: It would be better to say ‘the shear layer discussed by Ghisalberti and Nepf (2002, 2004)’.
+}
+
+We thank the referee for pointing this out. We prefer the term ``invoked by Ghisalberti and Nepf (2002, 2004)'', and assume that this revision is in-line with the referee's suggestion.
+
+\item The referee says:
+\textit{p.5 +10,11, Although experimentally observed wavelengths are not available, they do arise from the analysis of presumably, so some comment about the values and whether they seem physically realistic (and/or how they compare with the scales of typical motions in the turbulent flow above the canopy which are believed to be linked with monami) would be instructive.
+}
+
+We thank the referee for pointing out for the usefulness mentioning the wavelengths of the dominant mode. 
+For parameters corresponding to the lab scale experiments ($4<H/\delta<10$ in figure 2 of the manuscript), the dimensionless wavenumber of dominant mode is very close to unity, and therefore the dimensional wavelength is approximately half channel width ($2\pi H$). We have revied the manuscript to say:
+
+\revise{Figure 2 also shows that the predicted dimensionless wavenumber of the dominant mode for parameters corresponding to the lab scale experiments ($4<H/\delta<10$) is very close to unity, and therefore the dimensional wavelength is approximately $2\pi H$.}
+
+\item The referee says:
+\textit{
+The final sentence, if I understand this correctly, implies that all the available data suggests that only mode 1 (i.e. only the left hand panels in fig. 4) is actually relevant to real situations. On the other hand, the statement at the bottom on p.7 (mode 2 is distinct from KH), and the conclusions, seem together to imply that the observed monami are mode 2. I became confused at this point and would welcome greater clarity. And if mode 2 is not observed in experiments, the extended analysis of its character is perhaps not particularly relevant and should be shortened.
+}
+
+We understand that our presentation was not perfect, and have now clarified the confusion. The fact of the matter is that it is taken for granted based on superficial similarities with the KH instability, that \monami is based on KH instability. However, a careful analysis is needed to determine if it is really the case. We have presented such an analysis, and find that the picture is not simple. We find that there are two kinds of unstable modes for large vegetation density, and they merge together for smaller vegetation density. Both mechanisms of instability are presumably active when the two modes appear merged. All experiments lie in this regime where the vegetation density is small. Therefore, we are unable to distinguish based on the experimental observations and our analysis, if it is Mode 1 or Mode 2 that dominates in region where the two modes merge. Future experiments may be cleverly designed to resolve this ambiguity.
+
+To clarify this picture, we now say in the manuscript:
+
+\noindent
+\revise{All experimental data we have found corresponds to a vegetation density for which the unstable region in the $\Rey-k$ space has not split into two, so we are unable to determine if flow instability in the lab scale experiments \citep{Ghisal02} are due to Mode 1 or Mode 2.}
+
+and in the conclusion:
+
+\noindent
+\revise{
+We are unable to determine based on observations, and therefore have refrained from identifying, which mode is observed in experiments and it still remains a subtle question and subject of future investigation. Since the two modes merge for the experimental parameters, KH may not be assumed to underlie \monami.
+}
+
+\item The referee says:
+\textit{
+P.4 +8: It's not clear how a boundary layer thickness can be equated to a velocity ratio! This comment also appears in the caption of fig.1. Furthermore, the caption states that the profile is from Ghislaberti and Nepf - case I. This case has H=12.3 cm and hg =9 cm and the caption says that $\delta$
+= 5.02 cm. This implies an $H/\delta$ rather lower than any of the experimental
+data shown in fig.2 (left), which seems inconsistent.
+}
+
+Since the shear stress $U_y$ is continuous across the grass tip we can equate the scaling estimate of shear stress just above the grass  ($h_g^+$) with that of just below the grass ($h_g^{-}$). 
+Above the grass tip the base flow is a parabolic velocity profile and the estimate of $U_y$ at the grass tip is $U_0/H$, whereas below the grass tip the shear stress can be estimated to be $U_{bl}/\delta$, equating the shear stress above the grass and below the grass gives us $\delta/H = U_{bl}/U_0$.
+
+We think referee has understood the case-I mentioned for Figure 1 as the one from 2002 paper ( Mixing layer and coherent structures in vegetated aquatic flows, \textit{J. Geophys. Res. 107} ), whereas we are referring to the case-I from the 2004 paper ( The limited growth of vegetated shear layers, \textit{Water Resource Research 40(7)} ). In this case the channel width is $41cm$, implying $H=20.5 cm$ hence $H/\delta=4.02$. We would also like to point out that we have used a logarithmic scale on y-axis in Figure 2, and indeed $H/\delta \approx 5$ for all the experimental observation shown in Figure 2.
+
+\item The referee says:
+\textit{
+p.5, -9: `boundary layer, the' (i.e. singular).
+}
+
+We have accepted the referee's suggestion.
+
+\item The referee says:
+
+\textit{  Fig 2 $\& 3$:
+In both captions a value for the eddy viscosity is given. Was there any physical basis for this value? If not, how was it chosen? And how critical are the comparisons between theory and experiment to its value?
+}
+
+The constant eddy viscosity of 0.1 Pa s is chosen based on eddy viscosity profile shown in Figure 5 for lab scale experiments of Ghisalberti and Nepf (2004). As the referee realized, the exact value of the eddy viscosity varies with depth in the water column. But overall, the eddy viscosity arises from the eddies the vegetation generates. The scale of velocity for these eddies is the free stream speed ($U \sim 0.1$ m/s), and the size of the eddies is the width of the grass blade ($d \sim 0.01$ m). According to Ghisalberti and Nepf (2004), the eddy viscosity is approximately $\mu \approx 0.1 \rho U d = 0.1$ Pa s). The Reynolds number $\Rey$ is the only parameter that depends on the eddy viscosity. Any uncertainty in the eddy viscosity translates into an uncertainty in the critical Reynolds number for the onset of the instability. {\bf Any changes to the manuscript.}
+% (The limited growth of vegetated shear layers. \textit{Water Resources Research 40 (7), 2004} )
+
+We have now revised the manuscript to include this discussion. The manuscript now reads:
+
+\revise{
+The measured values of eddy viscosity vary with depth in the water column \citep{Nepf04}; we use $\mu= 0.1$ Pa s as a representative value from this range for comparison with experiments.
+}
+
+and we have removed the statement of the value of eddy viscosity from the captions of figures 2 and 3.
+
+\end{enumerate}
+
+\newpage
+\centerline{\large \textbf{Matched asymptotic solution}}
+~\vspace{1mm}
+
+Here we present an asymptotic solution of equation (3.1) for $N_g \gg 1$, which should be helpful in clarifying many questions the referee has related to the boundary layer near the grass top. For clarity of presentation in this particular calculation we assume the grass to extend from $y=0$ to $y=H$, i. e. the submergence ratio is 0.5. 
+Using $H$ as length scale, and $U_0 = (-dP/dx)H^2/\mu$ as velocity scale, we rescale $U= U_0 \bar{U}$ and $y-H = H \bar{y}$. 
+Equation (3.1) is then transformed to  
+\begin{equation}
+\begin{split}
+ \bar{U}_{\bar{y}\bar{y}}+1 - \Rey \Ndg \bar{U}^2 =0, \quad &\text{ for } -1<\bar{y}<0\\
+ \bar{U}_{\bar{y}\bar{y}}+1 =0, \quad &\text{ for } 1>\bar{y}>0.
+\end{split}
+\end{equation}
+For notational convenience, we will drop the overbar and define a drag parameter as $D_g = R\Ndg$ for $-1<y\le 0$, $D_g = 0$ for $0<y\le 1$, grass top is at $y=0$ and the bottom surface is at $y=-1$. Equation (3.1) now reads
+\begin{equation}
+\begin{split}
+ {U}_{{y}{y}}+1 - D_g{U}^2 &=0.
+\end{split}
+\end{equation}
+We use the zero shear boundary condition on both the boundaries ($y=-1,1$) as mentioned in the manuscript.
+
+\vspace{2mm}
+\noindent
+\textbf{Asymptotic Solution of 3.1 below the grass}
+\vspace{1mm}
+
+\noindent
+We observe that $U = \sqrt{1/D_g}$ is a stationary point of above equation, where both $U_{yy}=0$ and $U_y =0 $. By multiplying with $U_y$ and integrating once, we get
+\begin{equation}
+\begin{split}
+ \frac{1}{2} \left( \frac{dU}{dy} \right)^2 +U - \frac{1}{3} D_g U^3 + C = 0,
+\end{split}
+\label{eqn:above}
+\end{equation}
+where $C$ is a constant of integration, which can be determined by observing that as $U$ approaches $1/\sqrt{D_g}$, $U_y$ approaches zero. Applying this condition gives $C = -\dfrac{2}{3\sqrt{D_g}}$. Using the value of $C$, \eqref{eqn:above} becomes 
+\begin{equation}
+\begin{split}
+ \frac{dU}{dy} = \sqrt{\frac{2}{3}D_g U^3+\frac{4}{3\sqrt{D_g}}-2U }
+\end{split}
+\end{equation}
+We further use the substitution $U=\dfrac{1}{\sqrt{D_g}} u $ in the above equation, which simplifies it to
+\begin{equation}
+\begin{split}
+%  \frac{1}{\sqrt{D_g}}\frac{du}{dy} &= \frac{1}{D_g^{1/4}}\sqrt{\frac{2}{3}} \sqrt{ u^3+2-3u } \\
+%  \frac{du}{dy} &= {D_g^{1/4}}\sqrt{\frac{2}{3}} \sqrt{ u^3+2-3u } \\
+ \frac{du}{(u-1)\sqrt{u+2} } &= {D_g^{1/4}}\sqrt{\frac{2}{3}} dy
+\end{split}
+\end{equation}
+Above equation can be integrated to obtain the solution in the vegetated region as
+\begin{equation}
+\begin{split}
+u &= 3 \coth \left(\frac{C_1-y D_g^{1/4}}{\sqrt{2}}  \right)^2-2 \\
+U &= \frac{1}{\sqrt{D_g}} \left( 3 \coth^2 \left(\frac{C_1-y D_g^{1/4}}{\sqrt{2}}  \right)-2    \right)
+\label{under_grass_sol}
+\end{split}
+ \hspace{1cm} \text{for $-1\le y\le 0$,}
+\end{equation}
+where $C_1$ is constant of integration, which can be found by matching the shear stress applied by the flow above the grass at the tip of the grass. Deeper inside grass ($h_g-y \gg \delta$) the solution saturates to $U(y)=\frac{1}{\sqrt{D_g}}$ independent of the value of $C_1$ due to the dominant balance between drag and pressure gradient.
+
+\vspace{2mm}
+\noindent
+\textbf{Solution above the grass}
+\vspace{1mm}
+
+\noindent
+Above the grass, the dimensionless form of equation (3.1) translates to
+\begin{equation}
+ U_{yy}+1=0
+\end{equation}
+which can be integrated together with the zero shear boundary condition at top to provided
+\begin{equation}
+ U(y) = y-y^2/2+C_2 \hspace{1cm} \text{for $0<y<1$}
+ \label{above_grass_sol}
+\end{equation}
+Where $C_2$ is constant of integration.
+
+\vspace{2mm}
+\noindent
+\textbf{Matching the solution obtained by \eqref{under_grass_sol} and \eqref{above_grass_sol} }
+\vspace{1mm}
+
+\noindent
+The value of $C_1$ and $C_2$ can be determined by matching the solution \eqref{under_grass_sol} and \eqref{above_grass_sol} at the grass tip.
+Matching the shear stress at the grass top results in
+\begin{equation}
+\frac{3\sqrt{2}}{D_g^{1/4}} \coth\left(\dfrac{C_1}{\sqrt{2}}\right) \csch^2\left(\dfrac{C_1}{\sqrt{2}}\right) = 1;
+\label{C1_eq}
+\end{equation}
+Above equation can be solved numerically, but here we will solve it asymptotically for $D_g \gg 1$. We expect $C_1 \ll 1$ in this limit, and the terms in \eqref{C1_eq} may be expanded in this limit to get
+\begin{equation}
+\begin{split}
+\frac{3\sqrt{2}}{D_g^{1/4}} \left( \frac{\sqrt{2}}{C_1} \right) \left( \frac{2}{C_1^2} \right) &= 1 \\
+C_1 = \frac{(12)^{1/3}}{D_g^{1/12}},
+\end{split}
+\end{equation}
+consistent with our expectation.
+The boundary layer length scale may be derived from examining the scale of $y$ for which the argument of \eqref{under_grass_sol} changes asymptotic order. This examination implies $C_1 \sim O(y D_g^{1/4})$ or $y = O(D_g^{-1/3})$. The scale for velocity in the boundary layer is the value of \eqref{under_grass_sol} at $y=0$.
+\begin{align}
+ U_\text{top} &=  \frac{1}{\sqrt{D_g}} \left( 3 \coth^2 \left(\frac{C_1}{\sqrt{2}}  \right)-2    \right) \\
+              &\approx  \frac{1}{\sqrt{D_g}} \left( \frac{6}{C_1^2} -2    \right) \\
+              &\approx \frac{1}{\sqrt{D_g}} \frac{6D_g^{1/6}}{12^{2/3}} \\
+              &\approx \left( \dfrac{3}{2} \right)^{1/3} D_g^{-1/3}.
+\end{align}
+
+% 
+% 
+% Through constant $C_1$ a natural length scale $\delta$ arises when $\delta D_g^{1/4}$ balances $C_1$ in equation \eqref{under_grass_sol}, which gives $\delta \sim D_g^{-1/3}$ or $\delta \sim (R\Ndg)^{-1/3}$. We can also obtain scale of velocity in the boundary layer by substituting $y=0$ in the \eqref{under_grass_sol} and using asymptotic expansion of $\coth(x)$, doing this expansion leads to 
+% \begin{equation}
+% \begin{split}
+% U(y)-U_{tip} &\sim \frac{1}{\sqrt{D_g}}\frac{1}{C_1^2}\\
+% U(y)-U_{tip} &\sim D_g^{-1/3}\\
+% U(y)-U_{tip} &\sim (R\Ndg)^{-1/3}
+% \end{split}
+% \end{equation}
+% near the grass tip. 
+We have employed one of the many possible methods to understand the structure of the solution of (3.1); other methods can also be used to reach the same conclusions.
+In the manuscript we have presented the outline of an essentially identical method.
+For a general treatment of the topic, we refer the referee to the book by \cite{Hinch1991}. % (Perturbation Methods by E.J. Hinch, Cambridge Texts in Applied Mathematics ).
+
+
+\newpage
+\bibliography{Grass}{}
+\bibliographystyle{jfm}
+% 
+% \newpage
+% \textbf{ About the Origin of boundary layer $\delta$}
+% 
+% \centerline{Ravi's new edits}
+% 
+% In order to match shear stress at the grass tip applied by the fluid above the grass, the flow with in the grass increases from an approximately constant velocity $U_g = \sqrt{\frac{-dp/dx}{\rho C_N d N_g}}$ in a region $\delta$ to a value so that both velocity and shear stress are continuous across the grass tip. Again for in-depth discussion about such problem can be found in the book of Hinch.   
+% 
+% \textbf{About the estimated value of $H/\delta$ from Figure-1}
+% 
+% I think reviewer have understood the case-I mentioned for Figure-1 as the one from 2002 paper ( Mixing layer and coherent structures in vegetated aquatic flows, \textit{J. Geophys. Res. 107} ), whereas we are referring to the case-I from the 2004 paper ( The limited growth of vegetated shear layers, \textit{Water Resource Research 40(7)} ). In this case the channel width is $41cm$, implying $H=20.5 cm$ hence $H/\delta=4.02$. We would also like to point out that we have used log scale on y-axis in Figure-2, and indeed $H/\delta \approx 5$ for all the experimental observation shown in Figure-2.
+% 
+% \textbf{Basis for eddy viscosity}
+% 
+% The constant eddy viscosity of 0.1 Pa s is chosen based on eddy viscosity profile shown in Figure-5 for lab scale experiments of Ghisalberti and Nepf (The limited growth of vegetated shear layers. \textit{Water Resources Research 40 (7), 2004} )
+
+
+\end{document}
